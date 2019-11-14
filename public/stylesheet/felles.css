@@ -15,3 +15,8 @@ html, body {
     transform: translate(-50%, -50%);
     background: #fff;
 }
+
+@font-face {
+    font-family: Crayon;
+    src: url('../fonts/CrayonHandRegular2016Demo.ttf');
+}
