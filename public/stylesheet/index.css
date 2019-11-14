@@ -91,6 +91,35 @@
     transform: scale(1.05);
 }
 
+#signLeft {
+    position: absolute;
+    left: 410px;
+    top: 350px;
+}
+
+#signRight {
+    position: absolute;
+    left: 474px;
+    top: 345px;
+    z-index: 1;
+    transform: rotate(-8deg);
+    animation-name: signRightAnim;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-duration: 0.5s;
+}
+
+@keyframes signRightAnim {
+    0% {top: 345px; transform: rotate(-8deg); left: 474px;}
+    10% {top: 345px; transform: rotate(-12deg);}
+    20% {top: 345px; transform: rotate(-8deg);}
+    30% {top: 345px; transform: rotate(-12deg);}
+    40% {top: 345px; transform: rotate(-8deg);}
+    50% {top: 345px; transform: rotate(-12deg);}
+    60% {top: 345px; transform: rotate(-8deg); left: 474px;}
+    100% {top: 360px; transform: rotate(10deg); left: 478px;}
+}
+
 #rat1 {
     position: absolute;
     left: 400px;
