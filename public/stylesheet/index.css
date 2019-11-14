@@ -56,11 +56,19 @@
     top: -100px;
 }
 
-#houseLeftWindow {
+#houseLeftWindow1 {
     position: absolute;
-    top: 150px;
+    width: 90px;
+    top: 20px;
     left: 20px;
 }
+
+#houseLeftWindow2 {
+    position: absolute;
+    width: 90px;
+    top: 240px;
+    left: 20px;
+} 
 
 #houseRight {
     position: absolute;
