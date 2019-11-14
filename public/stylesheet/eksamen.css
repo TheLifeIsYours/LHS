@@ -1,0 +1,14 @@
+input {
+    display: none;
+}
+
+#questionLabel {
+    width: 100%;
+    height: 5em;
+    background: orange;
+    cursor: pointer;
+}
+
+#questionInput:checked ~ #questionLabel {
+    background: green;
+}

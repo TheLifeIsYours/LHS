@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#mainContainer {
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: rgb(213, 255, 255);
+}
+
+#jonny {
+    position: absolute;
+    width: 90px;
+    left: 530px;
+    top: 405px;
+}
+
+#jonny:hover {
+    transform: scale(1.05);
+}
+
+#houseJonny {
+    position: absolute;
+    top: 200px;
+}
+
+#doorJonny {
+    position: absolute;
+    top: 385px;
+    left: 412px;
+}
+
+#doorJonny:hover {
+    transform: scale(1.05);
+}
+
+#houseLeft {
+    position: absolute;
+    background-color: rgb(189, 60, 60);
+    width: 200px;
+    height: 460px;
+    top: 105px;
+}
+
+#houseLeftRoof {
+    position: absolute;
+    background-color: rgb(68, 0, 0);
+    width: 250px;
+    height: 100px;
+    top: -100px;
+}
+
+#houseLeftWindow1 {
+    position: absolute;
+    width: 90px;
+    top: 20px;
+    left: 20px;
+}
+
+#houseLeftWindow2 {
+    position: absolute;
+    width: 90px;
+    top: 240px;
+    left: 20px;
+} 
+
+#houseRight {
+    position: absolute;
+    background-color: rgb(255, 208, 56);
+    width: 200px;
+    height: 400px;
+    top: 165px;
+    right: 0px;
+}
+
+#houseRightRoof {
+    position: absolute;
+    background-color: rgb(68, 0, 0);
+    width: 300px;
+    height: 50px;
+    right: -20px;;
+    top: -25px;
+    transform: rotate(-10deg);
+}
+
+#houseRightWindow1 {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+
+#houseRightWindow2 {
+    position: absolute;
+    top: 120px;
+    left: 180px;
+}
+
+#road {
+    background-color: rgb(119, 108, 108);
+    width: 1280px;
+    height: 150px;
+    position: absolute;
+    top: 570px;
+}
+
+#roadLine {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: url("../images/Index/roadLine.png");
+    width: 1280px;
+    height: 10px;
+}
