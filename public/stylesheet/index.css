@@ -17,8 +17,59 @@
 #jonny {
     position: absolute;
     width: 90px;
-    left: 530px;
+    left: -500px;
     top: 405px;
+    animation-name: jonnyAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jonnyAnim {
+    0% {left: -370px; top: 500px; width: 70px;}
+    40% {left: 580px; top: 500px; width: 70px;}
+    50% {left: 580px; top: 450px; width: 90px;}
+    60% {top: 440px;}
+    60% {top: 440px;}
+    70% {top: 430px;}
+    70% {top: 430px;}
+    80% {top: 420px;}
+    80% {top: 420px;}
+    90% {top: 410px;}
+    90% {top: 410px;}
+    100% {left: 530px; top: 405px; width: 90px;}
+}
+
+#copCarContainer {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: -500px;
+    animation-name: copCarAnim;
+    animation-duration: 3s;
+}
+
+@keyframes copCarAnim {
+    0% {left: -500px;}
+    40% {left: 450px;}
+    50% {left: 450px;}
+    100% {left: 1500px;}
+}
+
+#copCar {
+    position: absolute;
+    bottom: 30px;
+}
+
+#copCarWheelLeft {
+    position: absolute;
+    bottom: 30px;
+    left: 86px;
+}
+
+#copCarWheelRight {
+    position: absolute;
+    bottom: 30px;
+    left: 336px;
 }
 
 #jonny:hover {
@@ -38,6 +89,14 @@
 
 #doorJonny:hover {
     transform: scale(1.05);
+}
+
+#rat1 {
+    position: absolute;
+    left: 400px;
+    bottom: 130px;
+    animation-name: rat1Anim;
+    animation-duration: 5s;
 }
 
 #houseLeft {
