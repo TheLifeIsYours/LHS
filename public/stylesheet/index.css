@@ -91,6 +91,14 @@
     transform: scale(1.05);
 }
 
+#rat1 {
+    position: absolute;
+    left: 400px;
+    bottom: 130px;
+    animation-name: rat1Anim;
+    animation-duration: 5s;
+}
+
 #houseLeft {
     position: absolute;
     background-color: rgb(189, 60, 60);
