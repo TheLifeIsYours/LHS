@@ -13,6 +13,16 @@
     transform: translate(-50%, 0);
 }
 
+#desk  {
+    width: 350px;
+    height: 160px;
+    background: brown;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+}
+
 input {
     display: none;
 }
