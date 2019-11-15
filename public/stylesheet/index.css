@@ -201,6 +201,126 @@
  100% {left: 600px; bottom: 387px; z-index: 0}
 }
 
+#fly1 {
+    position: absolute;
+    left: 360px;
+    bottom: 250px;
+    transform: rotate(0deg);
+    animation-name: fly1Anim;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly1Anim {
+    0% {left: 360px; bottom: 250px; transform: rotate(0deg);}
+    20% {left: 350px; bottom: 240px;}
+    40% {left: 360px; bottom: 230px;}
+    60% {left: 340px; bottom: 240px; transform: rotate(300deg);}
+    80% {left: 350px; bottom: 260px;}
+    100% {left: 360px; bottom: 250px; transform: rotate(0deg);}
+}
+
+#fly2 {
+    position: absolute;
+    left: 300px;
+    bottom: 190px;
+    transform: rotate(45deg);
+    animation-name: fly2Anim;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly2Anim {
+    0% {left: 300px; bottom: 190px; transform: rotate(45deg);}
+    20% {left: 310px; bottom: 200px;}
+    40% {left: 290px; bottom: 230px;}
+    60% {left: 300px; bottom: 240px; transform: rotate(245deg);}
+    80% {left: 310px; bottom: 220px;}
+    100% {left: 300px; bottom: 190px; transform: rotate(45deg);}
+}
+
+#fly3 {
+    position: absolute;
+    left: 320px;
+    bottom: 220px;
+    transform: rotate(145deg);
+    animation-name: fly3Anim;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly3Anim {
+    0% {left: 320px; bottom: 220px; transform: rotate(145deg);}
+    20% {left: 310px; bottom: 210px;}
+    40% {left: 300px; bottom: 190px;}
+    60% {left: 320px; bottom: 220px; transform: rotate(0deg);}
+    80% {left: 330px; bottom: 200px;}
+    100% {left: 320px; bottom: 220px; transform: rotate(145deg);}
+}
+
+#fly4 {
+    position: absolute;
+    left: 330px;
+    bottom: 260px;
+    transform: rotate(245deg);
+    animation-name: fly4Anim;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly4Anim {
+    0% {left: 330px; bottom: 260px; transform: rotate(145deg);}
+    20% {left: 320px; bottom: 240px;}
+    40% {left: 310px; bottom: 270px;}
+    60% {left: 300px; bottom: 250px; transform: rotate(345deg);}
+    80% {left: 320px; bottom: 240px;}
+    100% {left: 330px; bottom: 260px; transform: rotate(145deg);}
+}
+
+#fly5 {
+    position: absolute;
+    left: 830px;
+    bottom: 210px;
+    transform: rotate(300deg);
+    animation-name: fly5Anim;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly5Anim {
+    0% {left: 830px; bottom: 210px; transform: rotate(300deg);}
+    20% {left: 810px; bottom: 220px;}
+    40% {left:790px; bottom: 230px;}
+    60% {left: 810px; bottom: 220px; transform: rotate(45deg);}
+    80% {left: 820px; bottom: 230px;}
+    100% {left: 830px; bottom: 210px; transform: rotate(300deg);}
+}
+
+#fly6 {
+    position: absolute;
+    left: 780px;
+    bottom: 220px;
+    transform: rotate(150deg);
+    animation-name: fly6Anim;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly6Anim {
+    0% {left: 780px; bottom: 220px; transform: rotate(150deg);}
+    20% {left: 790px; bottom: 230px;}
+    40% {left:770px; bottom: 240px;}
+    60% {left: 760px; bottom: 230px; transform: rotate(360deg);}
+    80% {left: 790px; bottom: 240px;}
+    100% {left: 780px; bottom: 220px; transform: rotate(150deg);}
+}
+
 #houseLeft {
     position: absolute;
     background-color: rgb(189, 60, 60);
