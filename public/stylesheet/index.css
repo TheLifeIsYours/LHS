@@ -22,6 +22,7 @@
     animation-name: jonnyAnim;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 @keyframes jonnyAnim {
@@ -46,6 +47,7 @@
     left: -500px;
     animation-name: copCarAnim;
     animation-duration: 3s;
+    z-index: 2;
 }
 
 @keyframes copCarAnim {
@@ -79,12 +81,14 @@
 #houseJonny {
     position: absolute;
     top: 200px;
+    z-index: 1;
 }
 
 #doorJonny {
     position: absolute;
     top: 385px;
     left: 412px;
+    z-index: 1;
 }
 
 #doorJonny:hover {
@@ -95,6 +99,7 @@
     position: absolute;
     left: 410px;
     top: 350px;
+    z-index: 1;
 }
 
 #signRight {
@@ -122,10 +127,49 @@
 
 #rat1 {
     position: absolute;
-    left: 400px;
-    bottom: 130px;
+    left: 870px;
+    bottom: 155px;
     animation-name: rat1Anim;
-    animation-duration: 5s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1;
+    transform: rotate(0deg);
+}
+
+@keyframes rat1Anim {
+    0% {left: 870px; bottom: 155px;}
+    20% {left: 670px; bottom: 140px;}
+    40% {left: 500px; bottom: 140px;}
+    60% {left: 350px; bottom: 140px;z-index: 1;}
+    80% {left: 220px; bottom: 155px; z-index: 1; transform: rotateY(0deg);}
+    81% {z-index: 0; transform: rotateY(180deg);}
+    99% {z-index: 0; transform: rotateY(180deg);}
+    100%{left: 870px; bottom: 155px; z-index: 1; transform: rotateY(0deg);}
+}
+
+#rat2 {
+    position: absolute;
+    left: 600px;
+    bottom: 387px;
+    animation-name: rat2Anim;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 0;
+    transform:rotateY(180deg) rotate(-28deg);
+}
+
+@keyframes rat2Anim {
+ 0% {left: 600px; bottom: 387px; transform:rotateY(180deg) rotate(-28deg);}
+ 1% {z-index: 1}
+ 5% {left: 620px; bottom: 310px; transform:rotateY(180deg) rotate(0deg);}
+ 10% {left: 650px; bottom: 310px;}
+ 12% {left: 700px; bottom: 350px;}
+ 16% {left: 720px; bottom: 350px;}
+ 25% {left: 800px; bottom: 155px;}
+ 100% {left: 600px; bottom: 387px;}
 }
 
 #houseLeft {
