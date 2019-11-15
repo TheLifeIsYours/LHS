@@ -1,5 +1,5 @@
-#mainContainer {
-    background: linear-gradient(#dc9d62 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
+#mainContainer {background: linear-gradient(#dc9d62 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
+    
 }
 
 #blackboard {    
@@ -11,7 +11,9 @@
     left: 50%;
     top: 2em;
     transform: translate(-50%, 0);
-    font-family: crayon;
+    font-family: Crayon, comic sans ms;
+    font-size: 24px;
+    color: white;
 }
 
 #desk  {
@@ -23,3 +25,4 @@
     top: 50%;
     transform: translate(-50%, -45%);
 }
+
