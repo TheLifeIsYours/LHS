@@ -1,29 +1,17 @@
-#mainContainer{
-    width: 1280px;
-    height: 720px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); 
-    border: 1px solid grey;
-    background: linear-gradient(#dc9d62 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
-    overflow: hidden;
-}
-
 #blackboard {    
     width: 700px;
     height: 300px;
-    background: green;
-    border: solid 4px white;
-    position: absolute;
     left: 90%;
     top: -10px;
-    transform: translate(-50%, 0);
-    font-family: Crayon, comic sans ms;
-    font-size: 24px;
-    color: white;
 }
-#desk{
+
+ol{
+    margin-left: 30px;
+}
+li{
+    font-size: 16px;
+}
+#facebookDesk{
     position: relative;
     margin-bottom: 0px;
     border-bottom: 200px solid brown;
@@ -33,8 +21,9 @@
     width: 800px;
   }
 
-/* #backgroundWall{
-    width: 1280px;
-    height: 720px;
-    background: linear-gradient(#dc9d62 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
-} */
+  #computerDisplay{
+      position: absolute;
+      width: 300px;
+      height: 250px;
+      background: grey;
+  }
