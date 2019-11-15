@@ -1,5 +1,5 @@
-#mainContainer {background: linear-gradient(#dc9d62 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
-    
+#mainContainer {
+    background: linear-gradient(#dc9d62 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
 
 #blackboard {    
@@ -16,7 +16,7 @@
     color: white;
 }
 
-#desk  {
+#desk {
     width: 350px;
     height: 160px;
     background: brown;
