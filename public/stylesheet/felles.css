@@ -24,7 +24,7 @@ html, body {
 
 /* Snakke bobbler styles
 ------------------------------------------------------------------------------*/
-.speachBubble {
+.speechBubble {
     position: relative;
     background: #fff;
     min-height: 1em;
