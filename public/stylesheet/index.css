@@ -14,6 +14,14 @@
     background-color: rgb(213, 255, 255);
 }
 
+#speachBubble_1 {
+    position: absolute;
+    left: 650px;
+    bottom: 300px;
+    z-index: 2;
+    visibility: hidden;
+}
+
 #jonny {
     position: absolute;
     width: 90px;
@@ -23,6 +31,10 @@
     animation-duration: 3s;
     animation-fill-mode: forwards;
     z-index: 1;
+}
+
+#jonny:target {
+    visibility: visible;
 }
 
 @keyframes jonnyAnim {
@@ -152,24 +164,45 @@
     position: absolute;
     left: 600px;
     bottom: 387px;
-    animation-name: rat2Anim;
+    animation-name: rat2and3Anim;
     animation-duration: 10s;
-    animation-delay: 0s;
-    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-timing-function: ease-in;
     animation-iteration-count: infinite;
     z-index: 0;
     transform:rotateY(180deg) rotate(-28deg);
 }
 
-@keyframes rat2Anim {
+#rat3 {
+    position: absolute;
+    left: 600px;
+    bottom: 387px;
+    animation-name: rat2and3Anim;
+    animation-duration: 10s;
+    animation-delay: 6s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    z-index: 0;
+    transform:rotateY(180deg) rotate(-28deg);
+}
+
+@keyframes rat2and3Anim {
  0% {left: 600px; bottom: 387px; transform:rotateY(180deg) rotate(-28deg);}
  1% {z-index: 1}
  5% {left: 620px; bottom: 310px; transform:rotateY(180deg) rotate(0deg);}
  10% {left: 650px; bottom: 310px;}
- 12% {left: 700px; bottom: 350px;}
- 16% {left: 720px; bottom: 350px;}
- 25% {left: 800px; bottom: 155px;}
- 100% {left: 600px; bottom: 387px;}
+ 13% {left: 715px; bottom: 370px;}
+ 14% {left: 720px; bottom: 365px;}
+ 20% {left: 800px; bottom: 155px; transform:rotateY(180deg) rotate(0deg);}
+ 21% {transform:rotateY(0deg) rotate(0deg);}
+ 40% {left: 650px; bottom: 155px; transform:rotateY(0deg) rotate(0deg);}
+ 41% {transform:rotateY(0deg) rotate(28deg);}
+ 43% {left: 620px; bottom: 250px; transform:rotateY(0deg) rotate(28deg); }
+ 45% {left: 610px; bottom: 230px; transform:rotateY(0deg) rotate(0deg);}
+ 50% {left: 600px; z-index: 1;}
+ 51% {z-index: 0;}
+ 99% {left: 620px; bottom: 230px; transform:rotateY(0deg) rotate(0deg);}
+ 100% {left: 600px; bottom: 387px; z-index: 0}
 }
 
 #houseLeft {
