@@ -20,10 +20,17 @@
     bottom: 300px;
     z-index: 2;
     display: none;
+    opacity: 0;
+    transition: opacity 1s ease 0s;
+}
+
+#speechBubble_1Input {
+    display: none;
 }
 
 #speechBubble_1Input:checked ~ #speechBubble_1{
     display: block;
+    opacity: 1;
 }
 
 #jonny {
