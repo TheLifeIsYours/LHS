@@ -19,7 +19,10 @@
     left: 650px;
     bottom: 300px;
     z-index: 2;
-    visibility: hidden;
+    transform: scale(0);
+    transition-duration: 0.5s;
+    transition-delay: 2s;
+    transition-timing-function: ease;
 }
 
 #jonny {
@@ -33,8 +36,8 @@
     z-index: 1;
 }
 
-#jonny:target {
-    visibility: visible;
+#speachBubble_1:target {
+    transform: scale(1);
 }
 
 @keyframes jonnyAnim {
