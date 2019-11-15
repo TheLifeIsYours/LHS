@@ -1,16 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 #mainContainer {
-    width: 1280px;
-    height: 720px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
     background-color: rgb(213, 255, 255);
 }
 
@@ -19,9 +8,9 @@
     left: 650px;
     bottom: 300px;
     z-index: 2;
-    display: none;
+    visibility: hidden;
     opacity: 0;
-    transition: opacity 1s ease 0s;
+    transition: all 0.7s;
 }
 
 #speechBubble_1Input {
@@ -29,7 +18,7 @@
 }
 
 #speechBubble_1Input:checked ~ #speechBubble_1{
-    display: block;
+    visibility: visible;
     opacity: 1;
 }
 
