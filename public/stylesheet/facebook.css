@@ -1,3 +1,4 @@
+/* Stilsett av scenario */
 #mainContainer {
     background: linear-gradient(#CFC5B3 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
@@ -28,11 +29,12 @@ li{
     z-index: 0;
   }
 
-  #computerDiv {
+  /* Stilsett av pc */
+  #computer {
       position: absolute;
       width: 710px;
       height: 550px;
-      top: 100px;
+      top: 30px;
       left: 30px;
   }
 
@@ -77,4 +79,18 @@ li{
     top: 10px;
     left: 350px;
     z-index: 4;
+}
+
+/* Stilsett av knapper */
+#buttons {
+    position: absolute;
+    top: 600px;
+    left: 90px;
+    width: 700px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.buttonsClass {
+    
 }
