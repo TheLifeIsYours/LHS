@@ -3,16 +3,16 @@ input {
 }
 
 #blackboard {
+    padding:0.25em,
 }
 
-#questionLabel {
+.questionLabel {
     display: block;
     max-width: 100%;
-    padding: 0.5em;
-    background: orange;
+    padding: 0.25em;
     cursor: pointer;
 }
 
-#questionInput:checked ~ #questionLabel {
-    background: green;
+#questionInput_2:checked ~ input:checked+label {
+    background: yellow;
 }
