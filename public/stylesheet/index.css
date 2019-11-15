@@ -14,6 +14,14 @@
     background-color: rgb(213, 255, 255);
 }
 
+#speachBubble_1 {
+    position: absolute;
+    left: 650px;
+    bottom: 300px;
+    z-index: 2;
+    visibility: hidden;
+}
+
 #jonny {
     position: absolute;
     width: 90px;
@@ -23,6 +31,10 @@
     animation-duration: 3s;
     animation-fill-mode: forwards;
     z-index: 1;
+}
+
+#jonny:target {
+    visibility: visible;
 }
 
 @keyframes jonnyAnim {
