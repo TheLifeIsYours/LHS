@@ -1,3 +1,7 @@
+#mainContainer {
+    background: linear-gradient(#CFC5B3 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
+}
+
 #blackboard {    
     width: 700px;
     height: 300px;
@@ -8,22 +12,69 @@
 ol{
     margin-left: 30px;
 }
+
 li{
-    font-size: 16px;
+    font-size: 22px;
 }
-#facebookDesk{
+
+#facebookDesk {
     position: relative;
     margin-bottom: 0px;
-    border-bottom: 200px solid brown;
+    border-bottom: 200px solid #E5CB9C;
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
     height: 520px;
     width: 800px;
+    z-index: 0;
   }
 
-  #computerDisplay{
+  #computerDiv {
       position: absolute;
-      width: 300px;
-      height: 250px;
-      background: grey;
+      width: 710px;
+      height: 550px;
+      top: 100px;
+      left: 30px;
   }
+
+  #computerDisplay {
+      position: absolute;
+      width: 650px;
+      height: 400px;
+      background: #EFEFEF;
+      border-radius: 30px;
+      border-top: 30px solid #333333;
+      border-left: 30px solid #333333;
+      border-bottom: 30px solid #202020;
+      border-right: 30px solid #202020;
+      z-index: 3;
+  }
+
+  #computerFoot1 {
+      position: absolute;
+      width: 50px;
+      height: 130px;
+      background-color: #979797;
+      top: 400px;
+      left: 330px;
+      z-index: 1;
+  }
+
+  #computerFoot2 {
+    position: absolute;
+    width: 220px;
+    height: 30px;
+    background-color: #979797;
+    top: 530px;
+    left: 245px;
+}
+
+#webcam {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #202020;
+    border-radius: 50%;
+    top: 10px;
+    left: 350px;
+    z-index: 4;
+}
