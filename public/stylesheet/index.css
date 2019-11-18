@@ -27,9 +27,7 @@
     width: 90px;
     left: -500px;
     top: 405px;
-    animation-name: jonnyAnim;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+    animation: jonnyAnim 3s forwards; 
     z-index: 1;
 }
 
@@ -57,8 +55,7 @@
     z-index: 1;
     bottom: 10px;
     left: -500px;
-    animation-name: copCarAnim;
-    animation-duration: 3s;
+    animation: copCarAnim 3s;
     z-index: 2;
 }
 
@@ -92,7 +89,7 @@
     0% {transform: rotate(0deg);}
     40% {transform: rotate(500deg);}
     50% {transform: rotate(500deg);}
-    100% {transform: rotate(1000deg);}
+    100% {transform: rotate(1500deg);}
 }
 
 #houseJonny {
@@ -112,56 +109,65 @@
     transform: scale(1.05);
 }
 
-#smokeHouseJonny_1 {
+.smokeHouseJonny {
     position: absolute;
+    background-color: black;
+    widows: 25px;
+    height: 25px;
+    border-radius: 100%;
     left: 470px;
     top: 200px;
+    opacity: 0;
+}
+
+#smokeHouseJonny_1 {
     animation: smokeHouseJonnyAnim1 2s infinite linear;
 }
 
 @keyframes smokeHouseJonnyAnim1 {
-    0% {left: 470px; top: 200px; width: 25px; opacity: 1;}
+    0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.6;}
     50% {left: 500px;}
-    100% {left: 570px; top: 10px; width: 100px; opacity: 0;}
+    100% {left: 570px; top: 10px; width: 100px; height: 100px; opacity: 0;}
 }
 
 #smokeHouseJonny_2 {
-    position: absolute;
-    left: 470px;
-    top: 200px;
-    animation: smokeHouseJonnyAnim2 1.5s infinite linear 0.3s;
+    animation: smokeHouseJonnyAnim2 1.5s infinite linear 0.5s;
 }
 
 @keyframes smokeHouseJonnyAnim2 {
-    0% {left: 470px; top: 200px; width: 25px; opacity: 1;}
+    0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.5;}
     50% {left: 510px;}
-    100% {left: 580px; top: 10px; width: 100px; opacity: 0;}
+    100% {left: 580px; top: 0px; width: 110px; height: 110px; opacity: 0;}
 }
 
 #smokeHouseJonny_3 {
-    position: absolute;
-    left: 470px;
-    top: 200px;
-    animation: smokeHouseJonnyAnim3 2s infinite linear 0.6s;
+    animation: smokeHouseJonnyAnim3 2s infinite linear 0.5s;
 }
 
 @keyframes smokeHouseJonnyAnim3 {
-    0% {left: 470px; top: 200px; width: 25px; opacity: 1;}
+    0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.4;}
     50% {left: 490px;}
-    100% {left: 570px; top: 10px; width: 100px; opacity: 0;}
+    100% {left: 570px; top: 20px; width: 90px; height: 90px; opacity: 0;}
 }
 
 #smokeHouseJonny_4 {
-    position: absolute;
-    left: 470px;
-    top: 200px;
-    animation: smokeHouseJonnyAnim4 1s infinite linear 0.9s;
+    animation: smokeHouseJonnyAnim4 1.7s infinite linear 1s;
 }
 
 @keyframes smokeHouseJonnyAnim4 {
-    0% {left: 470px; top: 200px; width: 25px; opacity: 1;}
-    50% {left: 480px;}
-    100% {left: 560px; top: 10px; width: 100px; opacity: 0;}
+    0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.7;}
+    50% {left: 490px;}
+    100% {left: 560px; top: 5px; width: 105px; height: 105px; opacity: 0;}
+}
+
+#smokeHouseJonny_5 {
+    animation: smokeHouseJonnyAnim5 1.5s infinite linear 1.5s;
+}
+
+@keyframes smokeHouseJonnyAnim5 {
+    0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.5;}
+    50% {left: 490px;}
+    100% {left: 550px; top: 15px; width: 105px; height: 105px; opacity: 0;}
 }
 
 #signLeft {
@@ -177,10 +183,7 @@
     top: 345px;
     z-index: 1;
     transform: rotate(-8deg);
-    animation-name: signRightAnim;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-    animation-duration: 0.5s;
+    animation: signRightAnim 0.5s 3s forwards;
 }
 
 @keyframes signRightAnim {
@@ -198,10 +201,7 @@
     position: absolute;
     left: 870px;
     bottom: 155px;
-    animation-name: rat1Anim;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: rat1Anim 10s infinite linear;
     z-index: 1;
     transform: rotate(0deg);
 }
@@ -221,11 +221,7 @@
     position: absolute;
     left: 600px;
     bottom: 387px;
-    animation-name: rat2and3Anim;
-    animation-duration: 10s;
-    animation-delay: 5s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
+    animation: rat2and3Anim 10s 5s ease-in infinite;
     z-index: 0;
     transform:rotateY(180deg) rotate(-28deg);
 }
@@ -234,11 +230,7 @@
     position: absolute;
     left: 600px;
     bottom: 387px;
-    animation-name: rat2and3Anim;
-    animation-duration: 10s;
-    animation-delay: 6s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
+    animation: rat2and3Anim 10s 6s ease-in infinite;
     z-index: 0;
     transform:rotateY(180deg) rotate(-28deg);
 }
@@ -267,10 +259,7 @@
     left: 360px;
     bottom: 250px;
     transform: rotate(0deg);
-    animation-name: fly1Anim;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: fly1Anim 0.5s linear infinite;
 }
 
 @keyframes fly1Anim {
@@ -287,10 +276,7 @@
     left: 300px;
     bottom: 190px;
     transform: rotate(45deg);
-    animation-name: fly2Anim;
-    animation-duration: 0.4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: fly2Anim 0.4s linear infinite;
 }
 
 @keyframes fly2Anim {
@@ -307,10 +293,7 @@
     left: 320px;
     bottom: 220px;
     transform: rotate(145deg);
-    animation-name: fly3Anim;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: fly3Anim 0.3s linear infinite;
 }
 
 @keyframes fly3Anim {
@@ -327,10 +310,7 @@
     left: 330px;
     bottom: 260px;
     transform: rotate(245deg);
-    animation-name: fly4Anim;
-    animation-duration: 0.6s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: fly4Anim 0.6s linear infinite;
 }
 
 @keyframes fly4Anim {
@@ -347,10 +327,7 @@
     left: 830px;
     bottom: 210px;
     transform: rotate(300deg);
-    animation-name: fly5Anim;
-    animation-duration: 0.4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: fly5Anim 0.4s linear infinite;
 }
 
 @keyframes fly5Anim {
@@ -367,10 +344,7 @@
     left: 780px;
     bottom: 220px;
     transform: rotate(150deg);
-    animation-name: fly6Anim;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: fly6Anim 0.5s linear infinite;
 }
 
 @keyframes fly6Anim {
