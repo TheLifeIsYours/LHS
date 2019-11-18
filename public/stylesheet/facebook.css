@@ -1,4 +1,8 @@
 /* Stilsett av scenario */
+input {
+    display: none;
+}
+
 #mainContainer {
     background: linear-gradient(#CFC5B3 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
@@ -167,7 +171,7 @@ li {
         width: 242px;
         height: 15px;
         padding-left: 8px;
-        background-color: #D2D2D2;
+        background-color: #DFDFDF;
         font-size: 10px;
         font-family: sans-serif;
         color: #6D6D6D;
@@ -178,7 +182,7 @@ li {
         position: absolute;
         width: 242px;
         height: 70px;
-        background-color: #D2D2D2;
+        background-color: #DFDFDF;
         top: 280px;
         font-weight: 550;
         font-size: 30px;
@@ -186,7 +190,7 @@ li {
     }
 
     /* Kommentarfelt */
-    #commentSection {
+    .commentSection {
         position: absolute;
         top: 45px;
         left: 300px;
@@ -197,16 +201,127 @@ li {
         border: 1px solid #CECECE;
     }
 
+    #newComment{
+        position: absolute;
+        bottom: 5px;
+        width: 270px;
+        height: 30px;
+        font-family: sans-serif;
+        font-size: 12px;
+        background-color: #DFDFDF;
+        padding: 5px;
+        border-radius: 15px;
+        left: 10px;
+        border: 1px solid #CECECE;
+        color: grey;
+    }
+
+    #sendButton {
+        position: relative;
+        margin-left: 305px;
+        top: 298px;
+        font-size: 30px;
+        color: #4267B2;
+
+    }
+
+    .facebookName {
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #4267B2;
+        font-size: 12px;
+    }
+
+    .facebookComment {
+        position: absolute;
+        width: 300px;
+        font-family: sans-serif;
+        font-size: 12px;
+        background-color: #DFDFDF;
+        padding: 10px;
+        border-radius: 15px;
+        left: 8px;
+        border: 1px solid #CECECE;
+    }
+
+    .facebookActions {
+        position: relative;
+        top: 25px;
+        font-family: sans-serif;
+        color: #4267B2;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .commentMinutes {
+        color: #6D6D6D;
+    }
+
+    .jonnyComment{
+        position: absolute;
+        width: 270px;
+        font-family: sans-serif;
+        font-size: 12px;
+        background-color: #DFDFDF;
+        padding: 5px;
+        border-radius: 15px;
+        left: 10px;
+        border: 1px solid #CECECE;
+        color: black;
+    }
+
+
+    /* "Skyld på andre" */
+    #fbSection_1 {
+        position: absolute;
+        top: 0px;
+        width: 340px;
+        height: 350px;
+        background-color: #EAEAEA;
+        background-color: #;
+        display: none;
+    }
+
+    #lailaSyversenComment {
+        top: 5px;
+    }
+
+    #hugoHansenComment {
+        top: 100px;
+    }
+
+    #jonnyComment_1 {
+        bottom: 5px;
+    }
+
 /* Stilsett av knapper */
 #buttons {
     position: absolute;
-    top: 600px;
-    left: 90px;
-    width: 700px;
+    top: 630px;
+    left: 80px;
+    width: 900px;
     height: 50px;
-    border: 1px solid black;
 }
 
 .buttonsClass {
-    
+    font-family: sans-serif;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#button_1:checked ~ #fbSection_1 {
+    display: block;
+    cursor: pointer;
+}
+
+#button_2 {
+    position: relative;
+    top: -18px;
 }
