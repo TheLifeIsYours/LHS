@@ -8,21 +8,30 @@ top: 250px;}
     left: 710px;
     bottom: 200px;}
 
-#body{
+/*#bodySvein{
     position: relative;
-    left: 560px;}
+    left: 560px;}*/
 
+#pictureOnBlackboard{
+    position: relative;
+    bottom: 70px;
+    left: 50px;}
 
-
+#textOnBlackboard{
+    position: relative;
+    bottom: 200px;
+    left: 120px;
+    color: white;
+    font-size: 14px;}
 
 h1{
     color: white;
     text-align: center;
     position: relative;
-    bottom: 35px;
-}
+    bottom: 35px;}
 
-ul{
-    color: white;
-    font-size: 10px;
-}
+#speechBubble_1{
+    position: absolute;
+    top: 500px;
+    left: 250px;}
+
