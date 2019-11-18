@@ -2,13 +2,17 @@ input {
     display: none;
 }
 
-#questionLabel {
-    width: 100%;
-    height: 5em;
-    background: orange;
+#blackboard {
+    padding:0.25em,
+}
+
+.questionLabel {
+    display: block;
+    max-width: 100%;
+    padding: 0.25em;
     cursor: pointer;
 }
 
-#questionInput:checked ~ #questionLabel {
-    background: green;
+#questionInput_2:checked ~ input:checked+label {
+    background: yellow;
 }
