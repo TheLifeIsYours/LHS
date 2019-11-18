@@ -176,11 +176,12 @@
     position: absolute;
 }
 #tornadoPic_1{
-    transform: rotateY(0deg);
+    filter: hue-rotate(180deg);
+    transform: rotateY(0deg) translate(-50%);
     animation: move_1 20s linear infinite;
 }
 #tornadoPic_2{
-    transform: rotateY(90deg) scaleX(-1);
+    transform: rotateY(90deg) translate(-50%);
     animation: move_2 20s linear infinite;
 }
 
@@ -190,53 +191,63 @@
         left: 0px;
         transform: rotateY(0deg)
     }
-    10%{
+    16%{
         left: 100px;
-        transform: scale(1) rotateY(90deg);
+        transform: scale(1) rotateY(180deg);
     }
-    20%{
+    33%{
         left: 200px;
-        transform: scale(2) rotateY(180deg);
+        transform: scale(2) rotateY(360deg);
     }
-    30%{
+    50%{
         left: 300px;
-        transform: scale(3) rotateY(270deg);
+        transform: scale(3) rotateY(540deg);
     }
-    40%{
+    66%{
         left: 400px;
-        transform: scale(4) rotateY(360deg);
+        transform: scale(4) rotateY(720deg);
     }
-	50%{
+	85%{
         left: 1200px;
         bottom: 100px;
-        transform: scale(5) rotateY(450deg);
+        transform: scale(5) rotateY(900deg);
+    }
+    100%{
+        left: 1200px;
+        bottom: 100px;
+        transform: scale(5) rotateY(1080deg);
 	}
 }
 @keyframes move_2{
 	0%{
         left: 0px;
-        transform: rotateY(90deg)
+        transform: rotateY(180deg)
     }
-    10%{
+    16%{
         left: 100px;
-        transform: scale(1) rotateY(270deg);
+        transform: scale(1) rotateY(360deg);
     }
-    20%{
+    33%{
         left: 200px;
-        transform: scale(2) rotateY(360deg);
+        transform: scale(2) rotateY(540deg);
     }
-    30%{
+    50%{
         left: 300px;
-        transform: scale(3) rotateY(450deg);
+        transform: scale(3) rotateY(720deg);
     }
-    40%{
+    66%{
         left: 400px;
-        transform: scale(4) rotateY(540deg);
+        transform: scale(4) rotateY(900deg);
     }
-	50%{
+	85%{
         left: 1200px;
         bottom: 100px;
-        transform: scale(5) rotateY(630deg);
+        transform: scale(5) rotateY(1080deg);
+    }
+    100%{
+        left: 1200px;
+        bottom: 100px;
+        transform: scale(5) rotateY(1260deg);
 	}
 }
 
