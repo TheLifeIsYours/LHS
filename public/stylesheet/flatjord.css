@@ -1,0 +1,29 @@
+#teleskop {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 45%;
+    left: 40%;
+}
+
+#romskip {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    right: 200px;
+    top: 50px;
+}
+
+#jonny {
+    position: absolute;
+    height: 300px;
+    width: auto;
+    left: 100px;
+    bottom: 0px;
+}
+
+#speechBubble_1 {
+    position: absolute;
+    left: 230px;
+    bottom: 280px;
+}
