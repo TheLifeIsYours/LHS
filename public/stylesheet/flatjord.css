@@ -1,4 +1,4 @@
-#speechBubble_1 > input {
+#speechBubble_1>input {
     display: none;
 }
 
@@ -28,39 +28,78 @@
 
 #speechBubble_1 {
     position: absolute;
-    left: 230px;
-    bottom: 280px;
+    left: 250px;
+    bottom: 20px;
 }
 
 #speechBubble_2 {
     display: none;
     position: absolute;
-    left: 230px;
-    bottom: 280px;
+    left: 250px;
+    bottom: 20px;
 }
 
 .bubbleText {
     display: none;
 }
 
-#bubbleText_1Input:checked ~ #bubbleText_1 {
-    display: block;
-}
-#bubbleText_2Input:checked ~ #bubbleText_2 {
-    display: block;
-}
-#bubbleText_3Input:checked ~ #bubbleText_3 {
+#bubbleText_1Input:checked~#bubbleText_1 {
     display: block;
 }
 
-#speechBubble_1Input:checked ~ #speechBubble_1 {
+#bubbleText_2Input:checked~#bubbleText_2 {
+    display: block;
+}
+
+#bubbleText_3Input:checked~#bubbleText_3 {
+    display: block;
+}
+
+#speechBubble_1Input:checked~#speechBubble_1 {
     display: none;
 }
 
 #speechBubble_3 {
-    display: none
-    position: absolute;
-    left: 230px;
-    bottom: 280px;
+    display: none position: absolute;
+    left: 250px;
+    bottom: 20px;
 }
 
+@keyframes røykAnimasjon {
+    from {transform: translate(0,0%); width: 25px; height: 25px; opacity: 0.7;}
+    to {transform: translate(0,-300%); width: 100px; height: 100px; opacity: 0;}
+}
+
+#romskipRøykContainer >*{
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    top: 430px;
+    right: 380px;
+    border-radius: 100%;
+}
+
+#romskipRøyk_1 {
+    animation: røykAnimasjon 2s infinite linear;
+}
+
+#romskipRøyk_2 {
+    animation: røykAnimasjon 1s infinite linear;
+}
+
+#romskipRøyk_3 {
+    animation: røykAnimasjon 1.5s infinite linear;
+}
+
+#romskipRøyk_4 {
+    animation: røykAnimasjon 1.75s infinite linear;
+}
+
+#romskipRøyk_5 {
+    animation: røykAnimasjon 1.75s infinite linear;
+}
+
+#romskipRøyk_6 {
+    animation: røykAnimasjon 2s infinite linear;
+}

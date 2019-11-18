@@ -40,7 +40,8 @@ html, body {
     overflow-wrap: break-word;
   }
   
-  
+  /* 
+  -----------------------------------*/
   .bottomLeft {
     border-radius: 6px 6px 6px 0px;
   }
