@@ -1,3 +1,7 @@
+#speechBubble_1 > input {
+    display: none;
+}
+
 #teleskop {
     position: absolute;
     width: 150px;
@@ -27,3 +31,36 @@
     left: 230px;
     bottom: 280px;
 }
+
+#speechBubble_2 {
+    display: none;
+    position: absolute;
+    left: 230px;
+    bottom: 280px;
+}
+
+.bubbleText {
+    display: none;
+}
+
+#bubbleText_1Input:checked ~ #bubbleText_1 {
+    display: block;
+}
+#bubbleText_2Input:checked ~ #bubbleText_2 {
+    display: block;
+}
+#bubbleText_3Input:checked ~ #bubbleText_3 {
+    display: block;
+}
+
+#speechBubble_1Input:checked ~ #speechBubble_1 {
+    display: none;
+}
+
+#speechBubble_3 {
+    display: none
+    position: absolute;
+    left: 230px;
+    bottom: 280px;
+}
+
