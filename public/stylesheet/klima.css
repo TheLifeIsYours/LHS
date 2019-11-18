@@ -1,0 +1,145 @@
+#mainContainer {
+    background: linear-gradient(#1a75e8 51%, green 51%, darkgreen 54%, darkgreen 54%, green 60%);
+}
+
+#lavaPic{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    
+}
+#snowFlakeContainer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 250px;
+
+}
+#snowFlakeContainer > * {
+    position: relative;
+    top: -50px;
+    left: 0px;
+    animation:snow 15s linear infinite;
+    opacity: 0;
+}
+
+#snowFlake_1 {
+    transform: translate(50px, -150px);
+}
+#snowFlake_2 {
+    transform: translate(100px, 750px);
+}
+#snowFlake_3 {
+    transform: translate(150px, -350px);
+}
+#snowFlake_4 {
+    transform: translate(200px, 25px);
+}
+#snowFlake_5 {
+    transform: translate(250px, -560px);
+}
+#snowFlake_6 {
+    transform: translate(300px, 350px);
+}
+#snowFlake_7 {
+    transform: translate(350px, -200px);
+}
+#snowFlake_8 {
+    transform: translate(400px, 600px);
+}
+#snowFlake_9 {
+    transform: translate(450px, -590px);
+}
+#snowFlake_10 {
+    transform: translate(500px, 400px);
+}
+#snowFlake_11 {
+    transform: translate(550px, -15px);
+}
+#snowFlake_12 {
+    transform: translate(600px, 550px);
+}
+#snowFlake_13 {
+    transform: translate(650px, -800px);
+}
+#snowFlake_14 {
+    transform: translate(700px, 950px);
+}
+#snowFlake_15 {
+    transform: translate(750px, -70px);
+}
+#snowFlake_16 {
+    transform: translate(800px, 120px);
+}
+#snowFlake_17 {
+    transform: translate(850px, -780px);
+}
+#snowFlake_18 {
+    transform: translate(900px, 40px);
+}
+#snowFlake_19 {
+    transform: translate(950px, -1220px);
+}
+#snowFlake_20 {
+    transform: translate(1000px, 370px);
+}
+#snowFlake_21 {
+    transform: translate(1050px, -240px);
+}
+
+@keyframes snow{
+    0%{
+        left: 70px;
+        top: 0px;
+        opacity: 0;
+    }
+    10%{
+        left: 0px;
+        top: 78px;
+        opacity: 1;
+    }
+    20%{
+        left: -70px;
+        top: 156px;
+    }40%{
+        left: 70px;
+        top: 312px;
+    }60%{
+        left: -70px;
+        top: 468px;
+    }80%{
+        left: 70px;
+        top: 624px;
+    }
+    90%{
+        left: 0px;
+        opacity: 1;
+    }
+    100%{
+        left: -70px;
+        top: 780px;
+        opacity: 0;
+    }
+}
+#lavaPic{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 1000px;
+    bottom: 0px;
+}
+#tornadoPic{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 200px;
+    bottom: 350px;
+}
+#jonnyPic{
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+}

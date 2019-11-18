@@ -10,7 +10,7 @@
     z-index: 2;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.7s;
+    transition: all 1s;
 }
 
 #speechBubble_1Input {
@@ -29,24 +29,27 @@
     top: 405px;
     animation: jonnyAnim 3s forwards; 
     z-index: 1;
+    transition-duration: 1s;
 }
 
 #jonny:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 @keyframes jonnyAnim {
     0% {left: -370px; top: 500px; width: 70px;}
     40% {left: 580px; top: 500px; width: 70px;}
     50% {left: 580px; top: 450px; width: 90px;}
+    55% {top: 430px;}
     60% {top: 440px;}
-    60% {top: 440px;}
+    65% {top: 420px;}
     70% {top: 430px;}
-    70% {top: 430px;}
+    75% {top: 410px;}
     80% {top: 420px;}
-    80% {top: 420px;}
+    85% {top: 400px;}
     90% {top: 410px;}
-    90% {top: 410px;}
+    95% {top: 390px;}
     100% {left: 530px; top: 405px; width: 90px;}
 }
 
@@ -62,8 +65,8 @@
 @keyframes copCarAnim {
     0% {left: -500px;}
     40% {left: 450px;}
-    50% {left: 450px;}
-    100% {left: 1500px;}
+    80% {left: 450px;}
+    100% {left: 1400px;}
 }
 
 #copCar {
@@ -75,7 +78,7 @@
     position: absolute;
     bottom: 30px;
     left: 86px;
-    animation: copCarWheels 3s ease-out;
+    animation: copCarWheelsAnim 3s ease-out;
 }
 
 #copCarWheelRight {
@@ -88,7 +91,7 @@
 @keyframes copCarWheelsAnim {
     0% {transform: rotate(0deg);}
     40% {transform: rotate(500deg);}
-    50% {transform: rotate(500deg);}
+    75% {transform: rotate(500deg);}
     100% {transform: rotate(1500deg);}
 }
 
@@ -103,6 +106,7 @@
     top: 385px;
     left: 412px;
     z-index: 1;
+    transition-duration: 1s;
 }
 
 #doorJonny:hover {
@@ -217,22 +221,20 @@
     100%{left: 870px; bottom: 155px; z-index: 1; transform: rotateY(0deg);}
 }
 
-#rat2 {
+.rat2and3 {
     position: absolute;
     left: 600px;
     bottom: 387px;
-    animation: rat2and3Anim 10s 5s ease-in infinite;
-    z-index: 0;
     transform:rotateY(180deg) rotate(-28deg);
+    z-index: 0;
+}
+
+#rat2 {
+    animation: rat2and3Anim 10s 5s ease-in infinite;
 }
 
 #rat3 {
-    position: absolute;
-    left: 600px;
-    bottom: 387px;
     animation: rat2and3Anim 10s 6s ease-in infinite;
-    z-index: 0;
-    transform:rotateY(180deg) rotate(-28deg);
 }
 
 @keyframes rat2and3Anim {
