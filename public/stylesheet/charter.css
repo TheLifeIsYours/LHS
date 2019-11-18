@@ -1,8 +1,28 @@
+#jonny{
+position: relative;
+top: 250px;}
+
+#svein{
+    border-radius: 50%;
+    position: relative;
+    left: 710px;
+    bottom: 200px;}
+
+#body{
+    position: relative;
+    left: 560px;}
+
+
+
+
 h1{
     color: white;
     text-align: center;
+    position: relative;
+    bottom: 35px;
 }
 
 ul{
     color: white;
+    font-size: 10px;
 }
