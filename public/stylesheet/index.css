@@ -33,6 +33,10 @@
     z-index: 1;
 }
 
+#jonny:hover {
+    transform: scale(1.05);
+}
+
 @keyframes jonnyAnim {
     0% {left: -370px; top: 500px; width: 70px;}
     40% {left: 580px; top: 500px; width: 70px;}
@@ -74,16 +78,21 @@
     position: absolute;
     bottom: 30px;
     left: 86px;
+    animation: copCarWheels 3s ease-out;
 }
 
 #copCarWheelRight {
     position: absolute;
     bottom: 30px;
     left: 336px;
+    animation: copCarWheelsAnim 3s ease-out;
 }
 
-#jonny:hover {
-    transform: scale(1.05);
+@keyframes copCarWheelsAnim {
+    0% {transform: rotate(0deg);}
+    40% {transform: rotate(500deg);}
+    50% {transform: rotate(500deg);}
+    100% {transform: rotate(1000deg);}
 }
 
 #houseJonny {
@@ -101,6 +110,58 @@
 
 #doorJonny:hover {
     transform: scale(1.05);
+}
+
+#smokeHouseJonny_1 {
+    position: absolute;
+    left: 470px;
+    top: 200px;
+    animation: smokeHouseJonnyAnim1 2s infinite linear;
+}
+
+@keyframes smokeHouseJonnyAnim1 {
+    0% {left: 470px; top: 200px; width: 25px; opacity: 1;}
+    50% {left: 500px;}
+    100% {left: 570px; top: 10px; width: 100px; opacity: 0;}
+}
+
+#smokeHouseJonny_2 {
+    position: absolute;
+    left: 470px;
+    top: 200px;
+    animation: smokeHouseJonnyAnim2 1.5s infinite linear 0.3s;
+}
+
+@keyframes smokeHouseJonnyAnim2 {
+    0% {left: 470px; top: 200px; width: 25px; opacity: 1;}
+    50% {left: 510px;}
+    100% {left: 580px; top: 10px; width: 100px; opacity: 0;}
+}
+
+#smokeHouseJonny_3 {
+    position: absolute;
+    left: 470px;
+    top: 200px;
+    animation: smokeHouseJonnyAnim3 2s infinite linear 0.6s;
+}
+
+@keyframes smokeHouseJonnyAnim3 {
+    0% {left: 470px; top: 200px; width: 25px; opacity: 1;}
+    50% {left: 490px;}
+    100% {left: 570px; top: 10px; width: 100px; opacity: 0;}
+}
+
+#smokeHouseJonny_4 {
+    position: absolute;
+    left: 470px;
+    top: 200px;
+    animation: smokeHouseJonnyAnim4 1s infinite linear 0.9s;
+}
+
+@keyframes smokeHouseJonnyAnim4 {
+    0% {left: 470px; top: 200px; width: 25px; opacity: 1;}
+    50% {left: 480px;}
+    100% {left: 560px; top: 10px; width: 100px; opacity: 0;}
 }
 
 #signLeft {
