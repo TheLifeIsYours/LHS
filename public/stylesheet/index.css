@@ -32,7 +32,7 @@
 }
 
 #jonny:hover {
-    transform: scale(1.05);
+    transform: scale(1.1); 
 }
 
 @keyframes jonnyAnim {
@@ -106,7 +106,7 @@
 }
 
 #doorJonny:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .smokeHouseJonny {
@@ -156,7 +156,7 @@
 
 @keyframes smokeHouseJonnyAnim4 {
     0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.7;}
-    50% {left: 490px;}
+    50% {left: 480px;}
     100% {left: 560px; top: 5px; width: 105px; height: 105px; opacity: 0;}
 }
 
@@ -166,7 +166,7 @@
 
 @keyframes smokeHouseJonnyAnim5 {
     0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.5;}
-    50% {left: 490px;}
+    50% {left: 520px;}
     100% {left: 550px; top: 15px; width: 105px; height: 105px; opacity: 0;}
 }
 
