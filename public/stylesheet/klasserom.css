@@ -26,3 +26,20 @@
     transform: translate(-50%, -45%);
 }
 
+#deskTableTop {
+    position: absolute;
+    top: -0.8em;
+    height: 0.8em;
+    width: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    background: inherit;
+}
+
+#deskSign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

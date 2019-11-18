@@ -147,8 +147,9 @@
     100%{left: 870px; bottom: 155px; z-index: 1; transform: rotateY(0deg);}
 }
 @keyframes rat2and3Anim {
-    0% {left: 600px; bottom: 387px; transform:rotateY(180deg) rotate(-28deg);}
+    0% {left: 600px; bottom: 387px; transform:rotateY(180deg) rotate(-28deg); opacity: 0;}
     1% {z-index: 1}
+    3% {opacity: 1;}
     5% {left: 620px; bottom: 310px; transform:rotateY(180deg) rotate(0deg);}
     10% {left: 650px; bottom: 310px;}
     13% {left: 715px; bottom: 370px;}
@@ -159,8 +160,8 @@
     41% {transform:rotateY(0deg) rotate(28deg);}
     43% {left: 620px; bottom: 250px; transform:rotateY(0deg) rotate(28deg); }
     45% {left: 610px; bottom: 230px; transform:rotateY(0deg) rotate(0deg);}
-    50% {left: 590px; z-index: 1;}
-    51% {z-index: 0;}
+    50% {z-index: 1; opacity: 1;}
+    55% {left: 580px; z-index: 0; opacity: 0;}
     99% {left: 620px; bottom: 230px; transform:rotateY(0deg) rotate(0deg);}
     100% {left: 600px; bottom: 387px; z-index: 0}
 }
