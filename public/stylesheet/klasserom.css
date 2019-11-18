@@ -3,13 +3,13 @@
 }
 
 #blackboard {    
-    width: 500px;
-    height: 240px;
+    width: 600px;
+    height: 300px;
     background: #21561E;
     border: solid 4px white;
     position: absolute;
     left: 50%;
-    top: 2em;
+    top: 1em;
     transform: translate(-50%, 0);
     font-family: Crayon, comic sans ms;
     font-size: 24px;
@@ -19,10 +19,10 @@
 #desk {
     width: 350px;
     height: 160px;
-    background: brown;
+    background: rgb(129, 84, 47);
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 420px;
     transform: translate(-50%, -45%);
 }
 
