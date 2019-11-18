@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Index</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
-        <link rel="stylesheet" type="text/css" href="public/stylesheet/flatjord.css">
-    </head>
-    <body>
-        <!-- Kort forklarende kommentar -->
-        <main id="mainContainer">
-        </main>
-    </body>
+
+<head>
+    <title>flat jord</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/flatjord.css">
+</head>
+
+<body>
+    <!-- Hovedcontainer for flat jord -->
+    <main id="mainContainer">
+        <img id="mars" src="public/images/flat/mars.png" alt="mars">
+    </main>
+    <div>
+        <img id="teleskop" src="public/images/flat/telescope-svgrepo-com.svg" alt="teleskop">
+        <img id="romskip" src="public/images/flat/spaceship-svgrepo-com.svg" alt="romskip">
+        <img id="jonny" src="public/images/jonny/jonny_shadow.png" alt="jonny">
+    </div>
+    <div id="speechBubble_1" class="speechBubble bottomLeft">
+        <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
+        <section id="bubbleText_1" class="bubbleText">
+            <p>Mange sier at jorda er rund, men det er fake news. <br> Du ser jo her klart og tydelig at den er flat!
+            </p>
+            <label id="nextBubble" for="bubbleText_2Input"> >>> </label>
+        </section>
+
+        <input id="bubbleText_2Input" name="bubbleText" type="radio">
+        <section id="bubbleText_2" class="bubbleText">
+            <p>Jorda ser kun rund ut nå fordi teleskopets linse er rund</p>
+            <label id="nextBubble" for="bubbleText_3Input"> >>> </label>
+        </section>
+        
+
+        <input id="bubbleText_3Input" name="bubbleText" type="radio">
+        <section id="bubbleText_3" class="bubbleText">
+            <p>Vi må få folk rundt hele kloden til å forstå at jorda er flat som en tallerken</p>
+        </section>
+    </div>
+</body>
+
 </html>

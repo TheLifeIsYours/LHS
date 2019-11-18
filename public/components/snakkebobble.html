@@ -37,3 +37,44 @@
 <div id="speechBubble_1" class="speechBubble topRight">
     Dummy tekst for Jonnys akuhaksugdhkauwh
 </div>
+
+<!--
+    .bubbleText {
+    display: none;
+}
+
+#bubbleText_1Input:checked ~ #bubbleText_1 {
+    display: block;
+}
+#bubbleText_2Input:checked ~ #bubbleText_2 {
+    display: block;
+}
+#bubbleText_3Input:checked ~ #bubbleText_3 {
+    display: block;
+}
+
+#speechBubble_1Input:checked ~ #speechBubble_1 {
+    display: none;
+}
+-->
+
+<div id="speechBubble_1" class="speechBubble bottomLeft">
+        <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
+        <section id="bubbleText_1" class="bubbleText">
+            <p>Mange sier at jorda er rund, men det er fake news. <br> Du ser jo her klart og tydelig at den er flat!
+            </p>
+            <label id="nextBubble" for="bubbleText_2Input"> >>> </label>
+        </section>
+
+        <input id="bubbleText_2Input" name="bubbleText" type="radio">
+        <section id="bubbleText_2" class="bubbleText">
+            <p>Jorda ser kun rund ut nå fordi teleskopets linse er rund</p>
+            <label id="nextBubble" for="bubbleText_3Input"> >>> </label>
+        </section>
+        
+
+        <input id="bubbleText_3Input" name="bubbleText" type="radio">
+        <section id="bubbleText_3" class="bubbleText">
+            <p>Vi må få folk rundt hele kloden til å forstå at jorda er flat som en tallerken</p>
+        </section>
+</div>

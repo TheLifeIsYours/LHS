@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Index</title>
+        <title>Livets Harde Skole</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
         <link rel="stylesheet" type="text/css" href="public/stylesheet/index.css">
     </head>
     <body>
-        <!-- Kort forklarende kommentar -->
         <main id="mainContainer">
             
+            <!-- Container for huset til Jonny -->
             <div>
                 <img id="houseJonny" src="public/images/Index/HusJonny.png" alt="houseJonny">
                 <img id="signLeft" src="public/images/Index/skylt1.png" alt="signLeft">
                 <img id="signRight" src="public/images/Index/skylt2.png" alt="signRight">
-                <div class="smokeHouseJonny" id="smokeHouseJonny_1"></div>
-                <div class="smokeHouseJonny" id="smokeHouseJonny_2"></div>
-                <div class="smokeHouseJonny" id="smokeHouseJonny_3"></div>
-                <div class="smokeHouseJonny" id="smokeHouseJonny_4"></div>
-                <div class="smokeHouseJonny" id="smokeHouseJonny_5"></div>
-                <a href="#">
+                <!-- Animerade divs från murpipen till Jonnys hus -->
+                <div class="smokeHouseJonny">
+                    <div id="smokeHouseJonny_1"></div>
+                    <div id="smokeHouseJonny_2"></div>
+                    <div id="smokeHouseJonny_3"></div>
+                    <div id="smokeHouseJonny_4"></div>
+                    <div id="smokeHouseJonny_5"></div>
+                </div>
+                <!-- Link till neste side: Charter -->
+                <a href="Charter.html">
                     <img id="doorJonny" src="public/images/Index/Door.png" alt="doorJonny">
                 </a>
+                <!-- Animerade bilder runt Jonnys hus-->
+                <img id="fly_1" src="public/images/Index/Fluga.png" alt="fly1">
+                <img id="fly_2" src="public/images/Index/Fluga.png" alt="fly2">
+                <img id="fly_3" src="public/images/Index/Fluga.png" alt="fly3">
+                <img id="fly_4" src="public/images/Index/Fluga.png" alt="fly4">
+                <img id="fly_5" src="public/images/Index/Fluga.png" alt="fly5">
+                <img id="fly_6" src="public/images/Index/Fluga.png" alt="fly6">
+                <img id="rat_1" src="public/images/Index/Rat.png" alt="rat1">
+                <img class="rat2and3" id="rat_2" src="public/images/Index/Rat.png" alt="rat2">
+                <img class="rat2and3" id="rat_3" src="public/images/Index/Rat.png" alt="rat3">
             </div>
+
+            <!-- Venster hus i scenen -->
             <div id="houseLeft">
                 <div id="houseLeftRoof"></div>
-                <img id="houseLeftWindow1" src="public/images/Index/Fonster.png" alt="windowLeft">
-                <img id="houseLeftWindow2" src="public/images/Index/Fonster.png" alt="windowLeft">
+                <img id="houseLeftWindow_1" src="public/images/Index/Fonster.png" alt="windowLeft">
+                <img id="houseLeftWindow_2" src="public/images/Index/Fonster.png" alt="windowLeft">
             </div>
+
+            <!-- Høyre hus i scenen -->
             <div id="houseRight">
                 <div id="houseRightRoof"></div>
-                <img id="houseRightWindow1" src="public/images/Index/Fonster.png" alt="windowRight1">
-                <img id="houseRightWindow2" src="public/images/Index/Fonster.png" alt="windowRight2">
+                <img id="houseRightWindow_1" src="public/images/Index/Fonster.png" alt="windowRight1">
+                <img id="houseRightWindow_2" src="public/images/Index/Fonster.png" alt="windowRight2">
             </div>
+            
+            <!-- Vegen i bunn av scenen -->
             <div id="road">
                 <div id="roadLine"></div>
             </div>
+
+            <!-- Politi bil container -->
             <div id="copCarContainer">
                     <img id="copCar" src="public/images/Index/PolitiBil.png" alt="copCar">
                     <img id="copCarWheelLeft" src="public/images/Index/PolitiBilHjul.png" alt="wheelLeft">
                     <img id="copCarWheelRight" src="public/images/Index/PolitiBilHjul.png" alt="wheelRight">
             </div>
+            
+            <!-- Label for snakkebobble till Jonny -->
+            <label for="speechBubble_1Input">
+                <!-- Bilde av Jonny -->
+                <img id="jonny" src="public/images/jonny/jonny.png" alt="jonny">
+            </label>
             <input id="speechBubble_1Input" type="radio">
+            <!-- Snakkebobble till Jonny -->
             <div id="speechBubble_1" class="speechBubble bottomLeft">
                 <p>
                     Hei! Mitt navn er Jonny og jeg er rektor på Livets harde skole.<br>
                     Alt jeg har lært mig er fra egna erfarenheter og magefølelse.<br>
                     Mitt jobb idag er at guida deg genom Livets harde skole,<br>
-                    denne utbildningen er den viktigaste du kan ha i livet!
+                    denne utbildningen er den viktigaste du kan ha i livet!<br><br>
+                    Klikk på dørren for å starte!
                 </p>
             </div>
-            <label for="speechBubble_1Input">
-                <img id="jonny" src="public/images/jonny/jonny.png" alt="jonny">
-            </label>
-            <img id="rat1" src="public/images/Index/Rat.png" alt="rat1">
-            <img class="rat2and3" id="rat2" src="public/images/Index/Rat.png" alt="rat2">
-            <img class="rat2and3" id="rat3" src="public/images/Index/Rat.png" alt="rat3">
-            <img id="fly1" src="public/images/Index/Fluga.png" alt="fly1">
-            <img id="fly2" src="public/images/Index/Fluga.png" alt="fly2">
-            <img id="fly3" src="public/images/Index/Fluga.png" alt="fly3">
-            <img id="fly4" src="public/images/Index/Fluga.png" alt="fly4">
-            <img id="fly5" src="public/images/Index/Fluga.png" alt="fly5">
-            <img id="fly6" src="public/images/Index/Fluga.png" alt="fly6">
         </main>
     </body>
 </html>
