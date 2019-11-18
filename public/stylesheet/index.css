@@ -94,9 +94,9 @@
     position: absolute;
     left: 474px;
     top: 345px;
-    z-index: 1;
+    z-index: 2;
     transform: rotate(-8deg);
-    animation: signRightAnim 0.5s 3s forwards;
+    animation: signRightAnim 1s 3s forwards;
 }
 
 /* Keyframes */
@@ -355,20 +355,20 @@
     position: absolute;
     bottom: 30px;
     left: 336px;
-    animation: copCarWheelsAnim 3s ease-out;
+    animation: copCarWheelsAnim 3s ease;
 }
 
 /* Keyframes */
 @keyframes copCarAnim {
     0% {left: -500px;}
     40% {left: 450px;}
-    80% {left: 450px;}
+    60% {left: 450px;}
     100% {left: 1400px;}
 }
 @keyframes copCarWheelsAnim {
     0% {transform: rotate(0deg);}
     40% {transform: rotate(500deg);}
-    75% {transform: rotate(500deg);}
+    60% {transform: rotate(500deg);}
     100% {transform: rotate(1500deg);}
 }
 
@@ -405,7 +405,7 @@
     100% {left: 530px; top: 405px; width: 90px;}
 }
 
-/* Snakkebobble
+/* Snakkebobble og transition
 ------------------------------------------------------------------------------------------------------- */
 #speechBubble_1 {
     position: absolute;
