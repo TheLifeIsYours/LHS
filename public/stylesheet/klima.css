@@ -175,79 +175,65 @@
     width: 100%;
     position: absolute;
 }
+
 #tornadoPic_1{
-    filter: hue-rotate(180deg);
-    transform: rotateY(0deg) translate(-50%);
-    animation: move_1 20s linear infinite;
+    transform: rotateY(0deg);
+    animation: move_1 20s linear infinite alternate;
 }
 #tornadoPic_2{
-    transform: rotateY(90deg) translate(-50%);
-    animation: move_2 20s linear infinite;
+    transform: rotateY(45deg);
+    animation: move_2 20s linear infinite alternate;
+}
+#tornadoPic_3{
+    transform: rotateY(90deg);
+    animation: move_3 20s linear infinite alternate;
+}
+#tornadoPic_4{
+    transform: rotateY(135deg);
+    animation: move_4 20s linear infinite alternate;
 }
 
 
 @keyframes move_1{
 	0%{
         left: 0px;
-        transform: rotateY(0deg)
-    }
-    16%{
-        left: 100px;
-        transform: scale(1) rotateY(180deg);
-    }
-    33%{
-        left: 200px;
-        transform: scale(2) rotateY(360deg);
-    }
-    50%{
-        left: 300px;
-        transform: scale(3) rotateY(540deg);
-    }
-    66%{
-        left: 400px;
-        transform: scale(4) rotateY(720deg);
-    }
-	85%{
-        left: 1200px;
-        bottom: 100px;
-        transform: scale(5) rotateY(900deg);
+        transform:scale(1) rotateY(0deg)
     }
     100%{
         left: 1200px;
-        bottom: 100px;
-        transform: scale(5) rotateY(1080deg);
+        transform: scale(6) rotateY(6160deg);
 	}
 }
 @keyframes move_2{
 	0%{
         left: 0px;
-        transform: rotateY(180deg)
-    }
-    16%{
-        left: 100px;
-        transform: scale(1) rotateY(360deg);
-    }
-    33%{
-        left: 200px;
-        transform: scale(2) rotateY(540deg);
-    }
-    50%{
-        left: 300px;
-        transform: scale(3) rotateY(720deg);
-    }
-    66%{
-        left: 400px;
-        transform: scale(4) rotateY(900deg);
-    }
-	85%{
-        left: 1200px;
-        bottom: 100px;
-        transform: scale(5) rotateY(1080deg);
+        transform: scale(1) rotateY(45deg)
     }
     100%{
         left: 1200px;
-        bottom: 100px;
-        transform: scale(5) rotateY(1260deg);
+        transform: scale(6) rotateY(6205deg);
+	}
+}
+
+
+@keyframes move_3{
+	0%{
+        left: 0px;
+        transform:scale(1) rotateY(90deg)
+    }
+    100%{
+        left: 1200px;
+        transform: scale(6) rotateY(6250deg);
+	}
+}
+@keyframes move_4{
+	0%{
+        left: 0px;
+        transform: scale(1) rotateY(135deg)
+    }
+    100%{
+        left: 1200px;
+        transform: scale(6) rotateY(6295deg);
 	}
 }
 
