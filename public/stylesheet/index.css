@@ -1,100 +1,12 @@
 
+/* Main container bakgrunn
+------------------------------------------------------------------------------------------------------- */
 #mainContainer {
     background-color: rgb(213, 255, 255);
 }
 
-#speechBubble_1 {
-    position: absolute;
-    left: 650px;
-    bottom: 300px;
-    z-index: 2;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 1s;
-}
-
-#speechBubble_1Input {
-    display: none;
-}
-
-#speechBubble_1Input:checked ~ #speechBubble_1{
-    visibility: visible;
-    opacity: 1;
-}
-
-#jonny {
-    position: absolute;
-    width: 90px;
-    left: -500px;
-    top: 405px;
-    animation: jonnyAnim 3s forwards; 
-    z-index: 1;
-    transition-duration: 1s;
-}
-
-#jonny:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-@keyframes jonnyAnim {
-    0% {left: -370px; top: 500px; width: 70px;}
-    40% {left: 580px; top: 500px; width: 70px;}
-    50% {left: 580px; top: 450px; width: 90px;}
-    55% {top: 430px;}
-    60% {top: 440px;}
-    65% {top: 420px;}
-    70% {top: 430px;}
-    75% {top: 410px;}
-    80% {top: 420px;}
-    85% {top: 400px;}
-    90% {top: 410px;}
-    95% {top: 390px;}
-    100% {left: 530px; top: 405px; width: 90px;}
-}
-
-#copCarContainer {
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    left: -500px;
-    animation: copCarAnim 3s;
-    z-index: 2;
-}
-
-@keyframes copCarAnim {
-    0% {left: -500px;}
-    40% {left: 450px;}
-    80% {left: 450px;}
-    100% {left: 1400px;}
-}
-
-#copCar {
-    position: absolute;
-    bottom: 30px;
-}
-
-#copCarWheelLeft {
-    position: absolute;
-    bottom: 30px;
-    left: 86px;
-    animation: copCarWheelsAnim 3s ease-out;
-}
-
-#copCarWheelRight {
-    position: absolute;
-    bottom: 30px;
-    left: 336px;
-    animation: copCarWheelsAnim 3s ease-out;
-}
-
-@keyframes copCarWheelsAnim {
-    0% {transform: rotate(0deg);}
-    40% {transform: rotate(500deg);}
-    75% {transform: rotate(500deg);}
-    100% {transform: rotate(1500deg);}
-}
-
+/* Huset till Jonny
+------------------------------------------------------------------------------------------------------- */
 #houseJonny {
     position: absolute;
     top: 200px;
@@ -113,6 +25,7 @@
     transform: scale(1.1);
 }
 
+/* Røyk divs */
 .smokeHouseJonny div{
     position: absolute;
     background-color: black;
@@ -124,72 +37,69 @@
     opacity: 0;
 }
 
+/* Animationer for røyk elementer
+------------------------------------------------------------------------------------------------------- */
 #smokeHouseJonny_1 {
     animation: smokeHouseJonnyAnim1 2s infinite linear;
 }
+#smokeHouseJonny_2 {
+    animation: smokeHouseJonnyAnim2 1.5s infinite linear 0.5s;
+}
+#smokeHouseJonny_3 {
+    animation: smokeHouseJonnyAnim3 2s infinite linear 0.5s;
+}
+#smokeHouseJonny_4 {
+    animation: smokeHouseJonnyAnim4 1.7s infinite linear 1s;
+}
+#smokeHouseJonny_5 {
+    animation: smokeHouseJonnyAnim5 1.5s infinite linear 1.5s;
+}
 
+/* Keyframes */
 @keyframes smokeHouseJonnyAnim1 {
     0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.6;}
     50% {left: 500px;}
     100% {left: 570px; top: 10px; width: 100px; height: 100px; opacity: 0;}
 }
-
-#smokeHouseJonny_2 {
-    animation: smokeHouseJonnyAnim2 1.5s infinite linear 0.5s;
-}
-
 @keyframes smokeHouseJonnyAnim2 {
     0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.5;}
     50% {left: 510px;}
     100% {left: 580px; top: 0px; width: 110px; height: 110px; opacity: 0;}
 }
-
-#smokeHouseJonny_3 {
-    animation: smokeHouseJonnyAnim3 2s infinite linear 0.5s;
-}
-
 @keyframes smokeHouseJonnyAnim3 {
     0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.4;}
     50% {left: 490px;}
     100% {left: 570px; top: 20px; width: 90px; height: 90px; opacity: 0;}
 }
-
-#smokeHouseJonny_4 {
-    animation: smokeHouseJonnyAnim4 1.7s infinite linear 1s;
-}
-
 @keyframes smokeHouseJonnyAnim4 {
     0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.7;}
     50% {left: 480px;}
     100% {left: 560px; top: 5px; width: 105px; height: 105px; opacity: 0;}
 }
-
-#smokeHouseJonny_5 {
-    animation: smokeHouseJonnyAnim5 1.5s infinite linear 1.5s;
-}
-
 @keyframes smokeHouseJonnyAnim5 {
     0% {left: 470px; top: 200px; width: 25px; height: 25px; opacity: 0.5;}
     50% {left: 520px;}
     100% {left: 550px; top: 15px; width: 105px; height: 105px; opacity: 0;}
 }
 
+/* Skilt på Jonnys hus og animation
+------------------------------------------------------------------------------------------------------- */
 #signLeft {
     position: absolute;
     left: 410px;
     top: 350px;
     z-index: 1;
 }
-
 #signRight {
     position: absolute;
     left: 474px;
     top: 345px;
-    z-index: 1;
+    z-index: 2;
     transform: rotate(-8deg);
-    animation: signRightAnim 0.5s 3s forwards;
+    animation: signRightAnim 1s 3s forwards;
 }
 
+/* Keyframes */
 @keyframes signRightAnim {
     0% {top: 345px; transform: rotate(-8deg); left: 474px;}
     10% {top: 345px; transform: rotate(-12deg);}
@@ -201,6 +111,8 @@
     100% {top: 360px; transform: rotate(10deg); left: 478px;}
 }
 
+/* Animationer for rotter
+------------------------------------------------------------------------------------------------------- */
 #rat_1 {
     position: absolute;
     left: 870px;
@@ -209,7 +121,21 @@
     z-index: 1;
     transform: rotate(0deg);
 }
+#rat_2 {
+    animation: rat2and3Anim 10s 5s ease-in infinite;
+}
+#rat_3 {
+    animation: rat2and3Anim 10s 6s ease-in infinite;
+}
+.rat2and3 {
+    position: absolute;
+    left: 600px;
+    bottom: 387px;
+    transform:rotateY(180deg) rotate(-28deg);
+    z-index: 0;
+}
 
+/* Keyframes */
 @keyframes rat1Anim {
     0% {left: 870px; bottom: 155px;}
     20% {left: 670px; bottom: 135px;}
@@ -220,42 +146,28 @@
     99% {z-index: 0; transform: rotateY(180deg);}
     100%{left: 870px; bottom: 155px; z-index: 1; transform: rotateY(0deg);}
 }
-
-.rat2and3 {
-    position: absolute;
-    left: 600px;
-    bottom: 387px;
-    transform:rotateY(180deg) rotate(-28deg);
-    z-index: 0;
-}
-
-#rat_2 {
-    animation: rat2and3Anim 10s 5s ease-in infinite;
-}
-
-#rat_3 {
-    animation: rat2and3Anim 10s 6s ease-in infinite;
-}
-
 @keyframes rat2and3Anim {
- 0% {left: 600px; bottom: 387px; transform:rotateY(180deg) rotate(-28deg);}
- 1% {z-index: 1}
- 5% {left: 620px; bottom: 310px; transform:rotateY(180deg) rotate(0deg);}
- 10% {left: 650px; bottom: 310px;}
- 13% {left: 715px; bottom: 370px;}
- 14% {left: 720px; bottom: 365px;}
- 20% {left: 800px; bottom: 155px; transform:rotateY(180deg) rotate(0deg);}
- 21% {transform:rotateY(0deg) rotate(0deg);}
- 40% {left: 650px; bottom: 155px; transform:rotateY(0deg) rotate(0deg);}
- 41% {transform:rotateY(0deg) rotate(28deg);}
- 43% {left: 620px; bottom: 250px; transform:rotateY(0deg) rotate(28deg); }
- 45% {left: 610px; bottom: 230px; transform:rotateY(0deg) rotate(0deg);}
- 50% {left: 600px; z-index: 1;}
- 51% {z-index: 0;}
- 99% {left: 620px; bottom: 230px; transform:rotateY(0deg) rotate(0deg);}
- 100% {left: 600px; bottom: 387px; z-index: 0}
+    0% {left: 600px; bottom: 387px; transform:rotateY(180deg) rotate(-28deg); opacity: 0;}
+    1% {z-index: 1}
+    3% {opacity: 1;}
+    5% {left: 620px; bottom: 310px; transform:rotateY(180deg) rotate(0deg);}
+    10% {left: 650px; bottom: 310px;}
+    13% {left: 715px; bottom: 370px;}
+    14% {left: 720px; bottom: 365px;}
+    20% {left: 800px; bottom: 155px; transform:rotateY(180deg) rotate(0deg);}
+    21% {transform:rotateY(0deg) rotate(0deg);}
+    40% {left: 650px; bottom: 155px; transform:rotateY(0deg) rotate(0deg);}
+    41% {transform:rotateY(0deg) rotate(28deg);}
+    43% {left: 620px; bottom: 250px; transform:rotateY(0deg) rotate(28deg); }
+    45% {left: 610px; bottom: 230px; transform:rotateY(0deg) rotate(0deg);}
+    50% {z-index: 1; opacity: 1;}
+    55% {left: 580px; z-index: 0; opacity: 0;}
+    99% {left: 620px; bottom: 230px; transform:rotateY(0deg) rotate(0deg);}
+    100% {left: 600px; bottom: 387px; z-index: 0}
 }
 
+/* Animationer for fluer
+------------------------------------------------------------------------------------------------------- */
 #fly_1 {
     position: absolute;
     left: 360px;
@@ -263,16 +175,6 @@
     transform: rotate(0deg);
     animation: fly1Anim 0.5s linear infinite;
 }
-
-@keyframes fly1Anim {
-    0% {left: 360px; bottom: 250px; transform: rotate(0deg);}
-    20% {left: 350px; bottom: 240px;}
-    40% {left: 360px; bottom: 230px;}
-    60% {left: 340px; bottom: 240px; transform: rotate(300deg);}
-    80% {left: 350px; bottom: 260px;}
-    100% {left: 360px; bottom: 250px; transform: rotate(0deg);}
-}
-
 #fly_2 {
     position: absolute;
     left: 300px;
@@ -280,16 +182,6 @@
     transform: rotate(45deg);
     animation: fly2Anim 0.4s linear infinite;
 }
-
-@keyframes fly2Anim {
-    0% {left: 300px; bottom: 190px; transform: rotate(45deg);}
-    20% {left: 310px; bottom: 200px;}
-    40% {left: 290px; bottom: 230px;}
-    60% {left: 300px; bottom: 240px; transform: rotate(245deg);}
-    80% {left: 310px; bottom: 220px;}
-    100% {left: 300px; bottom: 190px; transform: rotate(45deg);}
-}
-
 #fly_3 {
     position: absolute;
     left: 320px;
@@ -297,16 +189,6 @@
     transform: rotate(145deg);
     animation: fly3Anim 0.3s linear infinite;
 }
-
-@keyframes fly3Anim {
-    0% {left: 320px; bottom: 220px; transform: rotate(145deg);}
-    20% {left: 310px; bottom: 210px;}
-    40% {left: 300px; bottom: 190px;}
-    60% {left: 320px; bottom: 220px; transform: rotate(0deg);}
-    80% {left: 330px; bottom: 200px;}
-    100% {left: 320px; bottom: 220px; transform: rotate(145deg);}
-}
-
 #fly_4 {
     position: absolute;
     left: 330px;
@@ -314,16 +196,6 @@
     transform: rotate(245deg);
     animation: fly4Anim 0.6s linear infinite;
 }
-
-@keyframes fly4Anim {
-    0% {left: 330px; bottom: 260px; transform: rotate(145deg);}
-    20% {left: 320px; bottom: 240px;}
-    40% {left: 310px; bottom: 270px;}
-    60% {left: 300px; bottom: 250px; transform: rotate(345deg);}
-    80% {left: 320px; bottom: 240px;}
-    100% {left: 330px; bottom: 260px; transform: rotate(145deg);}
-}
-
 #fly_5 {
     position: absolute;
     left: 830px;
@@ -331,16 +203,6 @@
     transform: rotate(300deg);
     animation: fly5Anim 0.4s linear infinite;
 }
-
-@keyframes fly5Anim {
-    0% {left: 830px; bottom: 210px; transform: rotate(300deg);}
-    20% {left: 810px; bottom: 220px;}
-    40% {left:790px; bottom: 230px;}
-    60% {left: 810px; bottom: 220px; transform: rotate(45deg);}
-    80% {left: 820px; bottom: 230px;}
-    100% {left: 830px; bottom: 210px; transform: rotate(300deg);}
-}
-
 #fly_6 {
     position: absolute;
     left: 780px;
@@ -349,6 +211,47 @@
     animation: fly6Anim 0.5s linear infinite;
 }
 
+/* Keyframes */
+@keyframes fly1Anim {
+    0% {left: 360px; bottom: 250px; transform: rotate(0deg);}
+    20% {left: 350px; bottom: 240px;}
+    40% {left: 360px; bottom: 230px;}
+    60% {left: 340px; bottom: 240px; transform: rotate(300deg);}
+    80% {left: 350px; bottom: 260px;}
+    100% {left: 360px; bottom: 250px; transform: rotate(0deg);}
+}
+@keyframes fly2Anim {
+    0% {left: 300px; bottom: 190px; transform: rotate(45deg);}
+    20% {left: 310px; bottom: 200px;}
+    40% {left: 290px; bottom: 230px;}
+    60% {left: 300px; bottom: 240px; transform: rotate(245deg);}
+    80% {left: 310px; bottom: 220px;}
+    100% {left: 300px; bottom: 190px; transform: rotate(45deg);}
+}
+@keyframes fly3Anim {
+    0% {left: 320px; bottom: 220px; transform: rotate(145deg);}
+    20% {left: 310px; bottom: 210px;}
+    40% {left: 300px; bottom: 190px;}
+    60% {left: 320px; bottom: 220px; transform: rotate(0deg);}
+    80% {left: 330px; bottom: 200px;}
+    100% {left: 320px; bottom: 220px; transform: rotate(145deg);}
+}
+@keyframes fly4Anim {
+    0% {left: 330px; bottom: 260px; transform: rotate(145deg);}
+    20% {left: 320px; bottom: 240px;}
+    40% {left: 310px; bottom: 270px;}
+    60% {left: 300px; bottom: 250px; transform: rotate(345deg);}
+    80% {left: 320px; bottom: 240px;}
+    100% {left: 330px; bottom: 260px; transform: rotate(145deg);}
+}
+@keyframes fly5Anim {
+    0% {left: 830px; bottom: 210px; transform: rotate(300deg);}
+    20% {left: 810px; bottom: 220px;}
+    40% {left:790px; bottom: 230px;}
+    60% {left: 810px; bottom: 220px; transform: rotate(45deg);}
+    80% {left: 820px; bottom: 230px;}
+    100% {left: 830px; bottom: 210px; transform: rotate(300deg);}
+}
 @keyframes fly6Anim {
     0% {left: 780px; bottom: 220px; transform: rotate(150deg);}
     20% {left: 790px; bottom: 230px;}
@@ -358,6 +261,8 @@
     100% {left: 780px; bottom: 220px; transform: rotate(150deg);}
 }
 
+/* Statiska bilder og divs i scenen
+------------------------------------------------------------------------------------------------------- */
 #houseLeft {
     position: absolute;
     background-color: rgb(189, 60, 60);
@@ -365,7 +270,6 @@
     height: 460px;
     top: 105px;
 }
-
 #houseLeftRoof {
     position: absolute;
     background-color: rgb(68, 0, 0);
@@ -373,21 +277,18 @@
     height: 100px;
     top: -100px;
 }
-
 #houseLeftWindow_1 {
     position: absolute;
     width: 90px;
     top: 20px;
     left: 20px;
 }
-
 #houseLeftWindow_2 {
     position: absolute;
     width: 90px;
     top: 240px;
     left: 20px;
 } 
-
 #houseRight {
     position: absolute;
     background-color: rgb(255, 208, 56);
@@ -396,7 +297,6 @@
     top: 165px;
     right: 0px;
 }
-
 #houseRightRoof {
     position: absolute;
     background-color: rgb(68, 0, 0);
@@ -406,19 +306,16 @@
     top: -25px;
     transform: rotate(-10deg);
 }
-
 #houseRightWindow_1 {
     position: absolute;
     top: 120px;
     left: 30px;
 }
-
 #houseRightWindow_2 {
     position: absolute;
     top: 120px;
     left: 180px;
 }
-
 #road {
     background-color: rgb(119, 108, 108);
     width: 1280px;
@@ -426,7 +323,6 @@
     position: absolute;
     top: 570px;
 }
-
 #roadLine {
     position: relative;
     top: 50%;
@@ -434,4 +330,97 @@
     background: url("../images/Index/roadLine.png");
     width: 1280px;
     height: 10px;
+}
+
+/* Politi bil container, bilder og animationer
+------------------------------------------------------------------------------------------------------- */
+#copCarContainer {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: -500px;
+    animation: copCarAnim 3s;
+    z-index: 2;
+}
+#copCar {
+    position: absolute;
+    bottom: 30px;
+}
+#copCarWheelLeft {
+    position: absolute;
+    bottom: 30px;
+    left: 86px;
+    animation: copCarWheelsAnim 3s ease-out;
+}
+#copCarWheelRight {
+    position: absolute;
+    bottom: 30px;
+    left: 336px;
+    animation: copCarWheelsAnim 3s ease;
+}
+
+/* Keyframes */
+@keyframes copCarAnim {
+    0% {left: -500px;}
+    40% {left: 450px;}
+    60% {left: 450px;}
+    100% {left: 1400px;}
+}
+@keyframes copCarWheelsAnim {
+    0% {transform: rotate(0deg);}
+    40% {transform: rotate(500deg);}
+    60% {transform: rotate(500deg);}
+    100% {transform: rotate(1500deg);}
+}
+
+/* Bilde av Jonny og animation
+------------------------------------------------------------------------------------------------------- */
+#jonny {
+    position: absolute;
+    width: 90px;
+    left: -500px;
+    top: 405px;
+    animation: jonnyAnim 3s forwards; 
+    z-index: 1;
+    transition-duration: 1s;
+}
+#jonny:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Keyframes */
+@keyframes jonnyAnim {
+    0% {left: -370px; top: 500px; width: 70px;}
+    40% {left: 580px; top: 500px; width: 70px;}
+    50% {left: 580px; top: 450px; width: 90px;}
+    55% {top: 430px;}
+    60% {top: 440px;}
+    65% {top: 420px;}
+    70% {top: 430px;}
+    75% {top: 410px;}
+    80% {top: 420px;}
+    85% {top: 400px;}
+    90% {top: 410px;}
+    95% {top: 390px;}
+    100% {left: 530px; top: 405px; width: 90px;}
+}
+
+/* Snakkebobble og transition
+------------------------------------------------------------------------------------------------------- */
+#speechBubble_1 {
+    position: absolute;
+    left: 650px;
+    bottom: 300px;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+#speechBubble_1Input {
+    display: none;
+}
+#speechBubble_1Input:checked ~ #speechBubble_1{
+    visibility: visible;
+    opacity: 1;
 }

@@ -2,141 +2,246 @@
     background: linear-gradient(#1a75e8 51%, green 51%, darkgreen 54%, darkgreen 54%, green 60%);
 }
 
-#lavaPic{
+#lavaPic {
     height: 500px;
     width: 500px;
     position: relative;
-    
+
 }
-#snowFlakeContainer{
+
+#snowFlakeContainer {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 1280px;
+    width: 1200px;
     height: 250px;
 
 }
-#snowFlakeContainer > * {
+
+#snowFlakeContainer>* {
     position: relative;
     top: -50px;
     left: 0px;
-    animation:snow 15s linear infinite;
+    animation: snow 15s linear infinite;
     opacity: 0;
 }
 
 #snowFlake_1 {
     transform: translate(50px, -150px);
 }
+
 #snowFlake_2 {
     transform: translate(100px, 750px);
 }
+
 #snowFlake_3 {
     transform: translate(150px, -350px);
 }
+
 #snowFlake_4 {
     transform: translate(200px, 25px);
 }
+
 #snowFlake_5 {
     transform: translate(250px, -560px);
 }
+
 #snowFlake_6 {
     transform: translate(300px, 350px);
 }
+
 #snowFlake_7 {
     transform: translate(350px, -200px);
 }
+
 #snowFlake_8 {
     transform: translate(400px, 600px);
 }
+
 #snowFlake_9 {
     transform: translate(450px, -590px);
 }
+
 #snowFlake_10 {
     transform: translate(500px, 400px);
 }
+
 #snowFlake_11 {
     transform: translate(550px, -15px);
 }
+
 #snowFlake_12 {
     transform: translate(600px, 550px);
 }
+
 #snowFlake_13 {
     transform: translate(650px, -800px);
 }
+
 #snowFlake_14 {
     transform: translate(700px, 950px);
 }
+
 #snowFlake_15 {
     transform: translate(750px, -70px);
 }
+
 #snowFlake_16 {
     transform: translate(800px, 120px);
 }
+
 #snowFlake_17 {
     transform: translate(850px, -780px);
 }
+
 #snowFlake_18 {
     transform: translate(900px, 40px);
 }
+
 #snowFlake_19 {
     transform: translate(950px, -1220px);
 }
+
 #snowFlake_20 {
     transform: translate(1000px, 370px);
 }
+
 #snowFlake_21 {
     transform: translate(1050px, -240px);
 }
 
-@keyframes snow{
-    0%{
+@keyframes snow {
+    0% {
         left: 70px;
         top: 0px;
         opacity: 0;
     }
-    10%{
+
+    10% {
         left: 0px;
         top: 78px;
         opacity: 1;
     }
-    20%{
+
+    20% {
         left: -70px;
         top: 156px;
-    }40%{
+    }
+
+    40% {
         left: 70px;
         top: 312px;
-    }60%{
+    }
+
+    60% {
         left: -70px;
         top: 468px;
-    }80%{
+    }
+
+    80% {
         left: 70px;
         top: 624px;
     }
-    90%{
+
+    90% {
         left: 0px;
         opacity: 1;
     }
-    100%{
+
+    100% {
         left: -70px;
         top: 780px;
         opacity: 0;
     }
 }
-#lavaPic{
-    height: 200px;
-    width: 200px;
+
+#lavaPic {
+    height: 350px;
+    width: 350px;
     position: absolute;
-    left: 1000px;
+    left: 900px;
     bottom: 0px;
 }
-#tornadoPic{
+
+#tornado{
     height: 100px;
     width: 100px;
     position: absolute;
-    left: 200px;
+    left: 0px;
     bottom: 350px;
 }
-#jonnyPic{
+#tornado > *{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#tornadoPic_1{
+    transform: rotateY(0deg);
+    animation: move_1 20s linear infinite;
+}
+#tornadoPic_2{
+    transform: rotateY(90deg) scaleX(-1);
+    animation: move_2 20s linear infinite;
+}
+
+
+@keyframes move_1{
+	0%{
+        left: 0px;
+        transform: rotateY(0deg)
+    }
+    10%{
+        left: 100px;
+        transform: scale(1) rotateY(90deg);
+    }
+    20%{
+        left: 200px;
+        transform: scale(2) rotateY(180deg);
+    }
+    30%{
+        left: 300px;
+        transform: scale(3) rotateY(270deg);
+    }
+    40%{
+        left: 400px;
+        transform: scale(4) rotateY(360deg);
+    }
+	50%{
+        left: 1200px;
+        bottom: 100px;
+        transform: scale(5) rotateY(450deg);
+	}
+}
+@keyframes move_2{
+	0%{
+        left: 0px;
+        transform: rotateY(90deg)
+    }
+    10%{
+        left: 100px;
+        transform: scale(1) rotateY(270deg);
+    }
+    20%{
+        left: 200px;
+        transform: scale(2) rotateY(360deg);
+    }
+    30%{
+        left: 300px;
+        transform: scale(3) rotateY(450deg);
+    }
+    40%{
+        left: 400px;
+        transform: scale(4) rotateY(540deg);
+    }
+	50%{
+        left: 1200px;
+        bottom: 100px;
+        transform: scale(5) rotateY(630deg);
+	}
+}
+
+
+#jonnyPic {
     height: 150px;
     width: 100px;
     position: absolute;

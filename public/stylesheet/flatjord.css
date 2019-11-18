@@ -1,0 +1,66 @@
+#speechBubble_1 > input {
+    display: none;
+}
+
+#teleskop {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 45%;
+    left: 40%;
+}
+
+#romskip {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    right: 200px;
+    top: 50px;
+}
+
+#jonny {
+    position: absolute;
+    height: 300px;
+    width: auto;
+    left: 100px;
+    bottom: 0px;
+}
+
+#speechBubble_1 {
+    position: absolute;
+    left: 230px;
+    bottom: 280px;
+}
+
+#speechBubble_2 {
+    display: none;
+    position: absolute;
+    left: 230px;
+    bottom: 280px;
+}
+
+.bubbleText {
+    display: none;
+}
+
+#bubbleText_1Input:checked ~ #bubbleText_1 {
+    display: block;
+}
+#bubbleText_2Input:checked ~ #bubbleText_2 {
+    display: block;
+}
+#bubbleText_3Input:checked ~ #bubbleText_3 {
+    display: block;
+}
+
+#speechBubble_1Input:checked ~ #speechBubble_1 {
+    display: none;
+}
+
+#speechBubble_3 {
+    display: none
+    position: absolute;
+    left: 230px;
+    bottom: 280px;
+}
+
