@@ -12,3 +12,60 @@
     margin-left: 220px; 
     margin-top: 250px;
 }
+
+#speechBubble_1 {
+    position: relative;
+    background: #fff;
+    min-height: 1em;
+    max-width: 70%;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: solid 2px #34373c;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+  }
+
+  .bottomLeft {
+    border-radius: 6px 6px 6px 0px;
+  }
+  
+  .bottomLeft::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -10px;
+    border: solid;
+    border-width: 10px 10px 0px 0px;
+    border-color: transparent #34373c;
+  }
+
+  #door {
+    width: 180px;
+    height: 320px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 80%;
+    top: 29%;
+    transform: translate(-50%, -45%);
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(83, 83, 83);
+}
+  
+#doorknob {
+    width: 180px;
+    height: 320px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 80%;
+    top: 29%;
+    transform:skew(3deg,3deg);
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(83, 83, 83);
+  
+}
