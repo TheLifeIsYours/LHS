@@ -10,11 +10,32 @@
     top: -10px;
 }
 
-ol{
+#doormat {
+    position: absolute;
+    left: 1100px;
+    top: 450px;
+    width: 150px;
+    height: 200px;
+    transform: skew(30deg);
+    background: #A5712E;
+    border: 10px solid #926429;
+    box-shadow: 10px 10px 30px 10px #2C2C5B;
+  }
+
+#doormatText {
+    margin-top: 34px;
+    color: white;
+    transform: rotate(90deg);
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: 1000;
+}
+
+ol {
     margin-left: 30px;
 }
 
-li{
+li {
     font-size: 22px;
 }
 
