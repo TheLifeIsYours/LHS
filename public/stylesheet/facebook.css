@@ -102,6 +102,101 @@ li {
     z-index: 4;
 }
 
+/* Alt av innhold på pcskjerm */
+#computerScreen {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 650px;
+    height: 400;
+    z-index: 3;
+}
+
+    /* Facebook meny bar */
+    #facebookMenu {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 650px;
+        height: 35px;
+        background-color: #4267B2;
+    }
+
+    #facebookLogo {
+        position: absolute;
+        top: 5px;
+        left: 40px;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border-radius: 2.5px;
+    }
+
+    #facebookF {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        color: #4267B2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 530;
+        font-size: 25px;
+    }
+
+    /* Artikkel av Greta */
+    #gretaArticle {
+        position: absolute;
+        top: 45px;
+        left: 40px;
+        width: 250px;
+        height: 350px;
+        background-color: #EAEAEA;
+        border-radius: 5px;
+        border: 1px solid #CECECE;
+    }
+
+    #gretaImg {
+        position: absolute;
+        width: 250px;
+        border-radius: 5px;
+    }
+
+    #articleLinkTxt {
+        position: absolute;
+        top: 265px;
+        left: 0px;
+        width: 242px;
+        height: 15px;
+        padding-left: 8px;
+        background-color: #D2D2D2;
+        font-size: 10px;
+        font-family: sans-serif;
+        color: #6D6D6D;
+        border-top: 2px solid #CECECE;
+    }
+    
+    #articleHeading {
+        position: absolute;
+        width: 242px;
+        height: 70px;
+        background-color: #D2D2D2;
+        top: 280px;
+        font-weight: 550;
+        font-size: 30px;
+        padding-left: 8px;
+    }
+
+    /* Kommentarfelt */
+    #commentSection {
+        position: absolute;
+        top: 45px;
+        left: 300px;
+        width: 340px;
+        height: 350px;
+        background-color: #EAEAEA;
+        border-radius: 5px;
+        border: 1px solid #CECECE;
+    }
+
 /* Stilsett av knapper */
 #buttons {
     position: absolute;
