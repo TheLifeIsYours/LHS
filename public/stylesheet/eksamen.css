@@ -13,6 +13,26 @@ input {
     cursor: pointer;
 }
 
-#questionInput_2:checked ~ input:checked+label {
+#questionInput_1:checked ~ #box {
+    width: 10em;
+    height: 10em;
+    background: yellow;
+}
+
+#questionInput_2:checked ~ #box {
+    width: 10em;
+    height: 10em;
+    background: yellow;
+}
+
+#questionInput_3:checked ~ #box {
+    width: 10em;
+    height: 10em;
+    background: yellow;
+}
+
+#questionInput_4:checked ~ #box {
+    width: 10em;
+    height: 10em;
     background: yellow;
 }
