@@ -26,19 +26,38 @@
     transform: translate(-50%, -45%);
 }
 
+#doorContainer {
+    width: 160px;
+    height: 300px;
+    background-color: rgb(129, 84, 47);
+    position: relative;
+    left: 1000px;
+    bottom: 365px;
+}
+#handle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: relative;
+    left: 130px;
+    top: 50%;
+}
+
 #jonny{
 position: relative;
-top: 250px;}
+top: 250px;
+}
 
 #svein{
     border-radius: 50%;
     position: relative;
-    left: 660px;
+    left: 630px;
     bottom: 200px;}
 
 #bodySvein{
     position: relative;
-    left: 460px;
+    left: 430px;
     top: 100px;}
     
 
