@@ -79,17 +79,7 @@
     z-index: 1;
 }
 
-#sign{
-    width: 100px;
-    height: 30px;
-    position: relative;
-    z-index: 2;
-    left: 1025px;
-    bottom: 900px;
-    color: white;
-    font-family: Crayon, comic sans ms;
-    text-align: center;
-}
+
 
 #jonny{
 position: relative;
