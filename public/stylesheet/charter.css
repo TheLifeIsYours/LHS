@@ -26,19 +26,63 @@
     transform: translate(-50%, -45%);
 }
 
+#doorContainer {
+    width: 160px;
+    height: 300px;
+    background-color:  rgb(129, 84, 47);
+    position: relative;
+    left: 1000px;
+    bottom: 365px;
+    transition: 1;
+}
+
+#doorContainer:hover{
+    transform: rotate(2deg)
+}
+
+#door{
+    width: 160px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    left: 1000px;
+    bottom: 365px; 
+    border-style: solid;
+
+}
+#handle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gold;
+    position: relative;
+    left: 130px;
+    bottom: 50%;
+}
+
 #jonny{
 position: relative;
-top: 250px;}
+top: 250px;
+}
 
 #svein{
     border-radius: 50%;
     position: relative;
-    left: 660px;
-    bottom: 200px;}
+    left: 630px;
+    bottom: 200px;
+    animation: sveinShakesHisHead;
+    animation: delay 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sveinShakesHisHead{
+    transform: rotate
+
+}
 
 #bodySvein{
     position: relative;
-    left: 460px;
+    left: 430px;
     top: 100px;}
     
 
