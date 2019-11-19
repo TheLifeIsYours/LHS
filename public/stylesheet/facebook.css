@@ -43,6 +43,31 @@ li {
     font-size: 22px;
 }
 
+#jonnyAnimationDiv {
+    position: absolute;
+    top: 130px;
+    right: -150px;
+    animation-name: jonnyAnimation;
+    animation-duration: 20s;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes jonnyAnimation {
+    0% {top: 130px; right: -150px;}
+    30% {top: 130px; right: 180px;}
+    50% {top: 130px; right: 180px;}
+}
+
+
+
+#jonnyImg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    transform: scaleX(-1);
+}
+
 #facebookDesk {
     position: relative;
     margin-bottom: 0px;
@@ -320,10 +345,10 @@ li {
     left: 80px;
     width: 900px;
     height: 50px;
-}
+}   ,
 
 #firstButton {
-    position: relative;
+    position: absolute;
     top: -17px;
 }
 
