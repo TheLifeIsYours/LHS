@@ -10,6 +10,7 @@ input {
     padding: 0.25em;
     width: 720px;
     height: 420px;
+    background: rgb(43, 43, 43);
 }
 
 #desk {
@@ -21,9 +22,11 @@ input {
 }
 
 .questionAnswerText {
+    position: relative;
     display: block;
     max-width: 100%;
     padding: 0.25em;
+    padding-left: 1.25em;
     cursor: pointer;
 }
 
@@ -31,6 +34,16 @@ input {
     background: rgba(255,255,255,0.2);
 }
 
+.questionAnswerText::before {
+    content: '';
+    position: absolute;
+    left: 0.25em;
+    top: 0.55em;
+    width: 0.5em;
+    height: 0.5em;
+    border: solid 3px white;
+    border-radius: 1em;
+}
 /* Black Board Next Task Lable (Sponge)
 ----------------------------------------------------------*/
 .nextTaskLabel {
@@ -85,10 +98,14 @@ input {
     display: block;
 }
 
-/* Exam test 1 question toggle
+/* Exam test 1 questions
 -----------------------------------------------------------*/
-#questionAnswerInput_11:checked ~ #questionAnswerLabel_11 {
+#questionAnswerInput_11:checked ~ #questionAnswerLabel_11{
     color: lightgreen;
+}
+#questionAnswerInput_11:checked ~ #questionAnswerLabel_11::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
 }
 
 #questionAnswerInput_12:checked ~ #questionAnswerLabel_12 {
@@ -139,8 +156,12 @@ input {
     color: rgb(255, 103, 86);
 }
 
-/* Exam test 1 question toggle
+/* Exam test 1 question
 -----------------------------------------------------------*/
+#examTaskAnswers_4 {
+    font-size: 0.8em;
+}
+
 #questionAnswerInput_41:checked ~ #questionAnswerLabel_41 {
     color: lightgreen;
 }
