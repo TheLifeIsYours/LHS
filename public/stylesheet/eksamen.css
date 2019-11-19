@@ -6,20 +6,43 @@ input {
     padding:0.25em,
 }
 
-.questionLabel {
+.questionAnswerText {
     display: block;
     max-width: 100%;
     padding: 0.25em;
     cursor: pointer;
 }
-
-#questionInput_1:checked ~ #box {
-    width: 10em;
-    height: 10em;
-    background: yellow;
+.questionAnswerText:hover {
+    background: rgba(255,255,255,0.7);
 }
 
-#questionInput_2:checked ~ #box {
+/* Exam test Section toggle
+-------------------------------------------------------*/
+.examTask {
+    display: none;
+}
+
+#examTask_1Input:checked ~ #examTask_1 {
+    display: block;
+}
+
+#examTask_2Input:checked ~ #examTask_2 {
+    display: block;
+}
+
+#examTask_3Input:checked ~ #examTask_3 {
+    display: block;
+}
+
+#examTask_4Input:checked ~ #examTask_4 {
+    display: block;
+}
+
+/* Exam test question toggle
+-----------------------------------------------------------*/
+
+
+#examTestQuestionInput_11:checked ~ #examTestQuestion_11 {
     width: 10em;
     height: 10em;
     background: yellow;
