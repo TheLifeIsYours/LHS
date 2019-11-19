@@ -33,6 +33,12 @@
     transform: translate(-50%, -45%);
 }
 
+#exit{
+    position: absolute;
+    right:170px;
+    top: 30px;
+}
+
 #doorContainer {
     width: 160px;
     height: 300px;
@@ -62,7 +68,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: gold;
+    background-color: goldenrod;
     position: relative;
     left: 1130px;
     bottom: 770px;
