@@ -309,6 +309,10 @@ li {
         display: none;
     }
 
+    #ruthComment {
+        top: 115px;
+    }
+
 /* Knapper */
 #buttons {
     position: absolute;
@@ -316,6 +320,16 @@ li {
     left: 80px;
     width: 900px;
     height: 50px;
+}
+
+#firstButton {
+    position: relative;
+    top: -17px;
+}
+
+#secondButton {
+    position: relative;
+    top: -17px;
 }
 
 .buttonsClass {
@@ -340,5 +354,9 @@ li {
 }
 
 #button_3:checked ~ #fbSection_3 {
+    display: block;
+}
+
+#button_4:checked ~ #fbSection_4 {
     display: block;
 }
