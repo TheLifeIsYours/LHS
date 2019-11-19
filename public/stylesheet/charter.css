@@ -33,15 +33,24 @@
     transform: translate(-50%, -45%);
 }
 
+#exit{
+    position: absolute;
+    right:170px;
+    top: 30px;
+}
+
 #doorContainer {
+    display: block;
     width: 160px;
     height: 300px;
     background-color:  rgb(129, 84, 47);
     position: relative;
     left: 1000px;
     bottom: 365px;
-    transition: 1;
     z-index: 1;
+    color: white;
+    font-family: Crayon, comic sans ms;
+    text-align: center;
 }
 
 #doorContainer:hover{
@@ -56,13 +65,14 @@
     left: 1010px;
     bottom: 665px; 
     border-style: solid;
+    
 }
 
 #handle {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: gold;
+    background-color: goldenrod;
     position: relative;
     left: 1130px;
     bottom: 770px;
@@ -70,12 +80,15 @@
 }
 
 #sign{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     position: relative;
     z-index: 2;
-    background-color: white;
-    left: 500px;
+    left: 1025px;
+    bottom: 900px;
+    color: white;
+    font-family: Crayon, comic sans ms;
+    text-align: center;
 }
 
 #jonny{
@@ -117,6 +130,17 @@ transition-duration: 0.5s;
     left: 430px;
     top: 100px;
     z-index: 1;
+}
+
+#kongHaraldDiv{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 500px;
+    left: 50px;
+    border-style: dotted;
+    border-color: yellow;
+    border-width: 7px;
 }
     
 
@@ -174,3 +198,4 @@ h1{
         100% {left: -100px; top: 480px; transform: rotate(360deg);}
     }
 
+   

@@ -1,14 +1,43 @@
+input {
+    display: none;
+}
+
 #mainContainer {
     background: linear-gradient(#1a75e8 51%, green 51%, darkgreen 54%, darkgreen 54%, green 60%);
 }
 
-#lavaPic {
-    height: 500px;
-    width: 500px;
-    position: relative;
-
+#snowGround {
+    background-color: white;
+    position: absolute;
+    width: 1280px;
+    height: 352px;
+    bottom: 0;
+    animation: snowGroundAnim 20s linear infinite;
 }
 
+@keyframes snowGroundAnim {
+    0% {opacity: 0;}
+    15% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/*Styling av lava bilde*/
+/*----------------------------------------------------*/
+#lavaPic {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    left: 900px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+/*----------------------------------------------------*/
+
+/*Animasjon av snø*/
+/*----------------------------------------------------*/
 #snowFlakeContainer {
     position: absolute;
     top: 0px;
@@ -22,8 +51,9 @@
     position: relative;
     top: -50px;
     left: 0px;
-    animation: snow 15s linear infinite;
+    animation: snow 20s  linear infinite;
     opacity: 0;
+    z-index: 1;
 }
 
 #snowFlake_1 {
@@ -114,46 +144,58 @@
     0% {
         left: 70px;
         top: 0px;
-        opacity: 0;
-    }
-
-    10% {
-        left: 0px;
-        top: 78px;
         opacity: 1;
     }
 
-    20% {
+    5% {
+        left: 0px;
+    }
+
+    10% {
         left: -70px;
-        top: 156px;
+    }
+
+    15% {
+        left: 0px;
+
+    }
+
+    20% {
+        left: 70px;
+
+    }
+
+    25% {
+        left: 0px;
+
+    }
+
+    30% {
+        left: -70px;
+        opacity: 1;
+    }
+
+    35% {
+        left: 0px;
     }
 
     40% {
         left: 70px;
-        top: 312px;
     }
 
-    60% {
-        left: -70px;
-        top: 468px;
-    }
-
-    80% {
-        left: 70px;
-        top: 624px;
-    }
-
-    90% {
+    45% {
         left: 0px;
-        opacity: 1;
-    }
-
-    100% {
-        left: -70px;
         top: 780px;
         opacity: 0;
     }
+
+    100%{
+        opacity: 0;
+    }
 }
+
+
+/*----------------------------------------------------*/
 
 #lavaPic {
     height: 350px;
@@ -161,87 +203,237 @@
     position: absolute;
     left: 900px;
     bottom: 0px;
+    z-index: 1;
 }
 
-#tornado{
+/* amimasjon for tornado */
+/*----------------------------------------------------*/
+#tornado {
     height: 100px;
     width: 100px;
     position: absolute;
     left: 0px;
     bottom: 350px;
+    z-index: 1;
 }
-#tornado > *{
+
+#tornado>* {
     height: 100%;
     width: 100%;
     position: absolute;
+    z-index: 1;
 }
 
-#tornadoPic_1{
+#tornadoPic_1 {
     transform: rotateY(0deg);
     animation: move_1 20s linear infinite alternate;
 }
-#tornadoPic_2{
+
+#tornadoPic_2 {
     transform: rotateY(45deg);
     animation: move_2 20s linear infinite alternate;
 }
-#tornadoPic_3{
+
+#tornadoPic_3 {
     transform: rotateY(90deg);
     animation: move_3 20s linear infinite alternate;
 }
-#tornadoPic_4{
+
+#tornadoPic_4 {
     transform: rotateY(135deg);
     animation: move_4 20s linear infinite alternate;
 }
 
 
-@keyframes move_1{
-	0%{
+@keyframes move_1 {
+    0% {
         left: 0px;
-        transform:scale(1) rotateY(0deg)
+        transform: rotateY(0deg);
+        width: 100px;
+        height: 100px;
     }
-    100%{
+
+    100% {
         left: 1200px;
-        transform: scale(6) rotateY(6160deg);
-	}
-}
-@keyframes move_2{
-	0%{
-        left: 0px;
-        transform: scale(1) rotateY(45deg)
+        transform: rotateY(6160deg);
+        width: 600px;
+        height: 600px;
     }
-    100%{
-        left: 1200px;
-        transform: scale(6) rotateY(6205deg);
-	}
 }
 
+@keyframes move_2 {
+    0% {
+        left: 0px;
+        transform: rotateY(45deg);
+        width: 100px;
+        height: 100px;
+    }
 
-@keyframes move_3{
-	0%{
-        left: 0px;
-        transform:scale(1) rotateY(90deg)
-    }
-    100%{
+    100% {
         left: 1200px;
-        transform: scale(6) rotateY(6250deg);
-	}
-}
-@keyframes move_4{
-	0%{
-        left: 0px;
-        transform: scale(1) rotateY(135deg)
+        transform: rotateY(6205deg);
+        width: 600px;
+        height: 600px;
     }
-    100%{
-        left: 1200px;
-        transform: scale(6) rotateY(6295deg);
-	}
 }
 
 
-#jonnyPic {
+@keyframes move_3 {
+    0% {
+        left: 0px;
+        transform: rotateY(90deg);
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        left: 1200px;
+        transform: rotateY(6250deg);
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@keyframes move_4 {
+    0% {
+        left: 0px;
+        transform: rotateY(135deg);
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        left: 1200px;
+        transform: rotateY(6295deg);
+        width: 600px;
+        height: 600px;
+    }
+}
+
+/*----------------------------------------------------*/
+
+/*Snakke boble styles*/
+/*----------------------------------------------------*/
+#speechBubble_1 {
+    position: absolute;
+    bottom: 200px;
+    left: 300px;
+    z-index: 99;
+}
+
+.bubbleText,
+.rocketTravel {
+    display: none;
+}
+
+#bubbleText_1Input:checked~#bubbleText_1 {
+    display: block;
+}
+
+#bubbleText_2Input:checked~#bubbleText_2 {
+    display: block;
+}
+
+/*----------------------------------------------------*/
+
+/* Styling og animasjon av rakett*/
+/*----------------------------------------------------*/
+#rocketPic_1 {
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 340px;
+    left: 100px;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+}
+
+#rocketPic_1:hover {
+    height: 220px;
+    width: 220px;
+}
+
+#rocketPic_2 {
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 250px;
+    left: 0px;
+    z-index: 99;
+    animation: rocket 5s linear 5s forwards;
+
+}
+
+#rocketTravelInput:checked~#rocketTravel {
+    display: block;
+
+}
+
+#rocketTravelAnimatedInput:checked~#rocketTravelAnimated {
+    display: block;
+}
+
+@keyframes rocket {
+    100% {
+        top: -200px;
+    }
+}
+
+/*----------------------------------------------------*/
+
+/*Styling og animasjon av Jonny*/
+/*----------------------------------------------------*/
+#jonnyPic_1 {
     height: 150px;
     width: 100px;
     position: absolute;
-    left: 100px;
+    left: 200px;
     bottom: 100px;
+    z-index: 1;
 }
+
+#jonnyPic_2 {
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    left: 200px;
+    bottom: 100px;
+    animation: jonny 5s ease-out forwards;
+    visibility: visible;
+    z-index: 1;
+}
+
+@keyframes jonny {
+    100% {
+        left: 0px;
+        top: 250px;
+        visibility: hidden;
+    }
+}
+
+/*----------------------------------------------------*/
+
+/*Styling av kanpp som fører videre til neste side*/
+/*----------------------------------------------------*/
+#nextPageBtn {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    color: antiquewhite;
+    background: black;
+    border: 1px solid black;
+    border-radius: 13px;
+    position: absolute;
+    left: 50px;
+    bottom: 200px;
+    z-index: 1;
+}
+
+#nextPageBtn>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----------------------------------------------------*/
