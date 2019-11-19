@@ -7,6 +7,13 @@ input {
     background: linear-gradient(#CFC5B3 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
 
+#mouseHole {
+    position: absolute;
+    width: 60px;
+    top: 343px;
+    right: 400px;
+}
+
 #blackboard {    
     width: 700px;
     height: 300px;
