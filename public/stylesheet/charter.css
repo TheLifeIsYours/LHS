@@ -123,6 +123,8 @@ transition-duration: 0.5s;
 }
 
 #kongHaraldDiv{
+    height: 100px;
+    width: 100px;
     position: absolute;
     bottom: 500px;
     left: 50px;
