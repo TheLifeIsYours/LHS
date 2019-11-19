@@ -29,19 +29,35 @@
 #doorContainer {
     width: 160px;
     height: 300px;
-    background-color: rgb(129, 84, 47);
+    background-color:  rgb(129, 84, 47);
     position: relative;
     left: 1000px;
     bottom: 365px;
+    transition: 1;
+}
+
+#doorContainer:hover{
+    transform: rotate(2deg)
+}
+
+#door{
+    width: 160px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    left: 1000px;
+    bottom: 365px; 
+    border-style: solid;
+
 }
 #handle {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: gold;
     position: relative;
     left: 130px;
-    top: 50%;
+    bottom: 50%;
 }
 
 #jonny{
@@ -53,7 +69,16 @@ top: 250px;
     border-radius: 50%;
     position: relative;
     left: 630px;
-    bottom: 200px;}
+    bottom: 200px;
+    animation: sveinShakesHisHead;
+    animation: delay 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sveinShakesHisHead{
+    transform: rotate
+
+}
 
 #bodySvein{
     position: relative;
