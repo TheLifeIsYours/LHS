@@ -61,7 +61,6 @@ input {
     transform: rotate(90deg);
     font-size: 80px;
     font-family: sans-serif;
-    font-weight: 1000;
 }
 
 ol {
@@ -483,6 +482,22 @@ li {
 #secondButton {
     position: relative;
     top: -17px;
+}
+
+#firstButton:hover {
+    transform: scale(1.05);
+}
+
+#secondButton:hover {
+    transform: scale(1.05);
+}
+
+#thirdButton:hover {
+    transform: scale(1.05);
+}
+
+#fourthButton:hover {
+    transform: scale(1.05);
 }
 
 .buttonsClass {
