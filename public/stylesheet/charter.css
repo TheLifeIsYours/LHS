@@ -40,14 +40,17 @@
 }
 
 #doorContainer {
+    display: block;
     width: 160px;
     height: 300px;
     background-color:  rgb(129, 84, 47);
     position: relative;
     left: 1000px;
     bottom: 365px;
-    transition: 1;
     z-index: 1;
+    color: white;
+    font-family: Crayon, comic sans ms;
+    text-align: center;
 }
 
 #doorContainer:hover{
@@ -62,6 +65,7 @@
     left: 1010px;
     bottom: 665px; 
     border-style: solid;
+    
 }
 
 #handle {
