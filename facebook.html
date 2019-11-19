@@ -11,6 +11,7 @@
         <main id="mainContainer">
             <div id="backgroundWall"></div>
             <div id="facebookDesk"></div>
+            <!-- Tavle + innhold på tavle -->
             <div id="blackboard">
                 <ol>
                     <h4>Regler ved livets harde skole</h4>
@@ -21,20 +22,24 @@
                     <li>Meningsmålinger der ditt syn ikke vinner er  <br>bestillingsverk og fake news.</li>
                 </ol>
             </div>
-
+            <!-- Dørmatte -->
             <a href="klima.html">
                 <div id="doormat">
                     <div id="doormatText">EXIT</div>
                 </div>
             </a>
-
+            <!-- Jonny -->
+            <div id="jonnyAnimationDiv">
+                <img id="jonnyImg" src="public/images/jonny/jonny.png" alt="Jonny">
+            </div>
+            <!-- PC -->
             <section id="computer">
                 <div id="computerDisplay"></div>
                 <div id="computerFoot1"></div>
                 <div id="computerFoot2"></div>
                 <div id="webcam"></div>
             </section>
-
+            <!-- innhold på PC skjerm -->
             <section id="computerScreen">
                 <div id="facebookMenu">
                     <div id="facebookLogo">
@@ -47,36 +52,85 @@
                     <div id="articleHeading">Greta(16) skulker skolen for klimaet</div>
                 </div>
                 <section class="commentSection">
-                    <div id="newComment">Skriv en kommentar... 
-                    </div>
+                    <div id="newComment">Skriv en kommentar... </div>
                     <div id="sendButton">⌲</div>
+                    <!-- Første facebook seksjon -->
                     <input id="button_1" type="radio" />
-                    <section id="fbSection_1">
-                        <div id="lailaSyversenComment" class="facebookComment"><span class="facebookName">Laila Syversen </span>Jeg sluttet personlig å kjøpe plastikkposer i matbutikken for flere år siden. Hva med at dere andre også bidrar til å forbedre klimaet?
+                    <section id="fbSection_1" class="fbSection">
+                        <div class="facebookComment"><span class="facebookName">Laila Syversen </span>Jeg sluttet personlig å kjøpe plastikkposer i matbutikken for flere år siden. Hva med at dere andre også bidrar til å forbedre klimaet?
                             <div id="" class="facebookActions">Like · Reply · <span class="commentMinutes">3h</span></div>
                         </div>
                         <div id="hugoHansenComment" class="facebookComment"><span class="facebookName">Hugo Hansen </span>Norge er aldri verstingen!!Se på hvor mye alle andre land forurenser, og så må vi få en del av skylden for at kloden vår overhetes? Patetisk. 
                             <div id="" class="facebookActions">Like · Reply · <span class="commentMinutes">48m</span></div>
                         </div>
-                        <div id="jonnyComment_1" class="jonnyComment">Jeg er svært uenig i alt dette kvinnemennesket <br>sier. Det er slik jeg der, så dere må bare leve med det.
+                        <div class="jonnyComment">Jeg er svært uenig i alt dette kvinnemennesket sier. Det er slik jeg der, så dere må bare leve med det.
                         </div>
                         <div id="sendButton">⌲</div>
-                        
                     </section>
-
-                    <input />
+                    <!-- Andre facebook seksjon -->
+                    <input id="button_2" type="radio" />
+                    <section id="fbSection_2" class="fbSection">
+                        <div class="facebookComment"><span class="facebookName">Kenneth Jørgensen</span> Har ikke noe å si enn at dette er det dummeste jeg noen gang har hørt. Det finnes ikke noe som heter klimakrisen.
+                            <div id="" class="facebookActions">Like · Reply · <span class="commentMinutes">8h</span></div>
+                        </div>
+                        <div class="jonnyComment"> Jeg er kanskje ikke forsker, men jeg har nok vett i hodet til å vite at denne jenta tar feil. 
+                        </div>
+                        <div id="sendButton">⌲</div>
+                    </section>
+                    <!-- Tredje facebook seksjon -->
+                    <input id="button_3" type="radio" />
+                    <section id="fbSection_3" class="fbSection">
+                        <div class="facebookComment"><span class="facebookName">Hugo Hansen</span> Stakkars hjernevaskede jentunge. 
+                            <div class="facebookActions">Like · Reply · <span class="commentMinutes">10h</span></div>
+                        </div>
+                        <div id="sylviComment" class="facebookComment"><span class="facebookName">Sylvi Listhaug</span> Her må barnevernet steppe inn med en gang!
+                            <div class="facebookActions">Like · Reply · <span class="commentMinutes">8m</span></div>
+                        </div>
+                        <div class="jonnyComment"> Ungdommen i dag vet ikke hva de snakker om. Bli på skolepulten og kom tilbake når dere har fått litt livserfaring!
+                        </div>
+                        <div id="sendButton">⌲</div>
+                    </section>
+                    <!-- Fjerde facebook seksjon -->
+                    <input id="button_4" type="radio" />
+                    <section id="fbSection_4" class="fbSection">
+                        <div class="facebookComment"><span class="facebookName">Rune André Berg</span> Jeg er tidligere elev ved livets harde skole, og klimakrisen er bare tull. Disse politikerne prøver å distrahere oss fra å fokusere på de viktige problemene her i landet!
+                            <div class="facebookActions">Like · Reply · <span class="commentMinutes">2h</span></div>
+                        </div>
+                        <div id="ruthComment" class="facebookComment"><span class="facebookName">Ruth Narvestad</span> FNS klimapanels eneste hensikt er å få en politisk agenda til å se ut som forskning.  Forskningen gir ikke mening, klimakrisen er fake news. 
+                            <div class="facebookActions">Like · Reply · <span class="commentMinutes">27m</span></div>
+                        </div>
+                        <div class="jonnyComment"> Selv mener jeg er klimakrisen er tidenes konspirasjon. Pengesugne klimaforskere og hysteriske miljøvernere har klart å overbevise oss om en sannhet som bare er tull og tøys. 
+                        </div>
+                        <div id="sendButton">⌲</div>
+                    </section>
                 </section>
             </section>
-
+            <!-- Knapper -->
             <section id="buttons">
+                <!-- Knapp nr. 1-->
                 <label for="button_1">
-                    <div class="buttonsClass">
+                    <div id="firstButton" class="buttonsClass">
                         <span id="">Skyld på andre</span> 
                     </div>
                 </label>
-                <div id="button_2" class="buttonsClass">Kveruler</div>
-                <div id="button_3" class="buttonsClass">Snakk nedlatende om ungdommen</div>
-                <div id="button_4" class="buttonsClass">Påstå at klimakrisen er en konspirasjon</div>
+                <!-- Knapp nr. 2-->
+                <label for="button_2">
+                    <div id="secondButton" class="buttonsClass">
+                        <span id="">Kveruler</span>
+                    </div>
+                </label>
+                <!-- Knapp nr. 3 -->
+                <label for="button_3">
+                    <div class="buttonsClass">
+                        <span id="">Snakk nedlatende om ungdommen</span>
+                    </div>
+                </label>
+                <!-- Knapp nr. 4 -->
+                <label for="button_4">
+                    <div class="buttonsClass">
+                        <span id="">Påstå at klimakrisen er en konspirasjon</span>
+                    </div>
+                </label>    
             </section>
 
         </main>
