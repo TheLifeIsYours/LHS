@@ -1,9 +1,11 @@
-input{
+input {
     display: none;
 }
+
 #mainContainer {
     background: linear-gradient(#1a75e8 51%, green 51%, darkgreen 54%, darkgreen 54%, green 60%);
 }
+
 /*Styling av lava bilde*/
 /*----------------------------------------------------*/
 #lavaPic {
@@ -13,6 +15,7 @@ input{
     left: 900px;
     bottom: 0px;
 }
+
 /*----------------------------------------------------*/
 
 /*Animasjon av snø*/
@@ -162,6 +165,7 @@ input{
         opacity: 0;
     }
 }
+
 /*----------------------------------------------------*/
 
 #lavaPic {
@@ -171,137 +175,154 @@ input{
     left: 900px;
     bottom: 0px;
 }
+
 /* amimasjon for tornado */
 /*----------------------------------------------------*/
-#tornado{
+#tornado {
     height: 100px;
     width: 100px;
     position: absolute;
     left: 0px;
     bottom: 350px;
 }
-#tornado > *{
+
+#tornado>* {
     height: 100%;
     width: 100%;
     position: absolute;
 }
 
-#tornadoPic_1{
+#tornadoPic_1 {
     transform: rotateY(0deg);
     animation: move_1 20s linear infinite alternate;
 }
-#tornadoPic_2{
+
+#tornadoPic_2 {
     transform: rotateY(45deg);
     animation: move_2 20s linear infinite alternate;
 }
-#tornadoPic_3{
+
+#tornadoPic_3 {
     transform: rotateY(90deg);
     animation: move_3 20s linear infinite alternate;
 }
-#tornadoPic_4{
+
+#tornadoPic_4 {
     transform: rotateY(135deg);
     animation: move_4 20s linear infinite alternate;
 }
 
 
-@keyframes move_1{
-	0%{
+@keyframes move_1 {
+    0% {
         left: 0px;
         transform: rotateY(0deg);
         width: 100px;
         height: 100px;
     }
-    100%{
+
+    100% {
         left: 1200px;
         transform: rotateY(6160deg);
         width: 600px;
         height: 600px;
-	}
+    }
 }
-@keyframes move_2{
-	0%{
+
+@keyframes move_2 {
+    0% {
         left: 0px;
         transform: rotateY(45deg);
         width: 100px;
         height: 100px;
     }
-    100%{
+
+    100% {
         left: 1200px;
         transform: rotateY(6205deg);
         width: 600px;
         height: 600px;
-	}
+    }
 }
 
 
-@keyframes move_3{
-	0%{
+@keyframes move_3 {
+    0% {
         left: 0px;
         transform: rotateY(90deg);
         width: 100px;
         height: 100px;
     }
-    100%{
+
+    100% {
         left: 1200px;
         transform: rotateY(6250deg);
         width: 600px;
         height: 600px;
-	}
+    }
 }
-@keyframes move_4{
-	0%{
+
+@keyframes move_4 {
+    0% {
         left: 0px;
         transform: rotateY(135deg);
         width: 100px;
         height: 100px;
     }
-    100%{
+
+    100% {
         left: 1200px;
         transform: rotateY(6295deg);
         width: 600px;
         height: 600px;
-	}
+    }
 }
+
 /*----------------------------------------------------*/
 
 /*Snakke boble styles*/
 /*----------------------------------------------------*/
-#speechBubble_1{
+#speechBubble_1 {
     position: absolute;
     bottom: 200px;
     left: 300px;
     z-index: 99;
 }
-.bubbleText, .rocketTravel {
+
+.bubbleText,
+.rocketTravel {
     display: none;
 }
 
-#bubbleText_1Input:checked ~ #bubbleText_1 {
+#bubbleText_1Input:checked~#bubbleText_1 {
     display: block;
 }
-#bubbleText_2Input:checked ~ #bubbleText_2 {
+
+#bubbleText_2Input:checked~#bubbleText_2 {
     display: block;
 }
 
 /*----------------------------------------------------*/
 
-/* Styling og animasjon av rakett og Jonny*/
+/* Styling og animasjon av rakett*/
 /*----------------------------------------------------*/
-#rocketPic_1{
-    height: 200px;
+#rocketPic_1 {
+    height: 250px;
     width: 200px;
     position: relative;
     top: 340px;
     left: 100px;
     z-index: 99;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
-#rocketPic_1:hover{
+
+#rocketPic_1:hover {
     height: 220px;
     width: 220px;
 }
-#rocketPic_2{
-    height: 200px;
+
+#rocketPic_2 {
+    height: 250px;
     width: 200px;
     position: relative;
     top: 250px;
@@ -311,18 +332,25 @@ input{
 
 }
 
-#rocketTravelInput:checked ~ #rocketTravel {
+#rocketTravelInput:checked~#rocketTravel {
     display: block;
 
 }
-#rocketTravelAnimatedInput:checked ~ #rocketTravelAnimated {
+
+#rocketTravelAnimatedInput:checked~#rocketTravelAnimated {
     display: block;
 }
-@keyframes rocket{
-    100%{
+
+@keyframes rocket {
+    100% {
         top: -200px;
     }
 }
+
+/*----------------------------------------------------*/
+
+/*Styling og animasjon av Jonny*/
+/*----------------------------------------------------*/
 #jonnyPic_1 {
     height: 150px;
     width: 100px;
@@ -330,6 +358,7 @@ input{
     left: 200px;
     bottom: 100px;
 }
+
 #jonnyPic_2 {
     height: 150px;
     width: 100px;
@@ -339,24 +368,37 @@ input{
     animation: jonny 5s ease-out forwards;
     visibility: visible;
 }
-@keyframes jonny{
-    100%{
+
+@keyframes jonny {
+    100% {
         left: 0px;
         top: 250px;
         visibility: hidden;
     }
 }
+
 /*----------------------------------------------------*/
-#nextPageBtn{
+
+/*Styling av kanpp som fører videre til neste side*/
+/*----------------------------------------------------*/
+#nextPageBtn {
     width: 100px;
     height: 50px;
     text-align: center;
-    align-items: center;
     color: antiquewhite;
     background: black;
     border: 1px solid black;
     border-radius: 13px;
     position: absolute;
-    left: 300px;
-    bottom: 0px;
+    left: 50px;
+    bottom: 200px;
 }
+
+#nextPageBtn>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----------------------------------------------------*/
