@@ -11,24 +11,36 @@
         <main id="mainContainer">
 
 <!--bilder i hovedkontainer-->
-            <img id="jonny" src="public/images/jonny/jonny.png" alt="jonny">
+            <!-- Label for snakkebobble till Jonny -->
+            <label for="speechBubble_1Input">
+                    <!-- Bilde av Jonny -->
+                    <img id="jonny" src="public/images/jonny/jonny.png" alt="jonny">
+                </label>
+                <input id="speechBubble_1Input" type="radio">
+                <!-- Snakkebobble till Jonny -->
+                <div id="speechBubble_1" class="speechBubble topLeft">
+                    <p>
+                        I dette faget gir vi deg et lynkurs i charter.
+                        <br> Vi har vært så heldig å få Svein Østvik som forelser
+                    </p>
+                </div>
             <img id="svein" src="public/images/charter/sveinface.png" alt="svein">
             <img id="bodySvein" src="public/images/charter/sveinbody.png" alt="body-svein">
+            <img id="rat_1" src="public/images/Index/Rat.png" alt="rat">
             
 <!--Lydfil som spiller "kongen av mallorca"-->
             <audio autoplay loop src="public/audio/hereYouGoPernille.mp3" type="audio/mpeg"></audio>
-<!--Snakkebobble-->
-            <div id="speechBubble_1" class="speechBubble topLeft">
-                    I dette faget gir vi deg et lynkurs i charter.
-                    <br> Vi har vært så heldig å få Svein Østvik som forelser </div>
+
 
             <!--Dør til neste side-->
             <a href="facebook.html">
             <div id="doorContainer">
-                <div id="door"></div>
                 <div id="handle"></div>
-            
             </div></a>
+
+            <div id="door"></div>
+            <div id="handle"></div>
+            <div id="sign"></div>
         
 
             <section id="blackboard">
