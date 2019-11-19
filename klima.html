@@ -12,12 +12,44 @@
     <main id="mainContainer">
         <div id="imageContainer">
             <img id="lavaPic" src="public/images/klima/lava.png" alt="lava">
-            <img id="jonnyPic" src="public/images/jonny/jonny.png" alt="jonny">
+
+            <input id="rocketTravelInput" name="rocketTravel" type="radio" checked>
+            <section id="rocketTravel" class="rocketTravel">
+                <img id="jonnyPic_1" src="public/images/jonny/jonny.png" alt="jonny">
+                <label for="rocketTravelAnimatedInput">
+                    <img id="rocketPic_1" src="public/images/flat/spaceship-svgrepo-com.svg" alt="rocketShip">
+                </label>
+                <div id="speechBubble_1" class="speechBubble bottomLeft">
+                    <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
+                    <section id="bubbleText_1" class="bubbleText">
+                        <p>Mange sier vi har en klima krise på jorda, men det er fake news. <br> Du ser jo her klart og
+                            tydelig at den er
+                            det!
+                        </p>
+                        <label id="nextBubble" for="bubbleText_2Input"> >>> </label>
+                    </section>
+
+                    <input id="bubbleText_2Input" name="bubbleText" type="radio">
+                    <section id="bubbleText_2" class="bubbleText">
+                        <p>Nå skal jeg ta raketten min og vise dere at jorda er flat</p>
+                    </section>
+                </div>
+            </section>
+
+            <input id="rocketTravelAnimatedInput" name="rocketTravel" type="radio">
+            <section id="rocketTravelAnimated" class="rocketTravel">
+                <img id="jonnyPic_2" src="public/images/jonny/jonny.png" alt="jonny">
+                <img id="rocketPic_2" src="public/images/flat/spaceship-svgrepo-com.svg" alt="rocketShip">
+                <a id="nextPageBtn" href="flatjord.html">
+                    <div>Dra til mars</div>
+                </a>
+            </section>
+
             <section id="tornado">
-                    <img id="tornadoPic_1" src="public/images/klima/tornado_simple_2.png" alt="tornado">
-                    <img id="tornadoPic_2" src="public/images/klima/tornado_simple_2.png" alt="tornado">
-                    <img id="tornadoPic_3" src="public/images/klima/tornado_simple_2.png" alt="tornado">
-                    <img id="tornadoPic_4" src="public/images/klima/tornado_simple_2.png" alt="tornado">
+                <img id="tornadoPic_1" src="public/images/klima/tornado_simple_2.png" alt="tornado">
+                <img id="tornadoPic_2" src="public/images/klima/tornado_simple_2.png" alt="tornado">
+                <img id="tornadoPic_3" src="public/images/klima/tornado_simple_2.png" alt="tornado">
+                <img id="tornadoPic_4" src="public/images/klima/tornado_simple_2.png" alt="tornado">
 
 
             </section>
@@ -45,6 +77,7 @@
                 <img id="snowFlake_21" src="public/images/klima/snowflake-svgrepo-com.svg" alt="snow">
             </section>
         </div>
+
     </main>
 </body>
 

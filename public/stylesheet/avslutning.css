@@ -15,7 +15,23 @@
     left: 200px; 
     top: 250px;
     z-index: 2;
+    animation: jonnyAnim 0.3s linear infinite;
+    animation-play-state: paused;
+    transition-duration: 0.2;
 }
+
+@keyframes jonnyAnim {
+  0% {top: 250px}
+  50% {top: 225px}
+  100% {top: 250px}
+}
+
+#jonny:hover {
+  transform: scale(1.05);
+  animation-play-state: running;
+}
+
+
 
 #blackboard {
     transform: rotate(5deg) translate(-50%, 15%);
@@ -55,7 +71,7 @@
     position: absolute;
     width: 180px;
     height: 320px;
-    background: #2a5c23;
+    background: #352308;
     left: 1000px;
     top: 60px;
     border: solid;
@@ -77,20 +93,20 @@
     position: absolute;
     width: 120px;
     height: 120px;
-    left: 660px; 
+    left: 625px; 
     top: 320px;
     transform: scale(1);
-    animation: zoom 1s ease 1s forwards;
+    animation: zoom 2s ease 1s infinite;
 }
 
 #beer{
     position: absolute;
     width: 100px;
     height: 150px;
-    left: 500px; 
+    left: 515px; 
     top: 300px;
     transform: scale(1);
-    animation: zoom 1s ease 1s forwards;
+    animation: zoom 2s ease 1s infinite;
 }
 
 #cigarette{
@@ -98,11 +114,62 @@
     width: 80px;
     height: 130px;
     left: 600px; 
-    top: 450px;
+    top: 440px;
     transform: scale(1);
-    animation: zoom 1s ease 1s forwards;
+    animation: zoom 2s ease 1s infinite;
     z-index: 2;
 }
+
+#star_1{
+    position: absolute;
+    left: 540px;
+    top: 330px;
+    opacity: 0;
+    animation: star1Anim 1s 1.8s linear infinite;
+  }
+  #star_2{
+    position: absolute;
+    left: 650px;
+    top: 300px;
+    opacity: 0;
+    animation: star2Anim 1s 2s linear infinite;
+  }
+  #star_3{
+    position: absolute;
+    left: 630px;
+    top: 400px;
+    opacity: 0;
+    animation: star3Anim 1s 2.2s linear infinite;
+  }
+  #star_4{
+    position: absolute;
+    left: 690px;
+    top: 540px;
+    z-index: 2;
+    opacity: 0;
+    animation: star4Anim 1s 2.4s linear infinite;
+  }
+  
+  @keyframes star1Anim {
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(3);}
+    100% {opacity: 0; transform: scale(4);}
+  }
+  @keyframes star2Anim {
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(3);}
+    100% {opacity: 0; transform: scale(4);}
+  }
+  @keyframes star3Anim {
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(3);}
+    100% {opacity: 0; transform: scale(4);}
+  }
+  @keyframes star4Anim {
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(3);}
+    100% {opacity: 0; transform: scale(4);}
+  }
 
 #mouse1{
     position: absolute;
@@ -118,9 +185,10 @@
     position: absolute;
     width: 80px;
     height: 130px;
-    left: 80px; 
+    right: 1400px; 
     top: 500px;
     z-index: 1;
+    animation: mouseAnimation2 10s linear infinite;
 }
 
 
@@ -131,13 +199,24 @@
     100%{right: -200px; top: 500px;}
 }
 
+@keyframes mouseAnimation2 {
+    0% {right: 1400px; top: 600px;}
+    40%{right: 800px;}
+    60%{right: 600px;}
+    100%{right: -200px; top: 400px;}
+}
+
 @keyframes zoom{
-    from{
+    0%{
         transform: scale(1);
     }
-    to{
+    50%{
         transform: scale(2);
     }
+    100%{
+        transform: scale(1);
+    }
+    
 }
 
 #blackboardText{
