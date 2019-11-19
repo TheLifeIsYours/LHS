@@ -14,6 +14,28 @@ input {
     right: 400px;
 }
 
+#fbRat {
+    width: 20px;
+    position: absolute;
+    top: 370px;
+    right: 411px;
+    opacity: 0;
+    transform: scaleX(-1);
+    animation-name: ratAnimation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+@keyframes ratAnimation {
+    0% {opacity: 0;}
+    10% {opacity: 1; right: 405px;}
+    30% {opacity: 1; right: 400px;}
+    45% {opacity: 1; right: 411px;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
 #blackboard {    
     width: 700px;
     height: 300px;
