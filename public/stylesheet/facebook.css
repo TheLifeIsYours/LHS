@@ -295,11 +295,13 @@ li {
         display: none;
     }
 
-    #
-
     /* Snakk nedlatende om ungdommen */
-    #fbSection_3 {
+    #fbSection_3{
         display: none;
+    }
+
+    #sylviComment {
+        top: 75px;
     }
 
     /* Påstå at klimakrisen er en konspirasjon */
@@ -333,6 +335,10 @@ li {
     display: block;
 }
 
-#button_2:checked ~#fbSection_2 {
+#button_2:checked ~ #fbSection_2 {
+    display: block;
+}
+
+#button_3:checked ~ #fbSection_3 {
     display: block;
 }
