@@ -1,20 +1,28 @@
 #mainContainer {
+    position: relative;
     background: linear-gradient(#727272 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
 
 #desk  {
-    background: rgb(0, 0, 0);
+    position: absolute;
+    background: rgb(29, 29, 29);
 }
 
 #jonny{
+    position: absolute;
     width: 180px;
     height: 380px;
-    margin-left: 220px; 
-    margin-top: 250px;
+    left: 200px; 
+    top: 250px;
+    z-index: 2;
+}
+
+#blackboard {
+    transform: rotate(5deg) translate(-50%, 15%);
 }
 
 #speechBubble_1 {
-    position: relative;
+    position: absolute;
     background: #fff;
     min-height: 1em;
     max-width: 70%;
@@ -24,48 +32,118 @@
     border: solid 2px #34373c;
     cursor: pointer;
     overflow-wrap: break-word;
-    position: absolute;
-    top: 200px;
-    left: 400px;
+    top: 140px;
+    left: 350px;
   }
 
   .bottomLeft {
     border-radius: 6px 6px 6px 0px;
   }
   
-  .bottomLeft::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: -10px;
-    border: solid;
-    border-width: 10px 10px 0px 0px;
-    border-color: transparent #34373c;
-  }
-
   #door {
+    position: absolute;
     width: 180px;
     height: 320px;
     background: rgb(255, 255, 255);
-    position: absolute;
-    left: 80%;
-    top: 29%;
-    transform: translate(-50%, -45%);
+    left: 1000px;
+    top: 60px;
     border: solid;
     border-width: 5px;
     border-color: rgb(83, 83, 83);
 }
-  
-#doorknob {
+#door:hover{
+    position: absolute;
     width: 180px;
     height: 320px;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    left: 80%;
-    top: 29%;
-    transform:skew(3deg,3deg);
+    background: #2a5c23;
+    left: 1000px;
+    top: 60px;
     border: solid;
     border-width: 5px;
     border-color: rgb(83, 83, 83);
-  
 }
+
+#doorknob{
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    width:20px;
+    height:20px;
+    left: 20px; 
+    top: 150px;   
+}
+
+#diploma{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 660px; 
+    top: 320px;
+    transform: scale(1);
+    animation: zoom 1s ease 1s forwards;
+}
+
+#beer{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    left: 500px; 
+    top: 300px;
+    transform: scale(1);
+    animation: zoom 1s ease 1s forwards;
+}
+
+#cigarette{
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    left: 600px; 
+    top: 450px;
+    transform: scale(1);
+    animation: zoom 1s ease 1s forwards;
+    z-index: 2;
+}
+
+#mouse1{
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    right: 1400px; 
+    top: 500px;
+    z-index: 1;
+    animation: mouseAnimation 6s linear infinite;
+}
+
+#mouse2{
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    left: 80px; 
+    top: 500px;
+    z-index: 1;
+}
+
+
+@keyframes mouseAnimation {
+    0% {right: 1400px; top: 500px;}
+    40%{right: 800px;}
+    60%{right: 600px;}
+    100%{right: -200px; top: 500px;}
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(2);
+    }
+}
+
+#blackboardText{
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    color: white;
+    font-size: 19px;}
+
