@@ -40,8 +40,8 @@ html, body {
     overflow-wrap: break-word;
   }
   
-  /* 
-  -----------------------------------*/
+  /* Klasser for posisjon av pekere til snakkeboblene
+  ----------------------------------------------------*/
   .bottomLeft {
     border-radius: 6px 6px 6px 0px;
   }

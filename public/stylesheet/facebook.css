@@ -7,6 +7,13 @@ input {
     background: linear-gradient(#CFC5B3 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
 
+#mouseHole {
+    position: absolute;
+    width: 60px;
+    top: 343px;
+    right: 400px;
+}
+
 #blackboard {    
     width: 700px;
     height: 300px;
@@ -46,19 +53,19 @@ li {
 #jonnyAnimationDiv {
     position: absolute;
     top: 130px;
-    right: -150px;
+    right: -200px;
     animation-name: jonnyAnimation;
     animation-duration: 20s;
-    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
 @keyframes jonnyAnimation {
-    0% {top: 130px; right: -150px;}
-    30% {top: 130px; right: 180px;}
-    50% {top: 130px; right: 180px;}
+    0% {top: 130px; right: -200px;}
+    20% {top: 130px; right: 130px;}
+    80% {top: 130px; right: 130px;}
+    100% {top: 130; right: -200;}
 }
-
-
 
 #jonnyImg {
     position: absolute;
@@ -66,6 +73,26 @@ li {
     right: 0px;
     width: 150px;
     transform: scaleX(-1);
+}
+
+#speechBubble_1 {
+    position: absolute;
+    top: 70px;
+    right: 300px;
+    width: 200px;
+    opacity: 0;
+    animation-name: speechBubbleAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes speechBubbleAnimation {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
+    80% {opacity: 0;}
 }
 
 #facebookDesk {
@@ -345,10 +372,10 @@ li {
     left: 80px;
     width: 900px;
     height: 50px;
-}   ,
+}  
 
 #firstButton {
-    position: absolute;
+    position: relative;
     top: -17px;
 }
 

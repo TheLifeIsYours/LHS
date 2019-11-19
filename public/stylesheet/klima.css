@@ -1,14 +1,22 @@
+input{
+    display: none;
+}
 #mainContainer {
     background: linear-gradient(#1a75e8 51%, green 51%, darkgreen 54%, darkgreen 54%, green 60%);
 }
-
+/*Styling av lava bilde*/
+/*----------------------------------------------------*/
 #lavaPic {
-    height: 500px;
-    width: 500px;
-    position: relative;
-
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    left: 900px;
+    bottom: 0px;
 }
+/*----------------------------------------------------*/
 
+/*Animasjon av snø*/
+/*----------------------------------------------------*/
 #snowFlakeContainer {
     position: absolute;
     top: 0px;
@@ -154,6 +162,7 @@
         opacity: 0;
     }
 }
+/*----------------------------------------------------*/
 
 #lavaPic {
     height: 350px;
@@ -162,7 +171,8 @@
     left: 900px;
     bottom: 0px;
 }
-
+/* amimasjon for tornado */
+/*----------------------------------------------------*/
 #tornado{
     height: 100px;
     width: 100px;
@@ -197,21 +207,29 @@
 @keyframes move_1{
 	0%{
         left: 0px;
-        transform:scale(1) rotateY(0deg)
+        transform: rotateY(0deg);
+        width: 100px;
+        height: 100px;
     }
     100%{
         left: 1200px;
-        transform: scale(6) rotateY(6160deg);
+        transform: rotateY(6160deg);
+        width: 600px;
+        height: 600px;
 	}
 }
 @keyframes move_2{
 	0%{
         left: 0px;
-        transform: scale(1) rotateY(45deg)
+        transform: rotateY(45deg);
+        width: 100px;
+        height: 100px;
     }
     100%{
         left: 1200px;
-        transform: scale(6) rotateY(6205deg);
+        transform: rotateY(6205deg);
+        width: 600px;
+        height: 600px;
 	}
 }
 
@@ -219,29 +237,126 @@
 @keyframes move_3{
 	0%{
         left: 0px;
-        transform:scale(1) rotateY(90deg)
+        transform: rotateY(90deg);
+        width: 100px;
+        height: 100px;
     }
     100%{
         left: 1200px;
-        transform: scale(6) rotateY(6250deg);
+        transform: rotateY(6250deg);
+        width: 600px;
+        height: 600px;
 	}
 }
 @keyframes move_4{
 	0%{
         left: 0px;
-        transform: scale(1) rotateY(135deg)
+        transform: rotateY(135deg);
+        width: 100px;
+        height: 100px;
     }
     100%{
         left: 1200px;
-        transform: scale(6) rotateY(6295deg);
+        transform: rotateY(6295deg);
+        width: 600px;
+        height: 600px;
 	}
 }
+/*----------------------------------------------------*/
 
+/*Snakke boble styles*/
+/*----------------------------------------------------*/
+#speechBubble_1{
+    position: absolute;
+    bottom: 200px;
+    left: 300px;
+    z-index: 99;
+}
+.bubbleText, .rocketTravel {
+    display: none;
+}
 
-#jonnyPic {
+#bubbleText_1Input:checked ~ #bubbleText_1 {
+    display: block;
+}
+#bubbleText_2Input:checked ~ #bubbleText_2 {
+    display: block;
+}
+
+/*----------------------------------------------------*/
+
+/* Styling og animasjon av rakett og Jonny*/
+/*----------------------------------------------------*/
+#rocketPic_1{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 340px;
+    left: 100px;
+    z-index: 99;
+    transform: translate(-50%, -50%)
+}
+#rocketPic_1:hover{
+    height: 220px;
+    width: 220px;
+}
+#rocketPic_2{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 250px;
+    left: 0px;
+    z-index: 99;
+    animation: rocket 5s linear 5s forwards;
+
+}
+
+#rocketTravelInput:checked ~ #rocketTravel {
+    display: block;
+
+}
+#rocketTravelAnimatedInput:checked ~ #rocketTravelAnimated {
+    display: block;
+}
+@keyframes rocket{
+    100%{
+        top: -200px;
+    }
+}
+#jonnyPic_1 {
     height: 150px;
     width: 100px;
     position: absolute;
-    left: 100px;
+    left: 200px;
     bottom: 100px;
+}
+#jonnyPic_2 {
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    left: 200px;
+    bottom: 100px;
+    animation: jonny 5s ease-out forwards;
+    visibility: visible;
+}
+@keyframes jonny{
+    100%{
+        left: 0px;
+        top: 250px;
+        visibility: hidden;
+    }
+}
+/*----------------------------------------------------*/
+#nextPageBtn{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    color: antiquewhite;
+    background: black;
+    border: 1px solid black;
+    border-radius: 13px;
+    position: absolute;
+    left: 300px;
+    bottom: 0px;
 }
