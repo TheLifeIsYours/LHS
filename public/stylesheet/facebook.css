@@ -43,6 +43,51 @@ li {
     font-size: 22px;
 }
 
+#jonnyAnimationDiv {
+    position: absolute;
+    top: 130px;
+    right: -200px;
+    animation-name: jonnyAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes jonnyAnimation {
+    0% {top: 130px; right: -200px;}
+    20% {top: 130px; right: 130px;}
+    80% {top: 130px; right: 130px;}
+    100% {top: 130; right: -200;}
+}
+
+#jonnyImg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    transform: scaleX(-1);
+}
+
+#speechBubble_1 {
+    position: absolute;
+    top: 70px;
+    right: 300px;
+    width: 200px;
+    opacity: 0;
+    animation-name: speechBubbleAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes speechBubbleAnimation {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
+    80% {opacity: 0;}
+}
+
 #facebookDesk {
     position: relative;
     margin-bottom: 0px;
@@ -95,16 +140,16 @@ li {
     left: 245px;
 }
 
-#webcam {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #202020;
-    border-radius: 50%;
-    top: 10px;
-    left: 350px;
-    z-index: 4;
-}
+    #webcam {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #202020;
+        border-radius: 50%;
+        top: 10px;
+        left: 350px;
+        z-index: 4;
+    }
 
 /* Alt av innhold på pcskjerm */
 #computerScreen {
@@ -242,6 +287,7 @@ li {
         border-radius: 15px;
         left: 8px;
         border: 1px solid #CECECE;
+        margin-top: 5px;
     }
 
     .facebookActions {
@@ -257,6 +303,14 @@ li {
         color: #6D6D6D;
     }
 
+    .fbSection {
+        position: absolute;
+        top: 0px;
+        width: 340px;
+        height: 350px;
+        background-color: #EAEAEA;
+    }
+
     .jonnyComment{
         position: absolute;
         width: 270px;
@@ -268,39 +322,59 @@ li {
         left: 10px;
         border: 1px solid #CECECE;
         color: black;
+        bottom: 5px;
     }
 
 
     /* "Skyld på andre" */
     #fbSection_1 {
-        position: absolute;
-        top: 0px;
-        width: 340px;
-        height: 350px;
-        background-color: #EAEAEA;
-        background-color: #;
         display: none;
-    }
-
-    #lailaSyversenComment {
-        top: 5px;
     }
 
     #hugoHansenComment {
         top: 100px;
     }
 
-    #jonnyComment_1 {
-        bottom: 5px;
+    /* Kveruler */
+    #fbSection_2 {
+        display: none;
     }
 
-/* Stilsett av knapper */
+    /* Snakk nedlatende om ungdommen */
+    #fbSection_3{
+        display: none;
+    }
+
+    #sylviComment {
+        top: 75px;
+    }
+
+    /* Påstå at klimakrisen er en konspirasjon */
+    #fbSection_4 {
+        display: none;
+    }
+
+    #ruthComment {
+        top: 115px;
+    }
+
+/* Knapper */
 #buttons {
     position: absolute;
     top: 630px;
     left: 80px;
     width: 900px;
     height: 50px;
+}  
+
+#firstButton {
+    position: relative;
+    top: -17px;
+}
+
+#secondButton {
+    position: relative;
+    top: -17px;
 }
 
 .buttonsClass {
@@ -318,10 +392,16 @@ li {
 
 #button_1:checked ~ #fbSection_1 {
     display: block;
-    cursor: pointer;
 }
 
-#button_2 {
-    position: relative;
-    top: -18px;
+#button_2:checked ~ #fbSection_2 {
+    display: block;
+}
+
+#button_3:checked ~ #fbSection_3 {
+    display: block;
+}
+
+#button_4:checked ~ #fbSection_4 {
+    display: block;
 }

@@ -7,50 +7,62 @@
     <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
     <link rel="stylesheet" type="text/css" href="public/stylesheet/flatjord.css">
 </head>
-
 <body>
     <!-- Hovedcontainer for flat jord -->
     <main id="mainContainer">
-        <img id="mars" src="public/images/flat/mars.png" alt="mars">
-    </main>
-    <div>
-        <img id="teleskop" src="public/images/flat/telescope-svgrepo-com.svg" alt="teleskop">
-        <img id="romskip" src="public/images/flat/spaceship-svgrepo-com.svg" alt="romskip">
-        <img id="jonny" src="public/images/jonny/jonny_shadow.png" alt="jonny">
-    </div>
-    <div id="speechBubble_1" class="speechBubble bottomLeft">
-        <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
-        <section id="bubbleText_1" class="bubbleText">
-            <p>Mange sier at jorda er rund, men det er fake news. <br> Du ser jo her klart og tydelig at den er flat!
-            </p>
-            <label id="nextBubble" for="bubbleText_2Input"> >>> </label>
-        </section>
 
-        <input id="bubbleText_2Input" name="bubbleText" type="radio">
-        <section id="bubbleText_2" class="bubbleText">
-            <p>Jorda ser kun rund ut nå fordi teleskopets linse er rund</p>
-            <label id="nextBubble" for="bubbleText_3Input"> >>> </label>
-        </section>
+        <!--figurer-->
+        <div>
+            <label for="teleskopInput">
+                <img id="teleskop" src="public/images/flat/telescope-svgrepo-com.svg" alt="teleskop">
+            </label>
+            <a href="eksamen.html">
+            <img id="romskip" src="public/images/flat/spaceship-svgrepo-com.svg" alt="romskip">
+            </a>
+            <img id="jonny" src="public/images/jonny/jonny_shadow.png" alt="jonny">
+            <img id="moonRover" src="public/images/flat/moon-rover-svgrepo-com.svg" alt="moonRover">
+        </div>
 
-        <input id="bubbleText_3Input" name="bubbleText" type="radio">
-        <section id="bubbleText_3" class="bubbleText">
-            <p>Vi må få folk rundt hele kloden til å forstå at jorda er flat som en tallerken</p>
-        </section>
-    </div>
+        <!--Snakkebobler. Trykk '>>>' for å gå videre-->
+        <div id="speechBubble_1" class="speechBubble topLeft">
+            <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
+            <section id="bubbleText_1" class="bubbleText">
+                <p>Mange sier at jorda er rund, men det er fake news. <br> Du ser jo her klart og tydelig at den er flat!</p>
+                <label id="nextBubble" for="bubbleText_2Input"> >>> </label>
+            </section>
 
-    <div id="romskipRøykContainer">
+            <input id="bubbleText_2Input" name="bubbleText" type="radio">
+            <section id="bubbleText_2" class="bubbleText">
+                <p>Jorda ser kun rund ut nå fordi teleskopets linse er rund <br>
+                Vi må få folk rundt hele kloden til å forstå at jorda er flat som en tallerken</p>
+                <label id="nextBubble" for="bubbleText_3Input"> >>> </label>
+            </section>
+
+            <input id="bubbleText_3Input" name="bubbleText" type="radio">
+            <section id="bubbleText_3" class="bubbleText">
+                <p>Trykk på teleskopet, så kan du se selv!</p>
+            </section>
+        </div>
+
+        <!--Røyk under romskipet-->
+        <div id="romskipRøykContainer">
             <div id="romskipRøyk_1"></div>
             <div id="romskipRøyk_2"></div>
             <div id="romskipRøyk_3"></div>
             <div id="romskipRøyk_4"></div>
             <div id="romskipRøyk_5"></div>
             <div id="romskipRøyk_6"></div>
-    </div>
+        </div>
 
-    <div>
-        <img id="flatJord" src="public/images/flat/flat-jord.png">
-    </div>
+        <section id="flatEarthContainer">
+            <input id="teleskopInput" name="flatJord" type="checkbox">
+            <label id="flatJord" for="teleskopInput">
+                <img src="public/images/flat/flat-jord.png" alt="flatJord">
+            </label>
+        </section>
 
+
+    </main>
 </body>
 
 </html>
