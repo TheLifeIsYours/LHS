@@ -7,7 +7,7 @@
 }
 
 /* Figurer */
-#teleskop {
+#telescope {
     position: absolute;
     width: 150px;
     height: auto;
@@ -16,7 +16,7 @@
     cursor: pointer;
 }
 
-#romskip {
+#spaceship {
     position: absolute;
     width: 400px;
     height: auto;
@@ -51,7 +51,7 @@
 }
 
 /* Røyk fra romskipet */
-#romskipRøykContainer >*{
+#spaceshipSmokeContainer >*{
     position: absolute;
     background-color: black;
     width: 100px;
@@ -61,27 +61,27 @@
     border-radius: 100%;
 }
 
-#romskipRøyk_1 {
+#spaceshipSmoke_1 {
     animation: røykAnimasjon 2s infinite linear;
 }
 
-#romskipRøyk_2 {
+#spaceshipSmoke_2 {
     animation: røykAnimasjon 1s infinite linear;
 }
 
-#romskipRøyk_3 {
+#spaceshipSmoke_3 {
     animation: røykAnimasjon 1.5s infinite linear;
 }
 
-#romskipRøyk_4 {
+#spaceshipSmoke_4 {
     animation: røykAnimasjon 1.75s infinite linear;
 }
 
-#romskipRøyk_5 {
+#spaceshipSmoke_5 {
     animation: røykAnimasjon 1.75s infinite linear;
 }
 
-#romskipRøyk_6 {
+#spaceshipSmoke_6 {
     animation: røykAnimasjon 2s infinite linear;
 }
 
@@ -164,7 +164,7 @@
 }
 
 /* Bilde som dukker opp når man trykker på teleskopet */
-#flatJord {
+#flatEarth {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -174,7 +174,7 @@
     cursor: pointer;
 }
 
-#teleskopInput:checked ~ #flatJord {
+#telescopeInput:checked ~ #flatEarth {
     display: block;
 }
 
@@ -191,7 +191,7 @@
     color: black;
 }
 
-#teleskopTekst {
+#telescopeText {
     position: absolute;
     height: 50px;
     width: auto;
