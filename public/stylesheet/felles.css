@@ -39,7 +39,7 @@ html, body {
     overflow-wrap: break-word;
   }
 
-  .nextBubble {
+  .nextBubble, label {
       cursor: pointer;
   }
   
