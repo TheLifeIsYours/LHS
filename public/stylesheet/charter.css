@@ -73,6 +73,12 @@
     transform: rotate(3deg)
 }
 
+#doorText {
+    position: absolute;
+    top: 70px;
+    left: 44px;
+}
+
 #door{
     width: 140px;
     height: 250px;
