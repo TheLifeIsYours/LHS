@@ -5,6 +5,7 @@
     <title>Lynkurs i charter</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/klasserom.css">
     <link rel="stylesheet" type="text/css" href="public/stylesheet/charter.css">
 </head>
 
@@ -21,18 +22,18 @@
         <input id="speechBubble_1Input" type="radio">
         <!-- Snakkebobble till Jonny -->
         <div id="speechBubble_1" class="speechBubble topLeft">
-            <p>
+            <div>
                 I dette faget gir vi deg et lynkurs i charter.<br>
                 Vi har vært så heldig å få Svein Østvik som foreleser
-            </p>
+            </div>
         </div>
         <img id="svein" src="public/images/charter/sveinface.png" alt="svein">
         <img id="bodySvein" src="public/images/charter/sveinbody.png" alt="body-svein">
         <img id="rat_1" src="public/images/Index/Rat.png" alt="rat">
 
-        <img id="exit" src="public/images/charter/nødutgang.jpg" alt="exit">
-        <div id=kongHaraldDiv>
-            <img id="kongHarald" src="public/images/charter/kongharald.jpg">
+        <img id="exit" src="public/images/felles/exit.jpg" alt="exit">
+        <div id="kongHaraldContainer">
+            <img id="kongHaraldImage" src="public/images/charter/kongharald.jpg">
         </div>
 
         <!--Lydfil som spiller "kongen av mallorca"-->
@@ -48,7 +49,7 @@
 
         <!--Overskrift på tavlen -->
         <section id="blackboard">
-            <h1>Reiseliv: </h1>
+            <div id="blackboardTitle">Reiseliv: </div>
             <div id="pictureOnBlackboard">
                 <div>
 
@@ -85,7 +86,13 @@
                 </div>
             </div>
         </section>
+
         <section id="desk">
+            <span id="deskTableTop"></span>
+
+            <span id="deskSign">
+                Reiseliv
+            </span>
         </section>
     </main>
 </body>

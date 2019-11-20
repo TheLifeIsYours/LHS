@@ -14,8 +14,8 @@
 
         <!--figurer-->
         <div>
-            <label for="telescopeInput">
-                <img id="telescope" src="public/images/flat/telescope-svgrepo-com.svg" alt="telescope">
+            <label id="telescopeLabel" for="telescopeInput">
+                <img id="telescopeImage" src="public/images/flat/telescope-svgrepo-com.svg" alt="telescope">
                 <p id="telescopeText">Jonny's teleskop</p>
             </label>
             <img id="spaceship" src="public/images/flat/spaceship-svgrepo-com.svg" alt="spaceship">
@@ -31,24 +31,26 @@
         <div id="speechBubble_1" class="speechBubble topLeft">
             <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
             <section id="bubbleText_1" class="bubbleText">
-                <p>Mange sier at jorda er rund, men det er fake news. <br>
+                <div>
+                    Mange sier at jorda er rund, men det er fake news. <br>
                     Du ser jo her klart og tydelig at den er flat!
-                </p>
+                </div>
                 <!--Trykk '>>>' for å gå videre-->
                 <label class="nextBubble" for="bubbleText_2Input"> >>> </label>
             </section>
 
             <input id="bubbleText_2Input" name="bubbleText" type="radio">
             <section id="bubbleText_2" class="bubbleText">
-                <p>Vi må få folk rundt hele kloden til å forstå at jorda er flat som en tallerken! <br>
+                <div>
+                    Vi må få folk rundt hele kloden til å forstå at jorda er flat som en tallerken! <br>
                     Jorda ser kanskje rund ut nå, men det er bare en illusjon
-                </p>
+                </div>
                 <label class="nextBubble" for="bubbleText_3Input"> >>> </label>
             </section>
 
             <input id="bubbleText_3Input" name="bubbleText" type="radio">
             <section id="bubbleText_3" class="bubbleText">
-                <p>Trykk på det spesielle teleskopet mitt, så kan du se selv!</p>
+                <div>Trykk på det spesielle teleskopet mitt, så kan du se selv!</div>
             </section>
         </div>
 

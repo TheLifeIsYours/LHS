@@ -1,93 +1,90 @@
-#mainContainer {
-    background: linear-gradient(#dc9d62 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
-}
-
-#blackboard {    
-    width: 600px;
-    height: 300px;
-    background: #21561E;
-    border: solid 4px white;
-    position: absolute;
+/* Tavle stylings
+------------------------------------------------------------*/
+#blackboard {
     left: 40%;
-    top: 1em;
-    transform: translate(-50%, 0);
-    font-family: Crayon, comic sans ms;
-    font-size: 24px;
-    color: white;
     animation: blackbordAnim 3s 1.1s ease forwards;
 }
 
-/*Animation for at tavlen detter ned*/
+/* Animation for at tavlen detter ned */
 
 @keyframes blackbordAnim {
-    0% {transform: translate(-50%, 0);}
-    90% {transform: translate(-50%, 0);}
-    100% {transform: rotate(5deg) translate(-50%, 15%);}
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    90% {
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        transform: rotate(5deg) translate(-50%, 15%);
+    }
 
 }
-/*Det som foregår på tavlen*/
-#pictureOnBlackboard{
-    position: relative;
-    bottom: 50px;
-    left: 50px;}
 
-#textOnBlackboard{
+/* Det som foregår på tavlen
+------------------------------------------------------------*/
+#blackboardTitle {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#pictureOnBlackboard {
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+#textOnBlackboard {
     position: relative;
     bottom: 240px;
     left: 100px;
     color: white;
-    font-size: 19px;}
+    font-size: 19px;
+}
 
-h1{
-    color: white;
-    text-align: center;
-    position: relative;
-    bottom: 35px;}
-
-/*Pult i klasserommet*/
+/* Pult i klasserommet
+------------------------------------------------------------*/
 #desk {
-    width: 350px;
-    height: 160px;
-    background: rgb(129, 84, 47);
-    position: absolute;
+    top: 430px;
     left: 40%;
-    top: 420px;
-    transform: translate(-50%, -45%);
 }
 
-/* Exitskilt for videre */
-#exit{
-    width: 100px;
-    height: auto;
+/* Exitskilt for videre
+------------------------------------------------------------*/
+#exit {
     position: absolute;
-    right:150px;
     top: 40px;
-    animation-name: exitSign;
-    animation-duration: 1s;
-    animation-delay: 10s;
-    animation-iteration-count: infinite;
+    right: 150px;
+    width: 100px;
+    animation: exitSign 1s infinite 10s;
 }
 
-/*Animation for Exit skiltet*/
+/* Animation for Exit skiltet
+------------------------------------------------------------*/
 
-@keyframes exitSign{
+@keyframes exitSign {
     0% {
         transform: scale();
     }
+
     50% {
         transform: scale();
     }
-    100%{
+
+    100% {
         transform: scale(1.1);
     }
 }
 
-/*Døra for å gå videre til neste løsning*/
+/* Døra for å gå videre til neste løsning
+------------------------------------------------------------*/
 #doorContainer {
     display: block;
     width: 160px;
     height: 300px;
-    background-color:  rgb(129, 84, 47);
+    background-color: rgb(129, 84, 47);
     position: relative;
     left: 1000px;
     bottom: 365px;
@@ -97,9 +94,7 @@ h1{
     text-align: center;
 }
 
-/**/
-
-#doorContainer:hover{
+#doorContainer:hover {
     transform: rotate(3deg)
 }
 
@@ -109,15 +104,15 @@ h1{
     left: 44px;
 }
 
-#door{
+#door {
     width: 140px;
     height: 250px;
     background-color: black;
     position: relative;
     left: 1010px;
-    bottom: 665px; 
+    bottom: 665px;
     border-style: solid;
-    
+
 }
 
 #handle {
@@ -131,21 +126,23 @@ h1{
     z-index: 1;
 }
 
-/*Jonny*/
-#jonny{
-position: relative;
-top: 250px;
-z-index: 1;
-transition-duration: 0.5s;
+/* Jonny
+------------------------------------------------------------*/
+#jonny {
+    position: relative;
+    top: 250px;
+    z-index: 1;
+    transition-duration: 0.5s;
 }
 
-#jonny:hover{
+#jonny:hover {
     transform: scale(1.02);
     cursor: pointer;
 }
 
-/*svein*/
-#svein{
+/* svein
+------------------------------------------------------------*/
+#svein {
     border-radius: 50%;
     position: relative;
     left: 630px;
@@ -155,83 +152,118 @@ transition-duration: 0.5s;
     animation-iteration-count: infinite;
 }
 
-/*Animation for Svein*/
-@keyframes sveinShakesHisHead{
-    0% {
-        transform: rotate(10deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(10deg);
-    }
-}
-
-/*Kroppen til Svein*/
-#bodySvein{
+/* Kroppen til Svein */
+#bodySvein {
     position: relative;
     left: 430px;
     top: 100px;
     z-index: 1;
 }
 
-/* bildet av kong Harald som er stylet*/
-#kongHaraldDiv{
-    height: 100px;
-    width: auto;
+/* Animation for Svein */
+@keyframes sveinShakesHisHead {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+/* Bildet av kong Harald som er stylet
+------------------------------------------------------------*/
+#kongHaraldContainer {
     position: absolute;
+    height: 100px;
     bottom: 500px;
     left: 50px;
-    border-style: dotted;
-    border-color: yellow;
-    border-width: 7px;
+    border: dotted yellow 7px;
 }
 
-#kongHarald{
-    height: 100px;
-    width: auto;
+#kongHaraldImage {
+    height: 100%;
 }
-    
 
-    /*snakkebobble til jonny*/
 
-    #speechBubble_1 {
-        position: absolute;
-        left: 250px;
-        top: 550px;
-        z-index: 2;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 1s;
-    }
-    #speechBubble_1Input {
-        display: none;
-    }
-    #speechBubble_1Input:checked ~ #speechBubble_1{
-        visibility: visible;
-        opacity: 1;
-    }
+/* Snakkebobble til jonny
+------------------------------------------------------------*/
 
-    /*Animation for rotte*/
+#speechBubble_1 {
+    position: absolute;
+    left: 210px;
+    top: 375px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1s;
+}
 
-    #rat_1 {
-        position: absolute;
+#speechBubble_1Input {
+    display: none;
+}
+
+#speechBubble_1Input:checked~#speechBubble_1 {
+    opacity: 1;
+}
+
+/* Animation for rotte
+------------------------------------------------------------*/
+
+#rat_1 {
+    position: absolute;
+    left: 1300px;
+    top: 480px;
+    animation: rat1Anim 5s linear infinite;
+}
+
+@keyframes rat1Anim {
+    0% {
         left: 1300px;
         top: 480px;
-        animation: rat1Anim 5s linear infinite;
     }
 
-    @keyframes rat1Anim{
-        0% {left: 1300px; top: 480px;}
-        30% {left: 800px;}
-        40% {left: 750px; top: 480px; z-index: 0;}
-        45% {top: 300px; z-index: 1;}
-        50% {top: 325px;}
-        70% {top: 325px; transform: rotate(0deg);}
-        75% {top: 250px; z-index: 1;}
-        80% {top: 480px; z-index: 0; transform: rotate(360deg);}
-        100% {left: -100px; top: 480px; transform: rotate(360deg);}
+    30% {
+        left: 800px;
     }
 
-   
+    40% {
+        left: 750px;
+        top: 480px;
+        z-index: 0;
+    }
+
+    45% {
+        top: 300px;
+        z-index: 1;
+    }
+
+    50% {
+        top: 325px;
+    }
+
+    70% {
+        top: 325px;
+        transform: rotate(0deg);
+    }
+
+    75% {
+        top: 250px;
+        z-index: 1;
+    }
+
+    80% {
+        top: 480px;
+        z-index: 0;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        left: -100px;
+        top: 480px;
+        transform: rotate(360deg);
+    }
+}

@@ -3,7 +3,7 @@ input {
 }
 
 #mainContainer {
-    background: linear-gradient(#dc9d62 78%, white 78%, white 81%, rgb(30, 30, 88) 81%, #333369 90%);
+    background: linear-gradient(#7c7059 78%, white 78%, white 81%, rgb(30, 30, 88) 81%, #333369 90%);
 }
 
 /* Blackboard related styles
@@ -117,10 +117,6 @@ input {
 
 /* Roaches related styles
 -------------------------------------------------------------------------------*/
- #roachesContainer {
-    
- }
-
  #roach_1 {
      position: absolute;
      left: 100px;
@@ -128,6 +124,7 @@ input {
      transform: rotate(180deg);
      animation: roach1Anim 10s linear infinite;
  }
+
  #roach_2 {
     position: absolute;
     right: 100px;
@@ -135,6 +132,7 @@ input {
     transform: rotate(180deg);
     animation: roach2Anim 10s linear infinite;
 }
+
 #roach_3 {
     position: absolute;
     width: 20px;
@@ -145,44 +143,42 @@ input {
     animation: roach3Anim 10s linear infinite;
 }
 
- @keyframes roach1Anim {
-     0% {left: 100px; top: -100px; transform: rotate(180deg);}
-     10% {top: 100px; transform: rotate(180deg);}
-     15% {transform: rotate(90deg);}
-     20% {left: 100px; top: 100px;}
-     30% {left: 400px; transform: rotate(90deg);}
-     35% {transform: rotate(130deg);}
-     40% {left: 400px; top: 100px;}
-     50% {left: 700px; top: 400px; transform: rotate(130deg);}
-     55% {transform: rotate(70deg);}
-     60% {left: 700px; top: 400px;}
-     70% {left: 1150px; top: 240px; transform: rotate(70deg);}
-     75% {top: 240px; transform: rotate(180deg);}
-     80% {transform: rotate(360deg);}
-     85% {top: 240px; transform: rotate(0deg);}
-     99% {left: 1150px; top: -100px; transform: rotate(0deg);}
-     100% {left: 100px; top: -100px;}
- }
- @keyframes roach2Anim {
-     0% {right: 100px; top: 250px; transform: rotate(180deg);}
-     30%{top: 530px; transform: rotate(180deg);}
-     35%{transform: rotate(0deg);}
-     40%{top: 530px; right: 100px;}
-     75% {right: 100px; top: 250px; transform: rotate(0deg);}
-     80% {transform: rotate(-260deg);}
-     85% {right: 100px; top: 250px; transform: rotate(0deg);}
-     100% {right: 100px; top: 250px; transform: rotate(180deg);}
- }
- @keyframes roach3Anim {
-     0% {top: 250px; right: 100px; opacity: 0;}
-     84% {opacity: 0;}
-     85% {right: 100px; opacity: 1;}
-     90% {right: 60px;}
-     95% {right: 60px;}
-     99% {right: -100px; opacity: 1;}
-     100% {top: 250px; right: -100px; opacity: 0;}
- }
+/* LAMP!
+-------------------------------------------------------------------------------*/
+#lampContainer {
+    position: absolute;
+    top: 0em;
+    right: 7em;
+    animation: swing 3s alternate infinite ease-in-out;
+}
 
+#lampItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.3em;
+    height: 4.5em;
+    transform: translate(-50%, -5%);
+    background: #38444f;
+    z-index: -1;
+}
+
+#lampImage {
+    position: absolute;
+    bottom: -8.5em;
+    left: 50%;
+    width: 9em;
+    transform: translate(-50%);
+}
+
+#lampGlow {
+    position: absolute;
+    top: 9.1em;
+    left: 50%;
+    width: 20em;
+    transform: translate(-50%);
+    pointer-events: none;
+}
 
 /* Jonny related styles
 -------------------------------------------------------------------------------*/
@@ -224,167 +220,150 @@ input {
     display: none;
 }
 
-#examStartInput:checked ~ #examStart {
+#examStartInput:checked ~ #examStart,
+#examTaskInputCharter:checked ~ #examTaskCharter,
+#examTaskInputFacebook:checked ~ #examTaskFacebook,
+#examTaskInputKlima:checked ~ #examTaskKlima,
+#examTaskInputFlat:checked ~ #examTaskFlat {
     display: block;
 }
 
-
-#examTask_1Input:checked ~ #examTask_1 {
-    display: block;
-}
-
-#examTask_1Input:checked ~ #examTask_1 {
-    display: block;
-}
-
-#examTask_2Input:checked ~ #examTask_2 {
-    display: block;
-}
-
-#examTask_3Input:checked ~ #examTask_3 {
-    display: block;
-}
-
-#examTask_4Input:checked ~ #examTask_4 {
-    display: block;
-}
-
-/* Exam test 1 questions
+/* Charter questions
 -----------------------------------------------------------*/
-#questionAnswerInput_11:checked ~ #questionAnswerLabel_11{
+#questionAnswerInputCharter1:checked ~ #questionAnswerLabelCharter_1{
     color: lightgreen;
 }
-#questionAnswerInput_11:checked ~ #questionAnswerLabel_11::before {
+#questionAnswerInputCharter1:checked ~ #questionAnswerLabelCharter_1::before {
     background: rgb(35, 124, 0);
     border-color: rgb(255, 255, 255);
 }
 
-#questionAnswerInput_12:checked ~ #questionAnswerLabel_12 {
+#questionAnswerInputCharter2:checked ~ #questionAnswerLabelCharter_2 {
     color: lightgreen;
 }
-#questionAnswerInput_12:checked ~ #questionAnswerLabel_12::before {
+#questionAnswerInputCharter2:checked ~ #questionAnswerLabelCharter_2::before {
     background: rgb(35, 124, 0);
     border-color: rgb(255, 255, 255);
 }
 
-#questionAnswerInput_13:checked ~ #questionAnswerLabel_13 {
+#questionAnswerInputCharter3:checked ~ #questionAnswerLabelCharter_3 {
     color: lightgreen;
 }
-#questionAnswerInput_13:checked ~ #questionAnswerLabel_13::before {
+#questionAnswerInputCharter3:checked ~ #questionAnswerLabelCharter_3::before {
     background: rgb(35, 124, 0);
     border-color: rgb(255, 255, 255);
 }
 
-#questionAnswerInput_14:checked ~ #questionAnswerLabel_14 {
+#questionAnswerInputCharter4:checked ~ #questionAnswerLabelCharter_4 {
     color: rgb(255, 103, 86);
 }
-#questionAnswerInput_14:checked ~ #questionAnswerLabel_14::before {
+#questionAnswerInputCharter4:checked ~ #questionAnswerLabelCharter_4::before {
     background: rgb(124, 0, 0);
     border-color: rgb(255, 255, 255);
 }
 
-/* Exam test 1 question toggle
+/* Facebook question toggle
 -----------------------------------------------------------*/
-#questionAnswerInput_21:checked ~ #questionAnswerLabel_21 {
-    color: lightgreen;
-}
-#questionAnswerInput_21:checked ~ #questionAnswerLabel_21::before {
-    background: rgb(35, 124, 0);
-    border-color: rgb(255, 255, 255);
-}
-
-#questionAnswerInput_22:checked ~ #questionAnswerLabel_22 {
-    color: lightgreen;
-}
-#questionAnswerInput_22:checked ~ #questionAnswerLabel_22::before {
-    background: rgb(35, 124, 0);
-    border-color: rgb(255, 255, 255);
-}
-
-#questionAnswerInput_23:checked ~ #questionAnswerLabel_23 {
-    color: lightgreen;
-}
-#questionAnswerInput_23:checked ~ #questionAnswerLabel_23::before {
-    background: rgb(35, 124, 0);
-    border-color: rgb(255, 255, 255);
-}
-
-#questionAnswerInput_24:checked ~ #questionAnswerLabel_24 {
-    color: rgb(255, 103, 86);
-}
-#questionAnswerInput_24:checked ~ #questionAnswerLabel_24::before {
-    background: rgb(124, 0, 0);
-    border-color: rgb(255, 255, 255);
-}
-
-/* Exam test 1 question toggle
------------------------------------------------------------*/
-#questionAnswerInput_31:checked ~ #questionAnswerLabel_31 {
-    color: lightgreen;
-}
-#questionAnswerInput_31:checked ~ #questionAnswerLabel_31::before {
-    background: rgb(35, 124, 0);
-    border-color: rgb(255, 255, 255);
-}
-
-#questionAnswerInput_32:checked ~ #questionAnswerLabel_32 {
-    color: lightgreen;
-}
-#questionAnswerInput_32:checked ~ #questionAnswerLabel_32::before {
-    background: rgb(35, 124, 0);
-    border-color: rgb(255, 255, 255);
-}
-
-#questionAnswerInput_33:checked ~ #questionAnswerLabel_33 {
-    color: lightgreen;
-}
-#questionAnswerInput_33:checked ~ #questionAnswerLabel_33::before {
-    background: rgb(35, 124, 0);
-    border-color: rgb(255, 255, 255);
-}
-
-#questionAnswerInput_34:checked ~ #questionAnswerLabel_34 {
-    color: rgb(255, 103, 86);
-}
-#questionAnswerInput_34:checked ~ #questionAnswerLabel_34::before {
-    background: rgb(124, 0, 0);
-    border-color: rgb(255, 255, 255);
-}
-
-/* Exam test 1 question
------------------------------------------------------------*/
-#examTaskAnswers_4 {
+#examTaskAnswersFacebook {
     font-size: 0.8em;
 }
 
-#questionAnswerInput_41:checked ~ #questionAnswerLabel_41 {
+#questionAnswerInputFacebook_1:checked ~ #questionAnswerLabelFacebook_1 {
     color: lightgreen;
 }
-#questionAnswerInput_41:checked ~ #questionAnswerLabel_41::before {
+#questionAnswerInputFacebook_1:checked ~ #questionAnswerLabelFacebook_1::before {
     background: rgb(35, 124, 0);
     border-color: rgb(255, 255, 255);
 }
 
-#questionAnswerInput_42:checked ~ #questionAnswerLabel_42 {
+#questionAnswerInputFacebook_2:checked ~ #questionAnswerLabelFacebook_2 {
     color: lightgreen;
 }
-#questionAnswerInput_42:checked ~ #questionAnswerLabel_42::before {
+#questionAnswerInputFacebook_2:checked ~ #questionAnswerLabelFacebook_2::before {
     background: rgb(35, 124, 0);
     border-color: rgb(255, 255, 255);
 }
 
-#questionAnswerInput_43:checked ~ #questionAnswerLabel_43 {
+#questionAnswerInputFacebook_3:checked ~ #questionAnswerLabelFacebook_3 {
     color: lightgreen;
 }
-#questionAnswerInput_43:checked ~ #questionAnswerLabel_43::before {
+#questionAnswerInputFacebook_3:checked ~ #questionAnswerLabelFacebook_3::before {
     background: rgb(35, 124, 0);
     border-color: rgb(255, 255, 255);
 }
 
-#questionAnswerInput_44:checked ~ #questionAnswerLabel_44 {
+#questionAnswerInputFacebook_4:checked ~ #questionAnswerLabelFacebook_4 {
     color: rgb(255, 103, 86);
 }
-#questionAnswerInput_44:checked ~ #questionAnswerLabel_44::before {
+#questionAnswerInputFacebook_4:checked ~ #questionAnswerLabelFacebook_4::before {
+    background: rgb(124, 0, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+/* Klima question toggle
+-----------------------------------------------------------*/
+#questionAnswerInputKlima_1:checked ~ #questionAnswerLabelKlima_1 {
+    color: lightgreen;
+}
+#questionAnswerInputKlima_1:checked ~ #questionAnswerLabelKlima_1::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInputKlima_2:checked ~ #questionAnswerLabelKlima_2 {
+    color: lightgreen;
+}
+#questionAnswerInputKlima_2:checked ~ #questionAnswerLabelKlima_2::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInputKlima_3:checked ~ #questionAnswerLabelKlima_3 {
+    color: lightgreen;
+}
+#questionAnswerInputKlima_3:checked ~ #questionAnswerLabelKlima_3::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInputKlima_4:checked ~ #questionAnswerLabelKlima_4 {
+    color: rgb(255, 103, 86);
+}
+#questionAnswerInputKlima_4:checked ~ #questionAnswerLabelKlima_4::before {
+    background: rgb(124, 0, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+/* Flat question
+-----------------------------------------------------------*/
+#questionAnswerInputFlat_1:checked ~ #questionAnswerLabelFlat_1 {
+    color: lightgreen;
+}
+#questionAnswerInputFlat_1:checked ~ #questionAnswerLabelFlat_1::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInputFlat_2:checked ~ #questionAnswerLabelFlat_2 {
+    color: lightgreen;
+}
+#questionAnswerInputFlat_2:checked ~ #questionAnswerLabelFlat_2::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInputFlat_3:checked ~ #questionAnswerLabelFlat_3 {
+    color: lightgreen;
+}
+#questionAnswerInputFlat_3:checked ~ #questionAnswerLabelFlat_3::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInputFlat_4:checked ~ #questionAnswerLabelFlat_4 {
+    color: rgb(255, 103, 86);
+}
+#questionAnswerInputFlat_4:checked ~ #questionAnswerLabelFlat_4::before {
     background: rgb(124, 0, 0);
     border-color: rgb(255, 255, 255);
 }
@@ -392,15 +371,58 @@ input {
 /* Animation keyframes
 ------------------------------------------------------------------------*/
 
-@keyframes lamp {
+@keyframes swing {
+    from {
+        transform: rotateZ(45deg);
+    }
+    to {
+        transform: rotateZ(-45deg);
+    }
 
 }
 
-
-@keyframes roaches {
-
+/* Roaches keyframes
+---------------------------------------------------------------*/
+@keyframes roach1Anim {
+    0% {left: 100px; top: -100px; transform: rotate(180deg);}
+    10% {top: 100px; transform: rotate(180deg);}
+    15% {transform: rotate(90deg);}
+    20% {left: 100px; top: 100px;}
+    30% {left: 400px; transform: rotate(90deg);}
+    35% {transform: rotate(130deg);}
+    40% {left: 400px; top: 100px;}
+    50% {left: 700px; top: 400px; transform: rotate(130deg);}
+    55% {transform: rotate(70deg);}
+    60% {left: 700px; top: 400px;}
+    70% {left: 1150px; top: 240px; transform: rotate(70deg);}
+    75% {top: 240px; transform: rotate(180deg);}
+    80% {transform: rotate(360deg);}
+    85% {top: 240px; transform: rotate(0deg);}
+    99% {left: 1150px; top: -100px; transform: rotate(0deg);}
+    100% {left: 100px; top: -100px;}
+}
+@keyframes roach2Anim {
+    0% {right: 100px; top: 250px; transform: rotate(180deg);}
+    30%{top: 530px; transform: rotate(180deg);}
+    35%{transform: rotate(0deg);}
+    40%{top: 530px; right: 100px;}
+    75% {right: 100px; top: 250px; transform: rotate(0deg);}
+    80% {transform: rotate(-260deg);}
+    85% {right: 100px; top: 250px; transform: rotate(0deg);}
+    100% {right: 100px; top: 250px; transform: rotate(180deg);}
+}
+@keyframes roach3Anim {
+    0% {top: 250px; right: 100px; opacity: 0;}
+    84% {opacity: 0;}
+    85% {right: 100px; opacity: 1;}
+    90% {right: 60px;}
+    95% {right: 60px;}
+    99% {right: -100px; opacity: 1;}
+    100% {top: 250px; right: -100px; opacity: 0;}
 }
 
+/* Smoke keyframes
+---------------------------*/
 @keyframes pulse {
     0% {
         opacity: 0;

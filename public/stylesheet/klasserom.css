@@ -3,13 +3,13 @@
 }
 
 #blackboard {    
+    position: absolute;
+    top: 1em;
+    left: 50%;
     width: 600px;
     height: 300px;
     background: #21561E;
     border: solid 4px white;
-    position: absolute;
-    left: 50%;
-    top: 1em;
     transform: translate(-50%, 0);
     font-family: Crayon, comic sans ms;
     font-size: 24px;
@@ -17,13 +17,13 @@
 }
 
 #desk {
+    position: absolute;
+    top: 420px;
+    left: 50%;
     width: 350px;
     height: 160px;
-    background: rgb(129, 84, 47);
-    position: absolute;
-    left: 50%;
-    top: 420px;
     transform: translate(-50%, -45%);
+    background: linear-gradient(rgb(56, 35, 19) -5%, rgb(129, 84, 47) 10%);
 }
 
 #deskTableTop {
@@ -42,9 +42,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border: solid 2px gray;
-    background: rgb(63, 63, 63);
-    color: white;
+    background: rgb(207, 207, 207);
+    color: rgb(0, 0, 0);
     font-size: 2em;
+    font-weight: bold;
     padding: 0.5em 0.75em 0.5em 0.75em;
 }
 

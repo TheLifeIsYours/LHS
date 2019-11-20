@@ -6,16 +6,49 @@
     display: none;
 }
 
-/* Figurer */
-#telescope {
+/* Telescope styles
+--------------------------------------------------------*/
+#telescopeLabel {
     position: absolute;
     width: 150px;
-    height: auto;
+    height: 150px;
     top: 45%;
     left: 40%;
     cursor: pointer;
 }
 
+#telescopeImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#telescopeText {
+    position: absolute;
+    top: 1.25em;
+    left: 2em;
+    color: black;
+    font-size: 0.8em;
+    transform: rotate(25deg);
+}
+
+/* Bilde som dukker opp når man trykker på teleskopet */
+#flatEarth {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+}
+
+#telescopeInput:checked ~ #flatEarth {
+    display: block;
+}
+
+/* Spaceship styles
+--------------------------------------------------------*/
 #spaceship {
     position: absolute;
     width: 400px;
@@ -24,6 +57,49 @@
     top: 50px;
 }
 
+/* Tekstboks */
+#backToEarth {
+    position: absolute;
+    height: 50px;
+    width: auto;
+    right: 442px;
+    top: 330px;
+    transform: rotate(-50deg);
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    font-size: 13px;
+}
+
+/* Røyk fra romskipet */
+#spaceshipSmokeContainer > * {
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    top: 430px;
+    right: 380px;
+    border-radius: 100%;
+}
+
+#spaceshipSmoke_1 {
+    animation: smokeAnimation 1s infinite linear;
+}
+
+#spaceshipSmoke_2 {
+    animation: smokeAnimation 1.5s infinite linear;
+}
+
+#spaceshipSmoke_3, #spaceshipSmoke_4 {
+    animation: smokeAnimation 1.75s infinite linear;
+}
+
+#spaceshipSmoke_5, #spaceshipSmoke_6 {
+    animation: smokeAnimation 2s infinite linear;
+}
+
+/* Figurer 
+--------------------------------------------------------*/
 #jonny {
     position: absolute;
     height: 300px;
@@ -50,45 +126,65 @@
     animation: ETAnimation 20s linear 1s infinite;
 }
 
-/* Røyk fra romskipet */
-#spaceshipSmokeContainer >* {
+/* Snakkebokbler
+--------------------------------------------------------*/
+#speechBubble_1 {
     position: absolute;
-    background-color: black;
-    width: 100px;
-    height: 100px;
-    top: 430px;
-    right: 380px;
-    border-radius: 100%;
+    left: 250px;
+    top: 510px;
+    animation: speachBubbleAnimation 1s linear;
 }
 
-#spaceshipSmoke_1 {
-    animation: smokeAnimation 2s infinite linear;
+#speechBubble_2 {
+    display: none;
+    position: absolute;
+    left: 250px;
+    top: 600px;
 }
 
-#spaceshipSmoke_2 {
-    animation: smokeAnimation 1s infinite linear;
+#speechBubble_3 {
+    display: none;
+    position: absolute;
+    left: 250px;
+    top: 600px;
 }
 
-#spaceshipSmoke_3 {
-    animation: smokeAnimation 1.5s infinite linear;
+.bubbleText {
+    display: none;
 }
 
-#spaceshipSmoke_4 {
-    animation: smokeAnimation 1.75s infinite linear;
+#bubbleText_1Input:checked ~ #bubbleText_1 {
+    display: block;
 }
 
-#spaceshipSmoke_5 {
-    animation: smokeAnimation 1.75s infinite linear;
+#bubbleText_2Input:checked ~ #bubbleText_2 {
+    display: block;
 }
 
-#spaceshipSmoke_6 {
-    animation: smokeAnimation 2s infinite linear;
+#bubbleText_3Input:checked ~ #bubbleText_3 {
+    display: block;
 }
 
-/* Keyframes */
+#speechBubble_1Input:checked ~ #speechBubble_1 {
+    display: none;
+}
+
+/* Animation keyframes
+--------------------------------------------------------*/
 @keyframes smokeAnimation {
-    from {transform: translate(0,0%); width: 25px; height: 25px; opacity: 0.7;}
-    to {transform: translate(0,-300%); width: 100px; height: 100px; opacity: 0;}
+    from {
+        transform: translate(0,0%);
+        width: 25px;
+        height: 25px;
+        opacity: 0.7;
+    }
+
+    to {
+        transform: translate(0,-300%);
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
 }
 
 @keyframes roverAnimation {
@@ -115,87 +211,4 @@
 @keyframes speachBubbleAnimation {
     from {left: 150px;}
     to {left: 250px;}
-}
-
-/* Snakkebokbler */
-#speechBubble_1 {
-    position: absolute;
-    left: 250px;
-    top: 600px;
-    animation: speachBubbleAnimation 1s linear;
-}
-
-#speechBubble_2 {
-    display: none;
-    position: absolute;
-    left: 250px;
-    top: 600px;
-}
-
-#speechBubble_3 {
-    display: none;
-    position: absolute;
-    left: 250px;
-    top: 600px;
-}
-
-.bubbleText {
-    display: none;
-}
-
-#bubbleText_1Input:checked~#bubbleText_1 {
-    display: block;
-}
-
-#bubbleText_2Input:checked~#bubbleText_2 {
-    display: block;
-}
-
-#bubbleText_3Input:checked~#bubbleText_3 {
-    display: block;
-}
-
-#speechBubble_1Input:checked~#speechBubble_1 {
-    display: none;
-}
-
-/* Bilde som dukker opp når man trykker på teleskopet */
-#flatEarth {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    display: none;
-    cursor: pointer;
-}
-
-#telescopeInput:checked ~ #flatEarth {
-    display: block;
-}
-
-/* Tekstbokser */
-#backToEarth {
-    position: absolute;
-    height: 50px;
-    width: auto;
-    right: 442px;
-    top: 330px;
-    transform: rotate(-50deg);
-    text-align: center;
-    cursor: pointer;
-    color: black;
-    font-size: 13px;
-}
-
-#telescopeText {
-    position: absolute;
-    height: 50px;
-    width: auto;
-    right: 645px;
-    top: 345px;
-    transform: rotate(23deg);
-    cursor: pointer;
-    color: black;
-    font-size: 13px;
 }

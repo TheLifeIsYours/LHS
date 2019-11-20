@@ -31,7 +31,7 @@ html, body {
     position: relative;
     background: #fff;
     min-height: 1em;
-    max-width: 70%;
+    max-width: 25em;
     width: fit-content;
     padding: 10px;
     margin-bottom: 1em;
