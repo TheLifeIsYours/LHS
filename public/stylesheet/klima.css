@@ -6,6 +6,9 @@ input {
     background: linear-gradient(#1a75e8 51%, green 51%, darkgreen 54%, darkgreen 54%, green 60%);
 }
 
+/*Animation av snø for bakken*/
+/*----------------------------------------------------*/
+/* Snø element */
 #snowGround {
     background-color: white;
     position: absolute;
@@ -14,13 +17,31 @@ input {
     bottom: 0;
     animation: snowGroundAnim 20s linear infinite;
 }
-
+/* Keyframes */
 @keyframes snowGroundAnim {
     0% {opacity: 0;}
     15% {opacity: 1;}
     40% {opacity: 1;}
     50% {opacity: 0;}
     100% {opacity: 0;}
+}
+
+/*Animation av solen*/
+/*----------------------------------------------------*/
+/* Sol element */
+#sol {
+    position: absolute;
+    top: 0px;
+    right: -300px;
+    animation: solAnim 20s ease infinite;
+}
+/* Keyframes */
+@keyframes solAnim {
+    0%{right: -300px;}
+    35%{right: -300px;}
+    40% {right: 100px;}
+    95% {right: 100px;}
+    100% {right: -500px;}
 }
 
 /*Styling av lava bilde*/
