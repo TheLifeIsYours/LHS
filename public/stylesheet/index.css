@@ -12,7 +12,6 @@
     top: 200px;
     z-index: 1;
 }
-
 #doorJonny {
     position: absolute;
     top: 385px;
@@ -20,7 +19,6 @@
     z-index: 1;
     transition-duration: 1s;
 }
-
 #doorJonny:hover {
     transform: scale(1.1);
 }
@@ -35,6 +33,59 @@
     left: 470px;
     top: 200px;
     opacity: 0;
+}
+
+/* Animationer for søppel elementer
+------------------------------------------------------------------------------------------------------- */
+#trashSmell_1 {
+    position: absolute;
+    width: 60px;
+    left: 350px;
+    top: 520px;
+    transform: scaleY(-1);
+    opacity: 0;
+    animation: trashSmell1Anim 4s infinite ease;
+}
+#trashSmell_2 {
+    position: absolute;
+    width: 60px;
+    left: 760px;
+    top: 480px;
+    transform: rotate(5deg)  scaleY(-1);
+    opacity: 0;
+    animation: trashSmell2Anim 3s infinite ease 1s;
+}
+#trashSmell_3 {
+    position: absolute;
+    width: 60px;
+    left: 800px;
+    top: 500px;
+    transform: rotate(15deg);
+    opacity: 0;
+    animation: trashSmell3Anim 3s infinite ease 2s;
+}
+
+/* Keyframes */
+@keyframes trashSmell1Anim {
+    0% {opacity: 0; left: 330px; top: 520px;}
+    25% {left: 320px; opacity: 0.4;}
+    50% {opacity: 0.2; left: 330px;}
+    75% {opacity: 0.4;}
+    100% {opacity: 0; left: 320px; top: 400px;}
+}
+@keyframes trashSmell2Anim {
+    0% {opacity: 0; left: 760px; top: 480px;}
+    25% {left: 750px; opacity: 0.4;}
+    50% {opacity: 0.2; left: 760px;}
+    75% {opacity: 0.4;}
+    100% {opacity: 0; left: 750px; top: 450px;}
+}
+@keyframes trashSmell3Anim {
+    0% {opacity: 0; left: 800px; top: 500px;}
+    25% {left: 780px; opacity: 0.4;}
+    50% {opacity: 0.2; left: 800px;}
+    75% {opacity: 0.4;}
+    100% {opacity: 0; left: 790px; top: 450px;}
 }
 
 /* Animationer for røyk elementer

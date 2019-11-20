@@ -47,7 +47,7 @@
     height: auto;
     left: 120px;
     top: 180px;
-    animation: ETAnimation 10s linear 2s infinite;
+    animation: ETAnimation 20s linear 1s infinite;
 }
 
 /* Røyk fra romskipet */
@@ -157,10 +157,6 @@
 
 #speechBubble_1Input:checked~#speechBubble_1 {
     display: none;
-}
-
-#nextBubble {
-    cursor: pointer;
 }
 
 /* Bilde som dukker opp når man trykker på teleskopet */
