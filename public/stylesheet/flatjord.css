@@ -2,7 +2,7 @@
     background: url("../images/flat/mars.png");
 }
 
-#speechBubble_1 > input, #teleskopInput {
+#speechBubble_1 > input, #telescopeInput {
     display: none;
 }
 
@@ -51,7 +51,7 @@
 }
 
 /* Røyk fra romskipet */
-#spaceshipSmokeContainer >*{
+#spaceshipSmokeContainer >* {
     position: absolute;
     background-color: black;
     width: 100px;
@@ -62,31 +62,31 @@
 }
 
 #spaceshipSmoke_1 {
-    animation: røykAnimasjon 2s infinite linear;
+    animation: smokeAnimation 2s infinite linear;
 }
 
 #spaceshipSmoke_2 {
-    animation: røykAnimasjon 1s infinite linear;
+    animation: smokeAnimation 1s infinite linear;
 }
 
 #spaceshipSmoke_3 {
-    animation: røykAnimasjon 1.5s infinite linear;
+    animation: smokeAnimation 1.5s infinite linear;
 }
 
 #spaceshipSmoke_4 {
-    animation: røykAnimasjon 1.75s infinite linear;
+    animation: smokeAnimation 1.75s infinite linear;
 }
 
 #spaceshipSmoke_5 {
-    animation: røykAnimasjon 1.75s infinite linear;
+    animation: smokeAnimation 1.75s infinite linear;
 }
 
 #spaceshipSmoke_6 {
-    animation: røykAnimasjon 2s infinite linear;
+    animation: smokeAnimation 2s infinite linear;
 }
 
 /* Keyframes */
-@keyframes røykAnimasjon {
+@keyframes smokeAnimation {
     from {transform: translate(0,0%); width: 25px; height: 25px; opacity: 0.7;}
     to {transform: translate(0,-300%); width: 100px; height: 100px; opacity: 0;}
 }
@@ -189,6 +189,7 @@
     text-align: center;
     cursor: pointer;
     color: black;
+    font-size: 13px;
 }
 
 #telescopeText {
@@ -196,8 +197,9 @@
     height: 50px;
     width: auto;
     right: 645px;
-    top: 340px;
+    top: 345px;
     transform: rotate(23deg);
     cursor: pointer;
     color: black;
+    font-size: 13px;
 }
