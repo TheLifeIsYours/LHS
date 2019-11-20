@@ -1,4 +1,3 @@
-/* Stilsett av scenario */
 input {
     display: none;
 }
@@ -6,7 +5,9 @@ input {
 #mainContainer {
     background: linear-gradient(#CFC5B3 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
-
+ 
+/* Stilsett + animasjon av rotte
+---------------------------------------------------- */
 #mouseHole {
     position: absolute;
     width: 60px;
@@ -36,6 +37,8 @@ input {
     100% {opacity: 0;}
 }
 
+/* Elementer i bakgrunn 
+---------------------------------------------------- */
 #blackboard {    
     width: 700px;
     height: 300px;
@@ -71,6 +74,8 @@ li {
     font-size: 22px;
 }
 
+/* Stilsett av Jonny + animasjon
+---------------------------------------------------- */
 #jonnyAnimationDiv {
     position: absolute;
     top: 130px;
@@ -78,8 +83,7 @@ li {
     width: 150px;
     height: 200px;
     animation-name: jonnyAnimation;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-duration: 25s;
     animation-direction: normal;
 }
 
@@ -137,6 +141,8 @@ li {
     transform: scaleX(-1);
 }
 
+/* Snakkeboble +
+---------------------------------------------------- */
 #speechBubble_1 {
     position: absolute;
     top: 70px;
@@ -144,8 +150,7 @@ li {
     width: 200px;
     opacity: 0;
     animation-name: speechBubbleAnimation;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-duration: 25s;
     animation-direction: normal;
 }
 
@@ -367,6 +372,7 @@ li {
     
     #articleHeading {
         position: absolute;
+        font-family: 'Times New Roman', Times, serif;
         width: 242px;
         height: 70px;
         background-color: #DFDFDF;
@@ -542,10 +548,24 @@ li {
     align-items: center;
     width: 200px;
     height: 40px;
-    background-color: grey;
-    border: 1px solid black;
+    background-color: #FFFFFF;
+    border-left: 3px solid #B9B9B9;
+    border-bottom: 3px solid #B9B9B9;
     border-radius: 5px;
     display: inline-block;
+    color: #696A6C;
+}
+
+.buttonsText {
+    position: relative;
+    top: -8px;
+    font-size: 14px;
+}
+
+.commentBtnIcon {
+    position: relative;
+    width: 30px;
+    top: 5px;
 }
 
 #button_1:checked ~ #fbSection_1 {
