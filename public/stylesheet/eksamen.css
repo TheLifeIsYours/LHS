@@ -124,8 +124,8 @@ input {
 ----------------------------------------------------------------------------------*/
 #speechBubbleContainer {
     position: absolute;
-    top: 20em;
-    left: 10em;
+    top: 13em;
+    left: 13em;
 }
 
 .bubbleText {
