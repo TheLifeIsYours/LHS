@@ -1,0 +1,329 @@
+#mainContainer{
+    position: relative;
+    background: linear-gradient(#727272 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
+}
+
+#desk{
+    position: absolute;
+    background: rgb(29, 29, 29);
+}
+
+#blackboard{
+    transform: rotate(5deg) translate(-50%, 15%);
+}
+
+#blackboardText{
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    color: white;
+    font-size: 19px;
+}
+
+#jonny{
+    position: absolute;
+    width: 180px;
+    height: 380px;
+    left: 200px; 
+    top: 250px;
+    z-index: 2;
+    animation: jonnyAnimation 0.3s linear infinite;
+    animation-play-state: paused;
+    transition-duration: 0.2;
+}
+
+@keyframes jonnyAnimation{
+    0% {top: 250px}
+    50% {top: 225px}
+    100% {top: 250px}
+}
+
+#jonny:hover{
+    transform: scale(1.05);
+    animation-play-state: running;
+}
+
+#speechBubble_1{
+    position: absolute;
+    background: #fff;
+    min-height: 1em;
+    max-width: 70%;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: solid 2px #34373c;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    top: 140px;
+    left: 360px;
+    animation-name: speechBubbleAnimation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes speechBubbleAnimation {
+    0% {opacity: 0;}
+    5% {opacity: 0;}
+    10% {opacity: 1;}
+    25% {opacity: 1;}
+    50%{opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.bottomLeft{
+    border-radius: 6px 6px 6px 0px;
+}
+  
+#door{
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    left: 1000px;
+    top: 80px;
+    border: solid 5px rgb(83, 83, 83);
+}
+
+#door:hover{
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    background: #d3d3d3;
+    left: 1000px;
+    top: 80px;
+    border: solid 5px rgb(83, 83, 83);
+}
+
+#doorknob{
+    position: absolute;
+    border-radius: 100%;
+    background-color: black;
+    width:20px;
+    height:20px;
+    left: 20px; 
+    top: 150px;  
+}
+
+#exit{
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    left: 1065px;
+    top: 50px;
+    z-index: 1;
+}
+
+#exit:hover{
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    left: 1060px;
+    top: 40px;
+    z-index: 1;
+}
+
+#window{
+    position: absolute;
+    width: 120px;
+    height: 240px;
+    left: 100px;
+    top: 40px;
+    z-index: 1;
+    border: solid 6px rgb(56, 56, 56);
+}
+
+#window:hover{
+    position: absolute;
+    width: 180px;
+    height: 320px;
+    left: 60px;
+    top: 10px;
+    z-index: 1;
+    border: solid 6px rgb(56, 56, 56);
+}
+
+#lamp{
+    position: absolute;
+    width: 150px;
+    height: 170px;
+    left: 30px;
+    top: -40px;
+    z-index: 1;
+}
+
+#plant{
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    left: 30px;
+    top: 250px;
+    z-index: 1;
+    animation: plantAnimation 1s linear infinite;
+    animation-play-state: paused;
+    transition-duration: 2;
+}
+
+@keyframes plantAnimation{
+0% {top: 250px; right: 20px;}
+50% {top: 225px}
+100% {top: 250px}
+}
+
+#plant:hover{
+transform: scale(1.05);
+animation-play-state: running;
+}
+
+#garbage{
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    left: 900px;
+    top: 300px;
+    z-index: 1;
+}
+
+#garbage:hover{
+    left: 940px;
+    transform: rotate(40deg);
+}
+
+#diploma{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 640px; 
+    top: 320px;
+    transform: scale(1);
+    animation: zoom 2s ease infinite;
+}
+
+#beer{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    left: 500px; 
+    top: 300px;
+    transform: scale(1);
+    animation: zoom 2s ease infinite;
+}
+
+#cigarette{
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    left: 600px; 
+    top: 440px;
+    transform: scale(1);
+    animation: zoom 2s ease infinite;
+    z-index: 2;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+#star_1{
+    position: absolute;
+    left: 540px;
+    top: 330px;
+    opacity: 0;
+    animation: star1Animation 2s 1.1s linear infinite;
+}
+
+#star_2{
+    position: absolute;
+    left: 650px;
+    top: 300px;
+    opacity: 0;
+    animation: star2Animation 1.5s 0.5s linear infinite;
+}
+
+#star_3{
+    position: absolute;
+    left: 630px;
+    top: 400px;
+    opacity: 0;
+    animation: star3Animation 1s 1.3s linear infinite;
+}
+  
+#star_4{
+    position: absolute;
+    left: 690px;
+    top: 540px;
+    z-index: 2;
+    opacity: 0;
+    animation: star4Animation 2s 0.8s linear infinite;
+}
+  
+@keyframes star1Animation{
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(4);}
+    75% {opacity: 0;}
+    100% {opacity: 0; transform: scale(1);}
+}
+
+@keyframes star2Animation{
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(4);}
+    100% {opacity: 0; transform: scale(1);}
+}
+
+@keyframes star3Animation{
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(4);}
+    75% {opacity: 0;}
+    100% {opacity: 0; transform: scale(1);}
+}
+
+@keyframes star4Animation{
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(4);}
+    100% {opacity: 0; transform: scale(1);}
+}
+
+#mouse1{
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    right: 1400px; 
+    top: 500px;
+    z-index: 1;
+    animation: mouseAnimation 6s linear infinite;
+}
+
+#mouse2{
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    right: 1400px; 
+    top: 500px;
+    z-index: 1;
+    animation: mouseAnimation2 10s linear infinite;
+}
+
+@keyframes mouseAnimation{
+    0% {right: 1400px; top: 500px;}
+    40%{right: 800px;}
+    60%{right: 600px;}
+    100%{right: -200px; top: 500px;}
+}
+
+@keyframes mouseAnimation2{
+    0% {right: 1400px; top: 600px;}
+    40%{right: 800px;}
+    60%{right: 600px;}
+    100%{right: -200px; top: 400px;}
+}
+
+
