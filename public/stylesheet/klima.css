@@ -386,7 +386,7 @@ input {
     left: 100px;
     z-index: 99;
     transform: translate(-50%, -50%);
-    animation: rocket 5s linear 5s forwards;
+    animation: rocket 5s ease-out 3s forwards;
 
 }
 
@@ -401,9 +401,10 @@ input {
 
 @keyframes rocket {
     100% {
-        top: -300px;
-        height: 50px;
-        width: 10px;
+        top: 40px;
+        left: 45px;
+        height: 25px;
+        width: 5px;
     }
 }
 
@@ -467,3 +468,6 @@ input {
 }
 
 /*----------------------------------------------------*/
+#marsPic{
+    margin: 20px;
+}
