@@ -78,9 +78,9 @@ input {
 --------------------------------------------------------*/
 #ashtrayContainer {
     position: absolute;
-    top: -4.25em;
-    left: 2em;
+    top: -3em;
     width: 4em;
+    z-index: 1;
 }
 
 .smoke {
