@@ -374,6 +374,7 @@ li {
     
     #articleHeading {
         position: absolute;
+        font-family: 'Times New Roman', Times, serif;
         width: 242px;
         height: 70px;
         background-color: #DFDFDF;
