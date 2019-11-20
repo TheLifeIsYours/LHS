@@ -83,8 +83,7 @@ li {
     width: 150px;
     height: 200px;
     animation-name: jonnyAnimation;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-duration: 25s;
     animation-direction: normal;
 }
 
@@ -151,8 +150,7 @@ li {
     width: 200px;
     opacity: 0;
     animation-name: speechBubbleAnimation;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-duration: 25s;
     animation-direction: normal;
 }
 
