@@ -6,15 +6,13 @@ input {
     background: linear-gradient(#dc9d62 78%, white 78%, white 81%, rgb(30, 30, 88) 81%, #333369 90%);
 }
 
+/* Blackboard related styles
+--------------------------------------------------------------*/
 #blackboard {
     padding: 0.25em;
     width: 720px;
     height: 420px;
     background: rgb(43, 43, 43);
-}
-
-#desk {
-    top: 590px;
 }
 
 .questionText {
@@ -44,6 +42,7 @@ input {
     border: solid 3px white;
     border-radius: 1em;
 }
+
 /* Black Board Next Task Lable (Sponge)
 ----------------------------------------------------------*/
 .nextTaskLabel {
@@ -74,8 +73,14 @@ input {
     width: 100%;
 }
 
-/* Ashtray
---------------------------------------------------------*/
+/* Desk related styles
+--------------------------------------------------------------------------------------*/
+#desk {
+    top: 590px;
+    background: linear-gradient(rgb(56, 35, 19) -5%, rgb(129, 84, 47) 10%);
+}
+
+/* Ashtray stylings */
 #ashtrayContainer {
     position: absolute;
     top: -3em;
@@ -113,9 +118,24 @@ input {
      }
 }
 
+/* Roaches related styles
+-------------------------------------------------------------------------------*/
+ #roachesContainer {
+    
+ }
+
+
+/* Jonny related styles
+-------------------------------------------------------------------------------*/
+#jonnyContainer {
+    position: absolute;
+    bottom: 2em;
+}
+
+
 
 /* Exam test Section toggle
---------------------------------------------------------*/
+--------------------------------------------------------------------------------------*/
 .examTask {
     display: none;
 }
@@ -279,3 +299,18 @@ input {
     background: rgb(124, 0, 0);
     border-color: rgb(255, 255, 255);
 }
+
+/* Animation keyframes
+------------------------------------------------------------------------*/
+
+@keyframes lamp {
+    
+}
+
+
+@keyframes roaches {
+
+}
+
+
+
