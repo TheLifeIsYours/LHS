@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html land="en">
+<html lang="en">
     <head>
-        <title>Crash course: Facebook</title>
+        <title>Facebook</title>
         <meta charset="utf-8">
         <link href="public/stylesheet/felles.css" rel="stylesheet" type="text/css">
         <link href="public/stylesheet/klasserom.css" rel="stylesheet" type="text/css">
@@ -10,7 +10,9 @@
     <body>
         <main id="mainContainer">
             <div id="backgroundWall">
+                <!-- Musehull -->
                 <img id="mouseHole" src="public/images/facebook/mouseHole.png" alt="Mouse Hole">
+                <img id="fbRat" src="public/images/facebook/rat.png" alt="rat"> 
             </div>
             <div id="facebookDesk"></div>
             <!-- Tavle + innhold på tavle -->
@@ -36,7 +38,7 @@
             </div>
             <!-- Snakkeboble -->
             <div id="speechBubble_1" class="speechBubble bottomRight"> 
-                Her kan du lære hvordan du skal oppføre deg i kommentarfeltet på facebook. Klikk på en av knappene for prøve! 
+                Her kan du lære hvordan du skal oppføre deg i kommentarfeltet på facebook. Klikk på en av knappene for prøve! <br> - Klikk på dørmatta for å gå videre til neste kurs. 
             </div>
             <!-- PC -->
             <section id="computer">
@@ -46,14 +48,22 @@
                 <div id="webcam"></div>
             </section>
             <!-- innhold på PC skjerm -->
+            <div id="brokenComputerScreen">
+                <img id="loading" src="public/images/facebook/loading.gif" alt="Loading">
+            </div>
             <section id="computerScreen">
+                <!-- Facebook meny -->
                 <div id="facebookMenu">
                     <div id="facebookLogo">
                         <div id="facebookF">f</div>
                     </div>
+                    <div id="searchBar"> <span id="searchTxt">Search..</span>
+                        <img id="searchIcon" src="public/images/facebook/magnifyingGlass.png" alt="Search Icon">
+                    </div>
+                    <img id="fbIcons" src="public/images/facebook/fbMenu.png" alt="Facebook Icons">
                 </div>
                 <div id="gretaArticle">
-                    <img id="gretaImg" src="public/images/facebook/greta.jpg" alt="Greta Thunberg">
+                    <img id="gretaImg" src="public/images/facebook/greta.png" alt="Greta Thunberg">
                     <div id="articleLinkTxt">NRK.no</div>
                     <div id="articleHeading">Greta(16) skulker skolen for klimaet</div>
                 </div>
@@ -61,7 +71,7 @@
                     <div id="newComment">Skriv en kommentar... </div>
                     <div id="sendButton">⌲</div>
                     <!-- Første facebook seksjon -->
-                    <input id="button_1" type="radio" />
+                    <input id="button_1" name="fbComment" type="radio" />
                     <section id="fbSection_1" class="fbSection">
                         <div class="facebookComment"><span class="facebookName">Laila Syversen </span>Jeg sluttet personlig å kjøpe plastikkposer i matbutikken for flere år siden. Hva med at dere andre også bidrar til å forbedre klimaet?
                             <div id="" class="facebookActions">Like · Reply · <span class="commentMinutes">3h</span></div>
@@ -74,7 +84,7 @@
                         <div id="sendButton">⌲</div>
                     </section>
                     <!-- Andre facebook seksjon -->
-                    <input id="button_2" type="radio" />
+                    <input id="button_2" name="fbComment" type="radio" />
                     <section id="fbSection_2" class="fbSection">
                         <div class="facebookComment"><span class="facebookName">Kenneth Jørgensen</span> Har ikke noe å si enn at dette er det dummeste jeg noen gang har hørt. Det finnes ikke noe som heter klimakrisen.
                             <div id="" class="facebookActions">Like · Reply · <span class="commentMinutes">8h</span></div>
@@ -84,7 +94,7 @@
                         <div id="sendButton">⌲</div>
                     </section>
                     <!-- Tredje facebook seksjon -->
-                    <input id="button_3" type="radio" />
+                    <input id="button_3" name="fbComment" type="radio" />
                     <section id="fbSection_3" class="fbSection">
                         <div class="facebookComment"><span class="facebookName">Hugo Hansen</span> Stakkars hjernevaskede jentunge. 
                             <div class="facebookActions">Like · Reply · <span class="commentMinutes">10h</span></div>
@@ -97,7 +107,7 @@
                         <div id="sendButton">⌲</div>
                     </section>
                     <!-- Fjerde facebook seksjon -->
-                    <input id="button_4" type="radio" />
+                    <input id="button_4" name="fbComment" type="radio" />
                     <section id="fbSection_4" class="fbSection">
                         <div class="facebookComment"><span class="facebookName">Rune André Berg</span> Jeg er tidligere elev ved livets harde skole, og klimakrisen er bare tull. Disse politikerne prøver å distrahere oss fra å fokusere på de viktige problemene her i landet!
                             <div class="facebookActions">Like · Reply · <span class="commentMinutes">2h</span></div>
@@ -127,13 +137,13 @@
                 </label>
                 <!-- Knapp nr. 3 -->
                 <label for="button_3">
-                    <div class="buttonsClass">
+                    <div id="thirdButton" class="buttonsClass">
                         <span id="">Snakk nedlatende om ungdommen</span>
                     </div>
                 </label>
                 <!-- Knapp nr. 4 -->
                 <label for="button_4">
-                    <div class="buttonsClass">
+                    <div id="fourthButton" class="buttonsClass">
                         <span id="">Påstå at klimakrisen er en konspirasjon</span>
                     </div>
                 </label>    

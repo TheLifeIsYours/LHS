@@ -14,6 +14,28 @@ input {
     right: 400px;
 }
 
+#fbRat {
+    width: 20px;
+    position: absolute;
+    top: 370px;
+    right: 411px;
+    opacity: 0;
+    transform: scaleX(-1);
+    animation-name: ratAnimation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+@keyframes ratAnimation {
+    0% {opacity: 0;}
+    10% {opacity: 1; right: 405px;}
+    30% {opacity: 1; right: 400px;}
+    45% {opacity: 1; right: 411px;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
 #blackboard {    
     width: 700px;
     height: 300px;
@@ -39,7 +61,6 @@ input {
     transform: rotate(90deg);
     font-size: 80px;
     font-family: sans-serif;
-    font-weight: 1000;
 }
 
 ol {
@@ -54,6 +75,8 @@ li {
     position: absolute;
     top: 130px;
     right: -200px;
+    width: 150px;
+    height: 200px;
     animation-name: jonnyAnimation;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -61,10 +84,49 @@ li {
 }
 
 @keyframes jonnyAnimation {
-    0% {top: 130px; right: -200px;}
+    0% {top: 130px; right: -200px; transform: rotateY(0deg);}
+    1% {top: 110px;}
+    2% {top: 130px}
+    3% {top: 110px}
+    4% {top: 130px}
+    5% {top: 110px;}
+    6% {top: 130px}
+    7% {top: 110px}
+    8% {top: 130px}
+    9% {top: 110px;}
+    10% {top: 130px}
+    11% {top: 110px}
+    12% {top: 130px}
+    13% {top: 110px}
+    14% {top: 130px}
+    15% {top: 110px;}
+    16% {top: 130px}
+    17% {top: 110px}
+    18% {top: 130px}
+    19% {top: 110px;}
     20% {top: 130px; right: 130px;}
-    80% {top: 130px; right: 130px;}
-    100% {top: 130; right: -200;}
+    75% {transform: rotateY(0deg);}
+    80% {top: 130px; right: 130px; transform: rotateY(180deg);}
+    81% {top: 110px;}
+    82% {top: 130px}
+    83% {top: 110px}
+    84% {top: 130px}
+    85% {top: 110px;}
+    86% {top: 130px}
+    87% {top: 110px}
+    88% {top: 130px}
+    89% {top: 110px;}
+    90% {top: 130px}
+    91% {top: 110px}
+    92% {top: 130px}
+    93% {top: 110px}
+    94% {top: 130px}
+    95% {top: 110px;}
+    96% {top: 130px}
+    97% {top: 110px}
+    98% {top: 130px}
+    99% {top: 110px;}
+    100% {top: 130px; right: -200px; transform: rotateY(180deg);}
 }
 
 #jonnyImg {
@@ -114,6 +176,44 @@ li {
       top: 30px;
       left: 30px;
   }
+
+  #brokenComputerScreen {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 650px;
+    height: 400px;
+    opacity: 0;
+    background-color: black;
+    z-index: 10;
+    animation-name: brokenComputerAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+
+  #loading {
+      position: absolute;
+      top: 185px;
+      left: 310px;
+      width: 30px;
+  }
+
+    @keyframes brokenComputerAnimation {
+      0% {opacity: 0;}
+      20% {opacity: 0;}
+      20.1% {opacity: 1;}
+      20.5% {opacity: 1;}
+      20.6% {opacity: 0;}
+      21% {opacity: 1;}
+      22% {opacity: 1;}
+      22.1% {opacity: 0;}
+      30% {opacity: 0;}
+      30.1% {opacity: 1;}
+      38% {opacity: 1;}
+      38.1% {opacity: 0;}
+
+  } 
 
   #computerDisplay {
       position: absolute;
@@ -196,6 +296,41 @@ li {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 530;
         font-size: 25px;
+    }
+
+    #searchBar {
+        position: absolute;
+        top: 5px;
+        left: 70px;
+        width: 200px;
+        height: 23px;
+        font-family: sans-serif;
+        font-size: 12px;
+        background-color: #FFFFFF;
+        border: 1px solid #CECECE;
+        border-radius: 3px;
+        color: grey;
+    }
+
+    #searchTxt {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    #searchIcon {
+        position: absolute;
+        top: 4px;
+        left: 180px;
+        width: 15px;
+        opacity: 0.5;
+    }
+
+    #fbIcons {
+        position: absolute;
+        top: 5px;
+        left: 350px;
+        width: 280px;
     }
 
     /* Artikkel av Greta */
@@ -382,6 +517,22 @@ li {
 #secondButton {
     position: relative;
     top: -17px;
+}
+
+#firstButton:hover {
+    transform: scale(1.05);
+}
+
+#secondButton:hover {
+    transform: scale(1.05);
+}
+
+#thirdButton:hover {
+    transform: scale(1.05);
+}
+
+#fourthButton:hover {
+    transform: scale(1.05);
 }
 
 .buttonsClass {

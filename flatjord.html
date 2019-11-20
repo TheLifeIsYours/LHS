@@ -7,60 +7,68 @@
     <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
     <link rel="stylesheet" type="text/css" href="public/stylesheet/flatjord.css">
 </head>
+
 <body>
     <!-- Hovedcontainer for flat jord -->
     <main id="mainContainer">
 
         <!--figurer-->
         <div>
-            <label for="teleskopInput">
-                <img id="teleskop" src="public/images/flat/telescope-svgrepo-com.svg" alt="teleskop">
+            <label for="telescopeInput">
+                <img id="telescope" src="public/images/flat/telescope-svgrepo-com.svg" alt="telescope">
+                <p id="telescopeText">Jonny's teleskop</p>
             </label>
-            <a href="eksamen.html">
-            <img id="romskip" src="public/images/flat/spaceship-svgrepo-com.svg" alt="romskip">
+            <img id="spaceship" src="public/images/flat/spaceship-svgrepo-com.svg" alt="spaceship">
+            <a id="backToEarth" style="text-decoration:none" href="eksamen.html">
+                <p>Tilbake til jorda! <br> >>> </p>
             </a>
             <img id="jonny" src="public/images/jonny/jonny_shadow.png" alt="jonny">
             <img id="moonRover" src="public/images/flat/moon-rover-svgrepo-com.svg" alt="moonRover">
+            <img id="ET" src="public/images/flat/ET.png" alt="ET">
         </div>
 
-        <!--Snakkebobler. Trykk '>>>' for å gå videre-->
+        <!--Snakkebobler-->
         <div id="speechBubble_1" class="speechBubble topLeft">
             <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
             <section id="bubbleText_1" class="bubbleText">
-                <p>Mange sier at jorda er rund, men det er fake news. <br> Du ser jo her klart og tydelig at den er flat!</p>
+                <p>Mange sier at jorda er rund, men det er fake news. <br>
+                    Du ser jo her klart og tydelig at den er flat!
+                </p>
+                <!--Trykk '>>>' for å gå videre-->
                 <label id="nextBubble" for="bubbleText_2Input"> >>> </label>
             </section>
 
             <input id="bubbleText_2Input" name="bubbleText" type="radio">
             <section id="bubbleText_2" class="bubbleText">
-                <p>Jorda ser kun rund ut nå fordi teleskopets linse er rund <br>
-                Vi må få folk rundt hele kloden til å forstå at jorda er flat som en tallerken</p>
+                <p>Vi må få folk rundt hele kloden til å forstå at jorda er flat som en tallerken! <br>
+                    Jorda ser kanskje rund ut nå, men det er bare en illusjon
+                </p>
                 <label id="nextBubble" for="bubbleText_3Input"> >>> </label>
             </section>
 
             <input id="bubbleText_3Input" name="bubbleText" type="radio">
             <section id="bubbleText_3" class="bubbleText">
-                <p>Trykk på teleskopet, så kan du se selv!</p>
+                <p>Trykk på teleskopet det spesielle teleskopet mitt, så kan du se selv!</p>
             </section>
         </div>
 
         <!--Røyk under romskipet-->
-        <div id="romskipRøykContainer">
-            <div id="romskipRøyk_1"></div>
-            <div id="romskipRøyk_2"></div>
-            <div id="romskipRøyk_3"></div>
-            <div id="romskipRøyk_4"></div>
-            <div id="romskipRøyk_5"></div>
-            <div id="romskipRøyk_6"></div>
+        <div id="spaceshipSmokeContainer">
+            <div id="spaceshipSmoke_1"></div>
+            <div id="spaceshipSmoke_2"></div>
+            <div id="spaceshipSmoke_3"></div>
+            <div id="spaceshipSmoke_4"></div>
+            <div id="spaceshipSmoke_5"></div>
+            <div id="spaceshipSmoke_6"></div>
         </div>
 
+        <!--Bilde av flat jord pop-up-->
         <section id="flatEarthContainer">
-            <input id="teleskopInput" name="flatJord" type="checkbox">
-            <label id="flatJord" for="teleskopInput">
-                <img src="public/images/flat/flat-jord.png" alt="flatJord">
+            <input id="telescopeInput" name="flatEarth" type="checkbox">
+            <label id="flatEarth" for="telescopeInput">
+                <img src="public/images/flat/flat-jord.png" alt="flatEarth">
             </label>
         </section>
-
 
     </main>
 </body>
