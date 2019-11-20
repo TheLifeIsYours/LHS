@@ -375,7 +375,7 @@ input {
 
 @keyframes rocket {
     100% {
-        top: -200px;
+        top: -250px;
     }
 }
 
@@ -400,15 +400,16 @@ input {
     bottom: 100px;
     animation: jonny 5s ease-out forwards;
     visibility: visible;
-    z-index: 1;
+    z-index: 100;
 }
 
 @keyframes jonny {
     100% {
-        left: 0px;
+        left: 20px;
         bottom: 250px;
         visibility: hidden;
-
+        height: 100px;
+        width: 50px;
     }
 }
 
