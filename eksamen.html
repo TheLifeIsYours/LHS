@@ -13,9 +13,21 @@
     <!-- Hovedkontainer for klasserom -->
     <main id="mainContainer">
         <section id="blackboard">
+            <!-- Eksamen start skjerm -->
+            <input id="examStartInput" name="examSlide" type="radio" checked />
+            <section id="examStart" class="examSlide">
+                <label id="examStartLabel" for="examTask_1Input">
+                    Klikk for å starte LHS Eksamen
+                </label>
+
+                <div class="nextTaskLabel">
+                    <img class="nextTaskSponge" src="public/images/eksamen/sponge.svg" />
+                </div>
+            </section>
+
             <!-- Eksamens oppgave 1 -->
-            <input id="examTask_1Input" name="examTask" type="radio" checked />
-            <section id="examTask_1" class="examTask">
+            <input id="examTask_1Input" name="examSlide" type="radio" />
+            <section id="examTask_1" class="examSlide">
                 <div class="questionText">
                     Hvilke agendaer står bak klimakrisen?
                 </div>
@@ -50,8 +62,8 @@
             </section>
 
             <!-- Eksamens oppgave 2 -->
-            <input id="examTask_2Input" name="examTask" type="radio" />
-            <section id="examTask_2" class="examTask">
+            <input id="examTask_2Input" name="examSlide" type="radio" />
+            <section id="examTask_2" class="examSlide">
                 <div class="questionText">
                     Hvilken form har jorda egentlig?
                 </div>
@@ -87,8 +99,8 @@
             </section>
 
             <!-- Eksamens oppgave 3 -->
-            <input id="examTask_3Input" name="examTask" type="radio" />
-            <section id="examTask_3" class="examTask">
+            <input id="examTask_3Input" name="examSlide" type="radio" />
+            <section id="examTask_3" class="examSlide">
                 <div class="questionText">
                     Hvordan skal man oppføre seg på en kulturell reise til syden?
                 </div>
@@ -123,8 +135,8 @@
             </section>
 
             <!-- Eksamens oppgave 4 -->
-            <input id="examTask_4Input" name="examTask" type="radio" />
-            <section id="examTask_4" class="examTask">
+            <input id="examTask_4Input" name="examSlide" type="radio" />
+            <section id="examTask_4" class="examSlide">
                 <div class="questionTextContainer">
                     <span class="questionText">
                         Skikk og bruk i kommentarfeltet på nett: hvilke av disse utsagnene er riktig?
@@ -178,7 +190,9 @@
         </section>
 
         <section id="roachesContainer">
-            <img id="roach_1" src="public/images/avslutning/">
+            <img id="roach_1" src="public/images/eksamen/cockroach.png" alt="roach1">
+            <img id="roach_2" src="public/images/eksamen/cockroach.png" alt="roach2">
+            <img id="roach_3" src="public/images/eksamen/cockroach.png" alt="roach3">
         </section>
 
         <section id="jonnyContainer">
@@ -190,9 +204,7 @@
             <div id="speechBubble_1" class="speechBubble bottomLeft">
                 <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
                 <section id="bubbleText_1" class="bubbleText">
-                    <p>
-                        Så fint å se deg her!
-                    </p>
+                    <p>Så fint å se deg her!</p>
                     <label class="nextBubble" for="bubbleText_2Input"> >>> </label>
                 </section>
 
@@ -202,11 +214,10 @@
                     <label class="nextBubble" for="bubbleText_3Input"> >>> </label>
                 </section>
 
-
                 <input id="bubbleText_3Input" name="bubbleText" type="radio">
                 <section id="bubbleText_3" class="bubbleText">
                     <p>Velg de riktige svarene og vis hva du har lært.</p>
-                    <label class="nextBubble" for="speechBubble_1Input"> x </label>
+                    <label class="nextBubble" for="speechBubble_1Input"> >>> </label>
                 </section>
             </div>
         </section>

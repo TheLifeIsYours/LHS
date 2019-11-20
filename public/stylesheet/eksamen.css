@@ -15,6 +15,15 @@ input {
     background: rgb(43, 43, 43);
 }
 
+#examStartLabel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    text-align: center;
+}
+
 .questionText {
     font-size: 1.4em;
 }
@@ -28,7 +37,7 @@ input {
     cursor: pointer;
 }
 
-.questionAnswerText:hover {
+.questionAnswerText:hover, #examStartLabel:hover {
     background: rgba(255,255,255,0.2);
 }
 
@@ -112,6 +121,68 @@ input {
     
  }
 
+ #roach_1 {
+     position: absolute;
+     left: 100px;
+     top: 100px;
+     transform: rotate(180deg);
+     animation: roach1Anim 10s linear infinite;
+ }
+ #roach_2 {
+    position: absolute;
+    right: 100px;
+    top: 110px;
+    transform: rotate(180deg);
+    animation: roach2Anim 10s linear infinite;
+}
+#roach_3 {
+    position: absolute;
+    width: 20px;
+    right: 100px;
+    top: 110px;
+    opacity: 1;
+    transform: rotate(90deg);
+    animation: roach3Anim 10s linear infinite;
+}
+
+ @keyframes roach1Anim {
+     0% {left: 100px; top: -100px; transform: rotate(180deg);}
+     10% {top: 100px; transform: rotate(180deg);}
+     15% {transform: rotate(90deg);}
+     20% {left: 100px; top: 100px;}
+     30% {left: 400px; transform: rotate(90deg);}
+     35% {transform: rotate(130deg);}
+     40% {left: 400px; top: 100px;}
+     50% {left: 700px; top: 400px; transform: rotate(130deg);}
+     55% {transform: rotate(70deg);}
+     60% {left: 700px; top: 400px;}
+     70% {left: 1150px; top: 100px; transform: rotate(70deg);}
+     75% {top: 100px; transform: rotate(180deg);}
+     80% {transform: rotate(360deg);}
+     85% {top: 100px; transform: rotate(0deg);}
+     90% {left: 1150px; top: -100px; transform: rotate(0deg);}
+     100% {left: 100px; top: -100px;}
+ }
+ @keyframes roach2Anim {
+     0% {right: 100px; top: 110px; transform: rotate(180deg);}
+     30%{top: 530px; transform: rotate(180deg);}
+     35%{transform: rotate(0deg);}
+     40%{top: 530px;}
+     75% {right: 100px; top: 120px; transform: rotate(0deg);}
+     80% {transform: rotate(-260deg);}
+     85% {right: 100px; top: 110px; transform: rotate(0deg);}
+     100% {right: 100px; top: 110px; transform: rotate(180deg);}
+ }
+ @keyframes roach3Anim {
+     0% {top: 110px; right: 100px; opacity: 0;}
+     84% {opacity: 0;}
+     85% {right: 100px; opacity: 1;}
+     90% {right: 60px;}
+     95% {right: 60px;}
+     99% {right: -100px; opacity: 1;}
+     100% {top: 110px; right: -100px; opacity: 0;}
+ }
+
 
 /* Jonny related styles
 -------------------------------------------------------------------------------*/
@@ -149,9 +220,14 @@ input {
 
 /* Exam test Section toggle
 --------------------------------------------------------------------------------------*/
-.examTask {
+.examSlide {
     display: none;
 }
+
+#examStartInput:checked ~ #examStart {
+    display: block;
+}
+
 
 #examTask_1Input:checked ~ #examTask_1 {
     display: block;
