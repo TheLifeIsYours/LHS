@@ -316,7 +316,7 @@ input {
 /*----------------------------------------------------*/
 #speechBubble_1 {
     position: absolute;
-    bottom: 200px;
+    bottom: 235px;
     left: 300px;
     z-index: 99;
 }
