@@ -1,238 +1,228 @@
 #mainContainer {
-  position: relative;
-  background: linear-gradient(#727272 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
-}
-
-#weedLight {
-position: absolute;
-top: 0px;
-left: 0px;
-width: 300px;
-height: 500px;
-opacity: 0.5;
-z-index: 2;
+    position: relative;
+    background: linear-gradient(#727272 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
 
 #desk  {
-  position: absolute;
-  background: rgb(29, 29, 29);
+    position: absolute;
+    background: rgb(29, 29, 29);
 }
 
 #jonny{
-  position: absolute;
-  width: 180px;
-  height: 380px;
-  left: 200px; 
-  top: 250px;
-  z-index: 2;
-  animation: jonnyAnim 0.3s linear infinite;
-  animation-play-state: paused;
-  transition-duration: 0.2;
+    position: absolute;
+    width: 180px;
+    height: 380px;
+    left: 200px; 
+    top: 250px;
+    z-index: 2;
+    animation: jonnyAnim 0.3s linear infinite;
+    animation-play-state: paused;
+    transition-duration: 0.2;
 }
 
 @keyframes jonnyAnim {
-0% {top: 250px}
-50% {top: 225px}
-100% {top: 250px}
+  0% {top: 250px}
+  50% {top: 225px}
+  100% {top: 250px}
 }
 
 #jonny:hover {
-transform: scale(1.05);
-animation-play-state: running;
+  transform: scale(1.05);
+  animation-play-state: running;
 }
 
 
 
 #blackboard {
-  transform: rotate(5deg) translate(-50%, 15%);
+    transform: rotate(5deg) translate(-50%, 15%);
 }
 
 #speechBubble_1 {
-  position: absolute;
-  background: #fff;
-  min-height: 1em;
-  max-width: 70%;
-  width: fit-content;
-  padding: 10px;
-  margin-bottom: 1em;
-  border: solid 2px #34373c;
-  cursor: pointer;
-  overflow-wrap: break-word;
-  top: 140px;
-  left: 350px;
-}
+    position: absolute;
+    background: #fff;
+    min-height: 1em;
+    max-width: 70%;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: solid 2px #34373c;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    top: 140px;
+    left: 350px;
+  }
 
-.bottomLeft {
-  border-radius: 6px 6px 6px 0px;
-}
-
-#door {
-  position: absolute;
-  width: 180px;
-  height: 320px;
-  background: rgb(255, 255, 255);
-  left: 1000px;
-  top: 60px;
-  border: solid;
-  border-width: 5px;
-  border-color: rgb(83, 83, 83);
+  .bottomLeft {
+    border-radius: 6px 6px 6px 0px;
+  }
+  
+  #door {
+    position: absolute;
+    width: 180px;
+    height: 320px;
+    background: rgb(255, 255, 255);
+    left: 1000px;
+    top: 60px;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(83, 83, 83);
 }
 #door:hover{
-  position: absolute;
-  width: 180px;
-  height: 320px;
-  background: #352308;
-  left: 1000px;
-  top: 60px;
-  border: solid;
-  border-width: 5px;
-  border-color: rgb(83, 83, 83);
+    position: absolute;
+    width: 180px;
+    height: 320px;
+    background: #352308;
+    left: 1000px;
+    top: 60px;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(83, 83, 83);
 }
 
 #doorknob{
-  position: absolute;
-  border-radius: 100%;
-  background-color: rgb(0, 0, 0);
-  width:20px;
-  height:20px;
-  left: 20px; 
-  top: 150px;   
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    width:20px;
+    height:20px;
+    left: 20px; 
+    top: 150px;   
 }
 
 #diploma{
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  left: 625px; 
-  top: 320px;
-  transform: scale(1);
-  animation: zoom 2s ease 1s infinite;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 625px; 
+    top: 320px;
+    transform: scale(1);
+    animation: zoom 2s ease 1s infinite;
 }
 
 #beer{
-  position: absolute;
-  width: 100px;
-  height: 150px;
-  left: 515px; 
-  top: 300px;
-  transform: scale(1);
-  animation: zoom 2s ease 1s infinite;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    left: 515px; 
+    top: 300px;
+    transform: scale(1);
+    animation: zoom 2s ease 1s infinite;
 }
 
 #cigarette{
-  position: absolute;
-  width: 80px;
-  height: 130px;
-  left: 600px; 
-  top: 440px;
-  transform: scale(1);
-  animation: zoom 2s ease 1s infinite;
-  z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    left: 600px; 
+    top: 440px;
+    transform: scale(1);
+    animation: zoom 2s ease 1s infinite;
+    z-index: 2;
 }
 
 #star_1{
-  position: absolute;
-  left: 540px;
-  top: 330px;
-  opacity: 0;
-  animation: star1Anim 1s 1.8s linear infinite;
-}
-#star_2{
-  position: absolute;
-  left: 650px;
-  top: 300px;
-  opacity: 0;
-  animation: star2Anim 1s 2s linear infinite;
-}
-#star_3{
-  position: absolute;
-  left: 630px;
-  top: 400px;
-  opacity: 0;
-  animation: star3Anim 1s 2.2s linear infinite;
-}
-#star_4{
-  position: absolute;
-  left: 690px;
-  top: 540px;
-  z-index: 2;
-  opacity: 0;
-  animation: star4Anim 1s 2.4s linear infinite;
-}
-
-@keyframes star1Anim {
-  0% {opacity: 0; transform: scale(1);}
-  50% {opacity: 1; transform: scale(3);}
-  100% {opacity: 0; transform: scale(4);}
-}
-@keyframes star2Anim {
-  0% {opacity: 0; transform: scale(1);}
-  50% {opacity: 1; transform: scale(3);}
-  100% {opacity: 0; transform: scale(4);}
-}
-@keyframes star3Anim {
-  0% {opacity: 0; transform: scale(1);}
-  50% {opacity: 1; transform: scale(3);}
-  100% {opacity: 0; transform: scale(4);}
-}
-@keyframes star4Anim {
-  0% {opacity: 0; transform: scale(1);}
-  50% {opacity: 1; transform: scale(3);}
-  100% {opacity: 0; transform: scale(4);}
-}
+    position: absolute;
+    left: 540px;
+    top: 330px;
+    opacity: 0;
+    animation: star1Anim 1s 1.8s linear infinite;
+  }
+  #star_2{
+    position: absolute;
+    left: 650px;
+    top: 300px;
+    opacity: 0;
+    animation: star2Anim 1s 2s linear infinite;
+  }
+  #star_3{
+    position: absolute;
+    left: 630px;
+    top: 400px;
+    opacity: 0;
+    animation: star3Anim 1s 2.2s linear infinite;
+  }
+  #star_4{
+    position: absolute;
+    left: 690px;
+    top: 540px;
+    z-index: 2;
+    opacity: 0;
+    animation: star4Anim 1s 2.4s linear infinite;
+  }
+  
+  @keyframes star1Anim {
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(3);}
+    100% {opacity: 0; transform: scale(4);}
+  }
+  @keyframes star2Anim {
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(3);}
+    100% {opacity: 0; transform: scale(4);}
+  }
+  @keyframes star3Anim {
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(3);}
+    100% {opacity: 0; transform: scale(4);}
+  }
+  @keyframes star4Anim {
+    0% {opacity: 0; transform: scale(1);}
+    50% {opacity: 1; transform: scale(3);}
+    100% {opacity: 0; transform: scale(4);}
+  }
 
 #mouse1{
-  position: absolute;
-  width: 80px;
-  height: 130px;
-  right: 1400px; 
-  top: 500px;
-  z-index: 1;
-  animation: mouseAnimation 6s linear infinite;
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    right: 1400px; 
+    top: 500px;
+    z-index: 1;
+    animation: mouseAnimation 6s linear infinite;
 }
 
 #mouse2{
-  position: absolute;
-  width: 80px;
-  height: 130px;
-  right: 1400px; 
-  top: 500px;
-  z-index: 1;
-  animation: mouseAnimation2 10s linear infinite;
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    right: 1400px; 
+    top: 500px;
+    z-index: 1;
+    animation: mouseAnimation2 10s linear infinite;
 }
 
 
 @keyframes mouseAnimation {
-  0% {right: 1400px; top: 500px;}
-  40%{right: 800px;}
-  60%{right: 600px;}
-  100%{right: -200px; top: 500px;}
+    0% {right: 1400px; top: 500px;}
+    40%{right: 800px;}
+    60%{right: 600px;}
+    100%{right: -200px; top: 500px;}
 }
 
 @keyframes mouseAnimation2 {
-  0% {right: 1400px; top: 600px;}
-  40%{right: 800px;}
-  60%{right: 600px;}
-  100%{right: -200px; top: 400px;}
+    0% {right: 1400px; top: 600px;}
+    40%{right: 800px;}
+    60%{right: 600px;}
+    100%{right: -200px; top: 400px;}
 }
 
 @keyframes zoom{
-  0%{
-      transform: scale(1);
-  }
-  50%{
-      transform: scale(2);
-  }
-  100%{
-      transform: scale(1);
-  }
-  
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
 }
 
 #blackboardText{
-  position: absolute;
-  top: 20px;
-  left: 180px;
-  color: white;
-  font-size: 19px;}
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    color: white;
+    font-size: 19px;}
 
