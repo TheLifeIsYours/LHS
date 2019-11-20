@@ -3,9 +3,17 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #000;
+    background: rgb(14, 14, 14);
     overflow-x: hidden;
     font-family: comic sans ms;
+}
+
+input {
+  display: none;
+}
+
+label {
+  cursor: pointer;
 }
 
 #mainContainer {
@@ -39,7 +47,7 @@ html, body {
     overflow-wrap: break-word;
   }
 
-  .nextBubble, label {
+  .nextBubble {
       cursor: pointer;
   }
   

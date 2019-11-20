@@ -61,24 +61,26 @@
 #backToEarth {
     position: absolute;
     height: 50px;
-    width: auto;
     right: 442px;
     top: 330px;
     transform: rotate(-50deg);
     text-align: center;
     cursor: pointer;
     color: black;
-    font-size: 13px;
+    font-size: 0.8em;
+}
+#backToEarth:hover {
+    font-size: 0.9em;
 }
 
 /* Røyk fra romskipet */
 #spaceshipSmokeContainer > * {
     position: absolute;
-    background-color: black;
-    width: 100px;
-    height: 100px;
     top: 430px;
     right: 380px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
     border-radius: 100%;
 }
 
