@@ -352,7 +352,7 @@ input {
 /*Styling og animasjon av Jonny*/
 /*----------------------------------------------------*/
 #jonnyPic_1 {
-    height: 150px;
+    height: 200px;
     width: 100px;
     position: absolute;
     left: 200px;
@@ -360,7 +360,7 @@ input {
 }
 
 #jonnyPic_2 {
-    height: 150px;
+    height: 200px;
     width: 100px;
     position: absolute;
     left: 200px;
@@ -372,8 +372,9 @@ input {
 @keyframes jonny {
     100% {
         left: 0px;
-        top: 250px;
+        bottom: 250px;
         visibility: hidden;
+
     }
 }
 
