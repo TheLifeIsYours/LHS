@@ -185,31 +185,32 @@
 
         <section id="jonnyContainer">
             <img id="jonnyImage" src="public/images/jonny/jonny_shadow.png" />
-            <section id="speechBubbleContainer">
+        </section>
+        
+        <section id="speechBubbleContainer">
+            <input id="speechBubble_1Input" type="radio" />
+            <div id="speechBubble_1" class="speechBubble bottomLeft">
+                <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
+                <section id="bubbleText_1" class="bubbleText">
+                    <p>
+                        Så fint å se deg her!
+                    </p>
+                    <label class="nextBubble" for="bubbleText_2Input"> >>> </label>
+                </section>
 
-                <input id="speechBubble_1Input" type="radio" />
-                <div id="speechBubble_1" class="speechBubble bottomLeft">
-                    <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
-                    <section id="bubbleText_1" class="bubbleText">
-                        <p>
-                            Så fint å se deg her!
-                        </p>
-                        <label id="nextBubble" for="bubbleText_2Input"> >>> </label>
-                    </section>
-
-                    <input id="bubbleText_2Input" name="bubbleText" type="radio">
-                    <section id="bubbleText_2" class="bubbleText">
-                        <p>Nå som du har gått gjennom kursene her hos LHS, så er det på tide med en eksamen!</p>
-                        <label id="nextBubble" for="bubbleText_3Input"> >>> </label>
-                    </section>
+                <input id="bubbleText_2Input" name="bubbleText" type="radio">
+                <section id="bubbleText_2" class="bubbleText">
+                    <p>Nå som du har gått gjennom kursene her hos LHS, så er det på tide med en eksamen!</p>
+                    <label class="nextBubble" for="bubbleText_3Input"> >>> </label>
+                </section>
 
 
-                    <input id="bubbleText_3Input" name="bubbleText" type="radio">
-                    <section id="bubbleText_3" class="bubbleText">
-                        <p>Velg de riktige svarene og vis hva du har lært.</p>
-                        <label id="nextBubble" for="speechBubble_1Input"> x </label>
-                    </section>
-                </div>
+                <input id="bubbleText_3Input" name="bubbleText" type="radio">
+                <section id="bubbleText_3" class="bubbleText">
+                    <p>Velg de riktige svarene og vis hva du har lært.</p>
+                    <label class="nextBubble" for="speechBubble_1Input"> x </label>
+                </section>
+            </div>
         </section>
     </main>
 </body>
