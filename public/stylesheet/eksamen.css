@@ -15,6 +15,15 @@ input {
     background: rgb(43, 43, 43);
 }
 
+#examStartLabel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    text-align: center;
+}
+
 .questionText {
     font-size: 1.4em;
 }
@@ -28,7 +37,7 @@ input {
     cursor: pointer;
 }
 
-.questionAnswerText:hover {
+.questionAnswerText:hover, #examStartLabel:hover {
     background: rgba(255,255,255,0.2);
 }
 
@@ -149,9 +158,14 @@ input {
 
 /* Exam test Section toggle
 --------------------------------------------------------------------------------------*/
-.examTask {
+.examSlide {
     display: none;
 }
+
+#examStartInput:checked ~ #examStart {
+    display: block;
+}
+
 
 #examTask_1Input:checked ~ #examTask_1 {
     display: block;
