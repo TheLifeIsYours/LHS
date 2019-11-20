@@ -58,6 +58,10 @@ input {
     box-shadow: 10px 10px 30px 10px #2C2C5B;
   }
 
+  #doormat:hover {
+      transform: scale(1.05) skew(30deg);
+  }
+
 #doormatText {
     margin-top: 34px;
     color: white;
@@ -554,6 +558,7 @@ li {
     border-radius: 5px;
     display: inline-block;
     color: #696A6C;
+    cursor: pointer;
 }
 
 .buttonsText {
