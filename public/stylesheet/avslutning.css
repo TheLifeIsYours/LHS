@@ -3,23 +3,15 @@
     background: linear-gradient(#727272 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
 
-#weedLight {
-position: absolute;
-top: 0px;
-left: 0px;
-width: 300px;
-height: 500px;
-opacity: 0.5;
-z-index: 2;
-}
-
 #desk{
     position: absolute;
-    background: rgb(29, 29, 29);
+    background: rgb(41, 41, 41);
 }
 
 #blackboard{
     transform: rotate(5deg) translate(-50%, 15%);
+    width: 550px;
+    height: 270px;
 }
 
 #blackboardText{
@@ -28,6 +20,10 @@ z-index: 2;
     left: 180px;
     color: white;
     font-size: 19px;
+}
+
+#grattis{
+    font-size: 60px;
 }
 
 #jonny{
@@ -67,18 +63,17 @@ z-index: 2;
     top: 140px;
     left: 360px;
     animation-name: speechBubbleAnimation;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
+    animation-duration: 20s;
     animation-direction: normal;
+    opacity: 0;
 }
 
 @keyframes speechBubbleAnimation {
     0% {opacity: 0;}
     5% {opacity: 0;}
     10% {opacity: 1;}
-    25% {opacity: 1;}
     50%{opacity: 1;}
-    75% {opacity: 1;}
+    85% {opacity: 1;}
     100% {opacity: 0;}
 }
 
@@ -138,18 +133,8 @@ z-index: 2;
     position: absolute;
     width: 120px;
     height: 240px;
-    left: 100px;
+    left: 110px;
     top: 40px;
-    z-index: 1;
-    border: solid 6px rgb(56, 56, 56);
-}
-
-#window:hover{
-    position: absolute;
-    width: 180px;
-    height: 320px;
-    left: 60px;
-    top: 10px;
     z-index: 1;
     border: solid 6px rgb(56, 56, 56);
 }
@@ -163,6 +148,16 @@ z-index: 2;
     z-index: 1;
 }
 
+#weedLight {
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    width: 300px;
+    height: 500px;
+    opacity: 0.5;
+    z-index: 2;
+    }
+
 #plant{
     position: absolute;
     width: 160px;
@@ -170,20 +165,20 @@ z-index: 2;
     left: 30px;
     top: 250px;
     z-index: 1;
-    animation: plantAnimation 1s linear infinite;
-    animation-play-state: paused;
+    animation: plantAnimation 2s linear infinite;
+    animation-play-state: running;
     transition-duration: 2;
 }
 
 @keyframes plantAnimation{
-0% {top: 250px; right: 20px;}
-50% {top: 225px}
-100% {top: 250px}
+    0% {top: 250px}
+    50% {top: 225px}
+    100% {top: 250px}
 }
 
 #plant:hover{
-transform: scale(1.05);
-animation-play-state: running;
+    transform: scale(1.05);
+    animation-play-state: running;
 }
 
 #garbage{
