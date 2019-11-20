@@ -1,178 +1,216 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Eksamen</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
-        <link rel="stylesheet" type="text/css" href="public/stylesheet/klasserom.css">
-        <link rel="stylesheet" type="text/css" href="public/stylesheet/eksamen.css">
-    </head>
-    <body>
-        <!-- Hovedkontainer for klasserom -->
-        <main id="mainContainer">
-            <section id="blackboard">
-                <!-- Eksamens oppgave 1 -->
-                <input id="examTask_1Input" name="examTask" type="radio" checked />
-                <section id="examTask_1" class="examTask">
-                    <div class="questionText">
-                        Hvilke agendaer står bak klimakrisen?
-                    </div>
 
-                    <input id="questionAnswerInput_11" type="radio" />
-                    <label id="questionAnswerLabel_11" class="questionAnswerText" for="questionAnswerInput_11">
-                        FN som betaler forskere til å skrive en fake rapport
+<head>
+    <title>Eksamen</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/klasserom.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/eksamen.css">
+</head>
+
+<body>
+    <!-- Hovedkontainer for klasserom -->
+    <main id="mainContainer">
+        <section id="blackboard">
+            <!-- Eksamens oppgave 1 -->
+            <input id="examTask_1Input" name="examTask" type="radio" checked />
+            <section id="examTask_1" class="examTask">
+                <div class="questionText">
+                    Hvilke agendaer står bak klimakrisen?
+                </div>
+
+                <input id="questionAnswerInput_11" type="radio" />
+                <label id="questionAnswerLabel_11" class="questionAnswerText" for="questionAnswerInput_11">
+                    FN som betaler forskere til å skrive en fake rapport
+                </label>
+
+                <input id="questionAnswerInput_12" type="radio" />
+                <label id="questionAnswerLabel_12" class="questionAnswerText" for="questionAnswerInput_12">
+                    Så de i eliten kan ta jobbene våres
+                </label>
+
+                <input id="questionAnswerInput_13" type="radio" />
+                <label id="questionAnswerLabel_13" class="questionAnswerText" for="questionAnswerInput_13">
+                    Klimakrisen er en konspirasjonsteori laget av Illuminati
+                </label>
+
+                <input id="questionAnswerInput_14" type="radio" />
+                <label id="questionAnswerLabel_14" class="questionAnswerText" for="questionAnswerInput_14">
+                    Klimakrisen er basert på vitenskaplige observasjoner over flere titals år, som vi bør ta til rette
+                    for og endre våre levemåter
+                </label>
+
+                <label for="examTask_2Input" class="nextTaskLabel">
+                    <img class="nextTaskSponge" src="public/images/eksamen/sponge.svg" />
+                    <span class="nextTaskSpongeText">
+                        Neste Oppgave
+                    </span>
+                </label>
+            </section>
+
+            <!-- Eksamens oppgave 2 -->
+            <input id="examTask_2Input" name="examTask" type="radio" />
+            <section id="examTask_2" class="examTask">
+                <div class="questionText">
+                    Hvilken form har jorda egentlig?
+                </div>
+
+                <input id="questionAnswerInput_21" type="radio" />
+                <label id="questionAnswerLabel_21" class="questionAnswerText" for="questionAnswerInput_21">
+                    Jorda består av en kuppel, som holdes opp av elefanter på ryggen av en hav-skillpadde som svømmer
+                    gjennom universet.
+                </label>
+
+                <input id="questionAnswerInput_22" type="radio" />
+                <label id="questionAnswerLabel_22" class="questionAnswerText" for="questionAnswerInput_22">
+                    Jorda er faktisk flat, spørr Grekerne!
+                </label>
+
+                <input id="questionAnswerInput_23" type="radio" />
+                <label id="questionAnswerLabel_23" class="questionAnswerText" for="questionAnswerInput_23">
+                    Myndighetene stopper oss fra å reise til såkalte “Antarktika”, for å forhindre oss fra å spre
+                    sannheten.
+                </label>
+
+                <input id="questionAnswerInput_24" type="radio" />
+                <label id="questionAnswerLabel_24" class="questionAnswerText" for="questionAnswerInput_24">
+                    Jorda er rund, som bevist av bilder fra sattelitter og astronauter på månen.
+                </label>
+
+                <label for="examTask_3Input" class="nextTaskLabel">
+                    <img class="nextTaskSponge" src="public/images/eksamen/sponge.svg" />
+                    <span class="nextTaskSpongeText">
+                        Neste Oppgave
+                    </span>
+                </label>
+            </section>
+
+            <!-- Eksamens oppgave 3 -->
+            <input id="examTask_3Input" name="examTask" type="radio" />
+            <section id="examTask_3" class="examTask">
+                <div class="questionText">
+                    Hvordan skal man oppføre seg på en kulturell reise til syden?
+                </div>
+
+                <input id="questionAnswerInput_31" type="radio" />
+                <label id="questionAnswerLabel_31" class="questionAnswerText" for="questionAnswerInput_31">
+                    Man skal alltid ha på crocs, og glemme solkrem den første dagen.
+                </label>
+
+                <input id="questionAnswerInput_32" type="radio" />
+                <label id="questionAnswerLabel_32" class="questionAnswerText" for="questionAnswerInput_32">
+                    Dersom man trenger øl, knipser man etter kelneren og sier “Una servesa por favor” uansett hvor man
+                    er.
+                </label>
+
+                <input id="questionAnswerInput_33" type="radio" />
+                <label id="questionAnswerLabel_33" class="questionAnswerText" for="questionAnswerInput_33">
+                    Snakker høyt og sakte på norsk, slik at de utenlandkse forstår deg.
+                </label>
+
+                <input id="questionAnswerInput_34" type="radio" />
+                <label id="questionAnswerLabel_34" class="questionAnswerText" for="questionAnswerInput_34">
+                    Syden er ikke et land, men en felles betegnese for “sørlige land” nære middelhavs området.
+                </label>
+
+                <label for="examTask_4Input" class="nextTaskLabel">
+                    <img class="nextTaskSponge" src="public/images/eksamen/sponge.svg" />
+                    <span class="nextTaskSpongeText">
+                        Neste Oppgave
+                    </span>
+                </label>
+            </section>
+
+            <!-- Eksamens oppgave 4 -->
+            <input id="examTask_4Input" name="examTask" type="radio" />
+            <section id="examTask_4" class="examTask">
+                <div class="questionTextContainer">
+                    <span class="questionText">
+                        Skikk og bruk i kommentarfeltet på nett: hvilke av disse utsagnene er riktig?
+                    </span>
+                </div>
+
+                <section id="examTaskAnswers_4">
+                    <input id="questionAnswerInput_41" type="radio" />
+                    <label id="questionAnswerLabel_41" class="questionAnswerText" for="questionAnswerInput_41">
+                        For å komme best ut av en diskusjon på nett, skal du IKKE lese saken før du kommenter
                     </label>
 
-                    <input id="questionAnswerInput_12" type="radio" />
-                    <label id="questionAnswerLabel_12" class="questionAnswerText" for="questionAnswerInput_12">
-                        Så de i eliten kan ta jobbene våres
+                    <input id="questionAnswerInput_42" type="radio" />
+                    <label id="questionAnswerLabel_42" class="questionAnswerText" for="questionAnswerInput_42">
+                        Man kan vinne diskusjoner ved å rette på motpartnerens grammatikk. Dine egne gramatikkfeil er
+                        irrelevant
                     </label>
 
-                    <input id="questionAnswerInput_13" type="radio" />
-                    <label id="questionAnswerLabel_13" class="questionAnswerText" for="questionAnswerInput_13">
-                        Klimakrisen er en konspirasjonsteori laget av Illuminati
+                    <input id="questionAnswerInput_43" type="radio" />
+                    <label id="questionAnswerLabel_43" class="questionAnswerText" for="questionAnswerInput_43">
+                        Når motparten viser til falske vitenskapelige forskningspapirer og fake news, skal man svare med
+                        personangrep som “Din dumme ku”, “Du forstår ikke en dritt” og “Den som ser deg passere i et
+                        gangfelt eller må ikke tråkke på bremsen, men på gassen”
                     </label>
 
-                    <input id="questionAnswerInput_14" type="radio" />
-                    <label id="questionAnswerLabel_14" class="questionAnswerText" for="questionAnswerInput_14">
-                        Klimakrisen er basert på vitenskaplige observasjoner over flere titals år, som vi bør ta til rette for og endre våre levemåter
+                    <input id="questionAnswerInput_44" type="radio" />
+                    <label id="questionAnswerLabel_44" class="questionAnswerText" for="questionAnswerInput_44">
+                        Man skal avstå fra sjikane, personangrep, overdreven bruk av ufint språk, brudd på norsk lov
+                        (eller oppfordringer til det), samt usaklige avsporinger fra temaet presentert i innlegget.
                     </label>
 
-                    <label for="examTask_2Input" class="nextTaskLabel">
+                    <label for="examTask_5Input" class="nextTaskLabel">
                         <img class="nextTaskSponge" src="public/images/eksamen/sponge.svg" />
-                        <span class="nextTaskSpongeText">
-                            Neste Oppgave
-                        </span>
                     </label>
-                </section>
-
-                <!-- Eksamens oppgave 2 -->
-                <input id="examTask_2Input" name="examTask" type="radio" />
-                <section id="examTask_2" class="examTask">
-                    <div class="questionText">
-                        Hvilken form har jorda egentlig?
-                    </div>
-
-                    <input id="questionAnswerInput_21" type="radio" />
-                    <label id="questionAnswerLabel_21" class="questionAnswerText" for="questionAnswerInput_21">
-                        Jorda består av en kuppel, som holdes opp av elefanter på ryggen av en hav-skillpadde som svømmer gjennom universet.
-                    </label>
-
-                    <input id="questionAnswerInput_22" type="radio" />
-                    <label id="questionAnswerLabel_22" class="questionAnswerText" for="questionAnswerInput_22">
-                        Jorda er faktisk flat, spørr Grekerne!
-                    </label>
-
-                    <input id="questionAnswerInput_23" type="radio" />
-                    <label id="questionAnswerLabel_23" class="questionAnswerText" for="questionAnswerInput_23">
-                        Myndighetene stopper oss fra å reise til såkalte “Antarktika”, for å forhindre oss fra å spre sannheten. 
-                    </label>
-
-                    <input id="questionAnswerInput_24" type="radio" />
-                    <label id="questionAnswerLabel_24" class="questionAnswerText" for="questionAnswerInput_24">
-                        Jorda er rund, som bevist av bilder fra sattelitter og astronauter på månen.
-                    </label>
-
-                    <label for="examTask_3Input" class="nextTaskLabel">
-                        <img class="nextTaskSponge" src="public/images/eksamen/sponge.svg" />
-                        <span class="nextTaskSpongeText">
-                            Neste Oppgave
-                        </span>
-                    </label>
-                </section>
-
-                <!-- Eksamens oppgave 3 -->
-                <input id="examTask_3Input" name="examTask" type="radio" />
-                <section id="examTask_3" class="examTask">
-                    <div class="questionText">
-                        Hvordan skal man oppføre seg på en kulturell reise til syden?
-                    </div>
-
-                    <input id="questionAnswerInput_31" type="radio" />
-                    <label id="questionAnswerLabel_31" class="questionAnswerText" for="questionAnswerInput_31">
-                            Man skal alltid ha på crocs, og glemme solkrem den første dagen.
-                    </label>
-
-                    <input id="questionAnswerInput_32" type="radio" />
-                    <label id="questionAnswerLabel_32" class="questionAnswerText" for="questionAnswerInput_32">
-                            Dersom man trenger øl, knipser man etter kelneren og sier “Una servesa por favor” uansett hvor man er.
-                    </label>
-
-                    <input id="questionAnswerInput_33" type="radio" />
-                    <label id="questionAnswerLabel_33" class="questionAnswerText" for="questionAnswerInput_33">
-                            Snakker høyt og sakte på norsk, slik at de utenlandkse forstår deg.
-                    </label>
-
-                    <input id="questionAnswerInput_34" type="radio" />
-                    <label id="questionAnswerLabel_34" class="questionAnswerText" for="questionAnswerInput_34">
-                            Syden er ikke et land, men en felles betegnese for “sørlige land” nære middelhavs området.
-                    </label>
-
-                    <label for="examTask_4Input" class="nextTaskLabel">
-                        <img class="nextTaskSponge" src="public/images/eksamen/sponge.svg" />
-                        <span class="nextTaskSpongeText">
-                            Neste Oppgave
-                        </span>
-                    </label>
-                </section>
-
-                <!-- Eksamens oppgave 4 -->
-                <input id="examTask_4Input" name="examTask" type="radio" />
-                <section id="examTask_4" class="examTask">
-                    <div class="questionTextContainer">
-                        <span class="questionText">
-                            Skikk og bruk i kommentarfeltet på nett: hvilke av disse utsagnene er riktig?
-                        </span>
-                    </div>
-
-                    <section id="examTaskAnswers_4">
-                        <input id="questionAnswerInput_41" type="radio" />
-                        <label id="questionAnswerLabel_41" class="questionAnswerText" for="questionAnswerInput_41">
-                            For å komme best ut av en diskusjon på nett, skal du IKKE lese saken før du kommenter
-                        </label>
-
-                        <input id="questionAnswerInput_42" type="radio" />
-                        <label id="questionAnswerLabel_42" class="questionAnswerText" for="questionAnswerInput_42">
-                            Man kan vinne diskusjoner ved å rette på motpartnerens grammatikk. Dine egne gramatikkfeil er irrelevant
-                        </label>
-
-                        <input id="questionAnswerInput_43" type="radio" />
-                        <label id="questionAnswerLabel_43" class="questionAnswerText" for="questionAnswerInput_43">
-                            Når motparten viser til falske vitenskapelige forskningspapirer og fake news, skal man svare med personangrep som “Din dumme ku”, “Du forstår ikke en dritt” og “Den som ser deg passere i et gangfelt eller må ikke tråkke på bremsen, men på gassen”
-                        </label>
-
-                        <input id="questionAnswerInput_44" type="radio" />
-                        <label id="questionAnswerLabel_44" class="questionAnswerText" for="questionAnswerInput_44">
-                            Man skal avstå fra sjikane, personangrep, overdreven bruk av ufint språk, brudd på norsk lov (eller oppfordringer til det), samt usaklige avsporinger fra temaet presentert i innlegget.
-                        </label>
-
-                        <label for="examTask_5Input" class="nextTaskLabel">
-                            <img class="nextTaskSponge" src="public/images/eksamen/sponge.svg" />
-                        </label>
-                    </section>
                 </section>
             </section>
+        </section>
 
-            <section id="desk">
-                <section id="ashtrayContainer">
-                    <img id="smoke_1" class="smoke" src="public/images/eksamen/smoke.svg">
-                    <img id="smoke_2" class="smoke" src="public/images/eksamen/smoke.svg">
-                    <img id="ashtray" src="public/images/eksamen/ashtray.png">
+        <section id="desk">
+            <section id="ashtrayContainer">
+                <img id="smoke_1" class="smoke" src="public/images/eksamen/smoke.svg">
+                <img id="smoke_2" class="smoke" src="public/images/eksamen/smoke.svg">
+                <img id="ashtray" src="public/images/eksamen/ashtray.png">
+            </section>
+
+            <span id="deskTableTop"></span>
+
+            <span id="deskSign">
+                Eksamen
+            </span>
+        </section>
+
+        <section id="roachesContainer">
+            <img id="roach_1" src="public/images/avslutning/">
+        </section>
+
+        <section id="jonnyContainer">
+            <img id="jonnyImage" src="public/images/jonny/jonny_shadow.png" />
+        </section>
+        
+        <section id="speechBubbleContainer">
+            <input id="speechBubble_1Input" type="radio" />
+            <div id="speechBubble_1" class="speechBubble bottomLeft">
+                <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
+                <section id="bubbleText_1" class="bubbleText">
+                    <p>
+                        Så fint å se deg her!
+                    </p>
+                    <label class="nextBubble" for="bubbleText_2Input"> >>> </label>
                 </section>
 
-                <span id="deskTableTop"></span>
-                
-                <span id="deskSign">
-                    Eksamen
-                </span>
-            </section>
+                <input id="bubbleText_2Input" name="bubbleText" type="radio">
+                <section id="bubbleText_2" class="bubbleText">
+                    <p>Nå som du har gått gjennom kursene her hos LHS, så er det på tide med en eksamen!</p>
+                    <label class="nextBubble" for="bubbleText_3Input"> >>> </label>
+                </section>
 
-            <section id="cockroachesContainer">
-            </section>
 
-            <section id="jonnyContainer">
-                <img id="jonnyImage" src="public/images/jonny/jonny_shadow.png" />
-            </section>
-        </main>
-    </body>
+                <input id="bubbleText_3Input" name="bubbleText" type="radio">
+                <section id="bubbleText_3" class="bubbleText">
+                    <p>Velg de riktige svarene og vis hva du har lært.</p>
+                    <label class="nextBubble" for="speechBubble_1Input"> x </label>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>

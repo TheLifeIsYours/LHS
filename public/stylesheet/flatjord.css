@@ -159,10 +159,6 @@
     display: none;
 }
 
-#nextBubble {
-    cursor: pointer;
-}
-
 /* Bilde som dukker opp når man trykker på teleskopet */
 #flatEarth {
     position: absolute;
