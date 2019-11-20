@@ -3,6 +3,16 @@
     background: linear-gradient(#727272 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
 }
 
+#weedLight {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 300px;
+height: 500px;
+opacity: 0.5;
+z-index: 2;
+}
+
 #desk{
     position: absolute;
     background: rgb(29, 29, 29);
