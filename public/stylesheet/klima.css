@@ -469,6 +469,43 @@ input {
 }
 
 @keyframes jonny {
+    10% {
+        bottom: 10px;
+    }
+
+    20% {
+
+        bottom: 40px;
+    }
+
+    30% {
+        bottom: 60px;
+    }
+
+    40% {
+        bottom: 80px;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+
+    60% {
+        bottom: 120px;
+    }
+
+    70% {
+        bottom: 150px;
+    }
+
+    80% {
+        bottom: 170px;
+    }
+
+    90% {
+        bottom: 200px;
+    }
+
     100% {
         left: 20px;
         bottom: 250px;
