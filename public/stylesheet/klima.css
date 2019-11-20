@@ -15,7 +15,7 @@ input {
     width: 1280px;
     height: 352px;
     bottom: 0;
-    animation: snowGroundAnim 20s linear infinite;
+    animation: snowGroundAnim 15s linear infinite;
 }
 /* Keyframes */
 @keyframes snowGroundAnim {
@@ -31,17 +31,19 @@ input {
 /* Sol element */
 #sol {
     position: absolute;
-    top: 0px;
+    width: 200px;
+    top: 20px;
     right: -300px;
-    animation: solAnim 20s ease infinite;
+    animation: solAnim 15s ease infinite;
 }
 /* Keyframes */
 @keyframes solAnim {
-    0%{right: -300px;}
+    0%{right: 100px;}
+    2%{right: 100px;}
+    6% {right: -300px;}
     35%{right: -300px;}
     40% {right: 100px;}
-    95% {right: 100px;}
-    100% {right: -500px;}
+    100% {right: 100px;}
 }
 
 /*Styling av lava bilde*/
@@ -72,7 +74,7 @@ input {
     position: relative;
     top: -50px;
     left: 0px;
-    animation: snow 20s  linear infinite;
+    animation: snow 15s  linear infinite;
     opacity: 0;
     z-index: 1;
 }
