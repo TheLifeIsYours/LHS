@@ -58,9 +58,9 @@ input {
     box-shadow: 10px 10px 30px 10px #2C2C5B;
   }
 
-  #doormat:hover {
-      transform: scale(1.05) skew(30deg);
-  }
+#doormat:hover {
+    transform: scale(1.05) skew(30deg);
+}
 
 #doormatText {
     margin-top: 34px;
@@ -166,6 +166,8 @@ li {
     80% {opacity: 0;}
 }
 
+/* Skrivebord 
+---------------------------------------------------- */
 #facebookDesk {
     position: relative;
     margin-bottom: 0px;
@@ -177,340 +179,350 @@ li {
     z-index: 0;
   }
 
-  /* Stilsett av pc */
-  #computer {
-      position: absolute;
-      width: 710px;
-      height: 550px;
-      top: 30px;
-      left: 30px;
-  }
-
-  #brokenComputerScreen {
+/* Stilsett av pc 
+---------------------------------------------------- */
+#computer {
     position: absolute;
-    top: 60px;
-    left: 60px;
-    width: 650px;
-    height: 400px;
-    opacity: 0;
-    background-color: black;
-    z-index: 10;
-    animation-name: brokenComputerAnimation;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-  }
-
-  #loading {
-      position: absolute;
-      top: 185px;
-      left: 310px;
-      width: 30px;
-  }
-
-    @keyframes brokenComputerAnimation {
-      0% {opacity: 0;}
-      20% {opacity: 0;}
-      20.1% {opacity: 1;}
-      20.5% {opacity: 1;}
-      20.6% {opacity: 0;}
-      21% {opacity: 1;}
-      22% {opacity: 1;}
-      22.1% {opacity: 0;}
-      30% {opacity: 0;}
-      30.1% {opacity: 1;}
-      38% {opacity: 1;}
-      38.1% {opacity: 0;}
-
-  } 
-
-  #computerDisplay {
-      position: absolute;
-      width: 650px;
-      height: 400px;
-      background: #EFEFEF;
-      border-radius: 30px;
-      border-top: 30px solid #333333;
-      border-left: 30px solid #333333;
-      border-bottom: 30px solid #202020;
-      border-right: 30px solid #202020;
-      z-index: 3;
-  }
-
-  #computerFoot1 {
-      position: absolute;
-      width: 50px;
-      height: 130px;
-      background-color: #979797;
-      top: 400px;
-      left: 330px;
-      z-index: 1;
-  }
-
-  #computerFoot2 {
-    position: absolute;
-    width: 220px;
-    height: 30px;
-    background-color: #979797;
-    top: 530px;
-    left: 245px;
+    width: 710px;
+    height: 550px;
+    top: 30px;
+    left: 30px;
 }
 
-    #webcam {
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background-color: #202020;
-        border-radius: 50%;
-        top: 10px;
-        left: 350px;
-        z-index: 4;
-    }
+#brokenComputerScreen {
+position: absolute;
+top: 60px;
+left: 60px;
+width: 650px;
+height: 400px;
+opacity: 0;
+background-color: black;
+z-index: 10;
+animation-name: brokenComputerAnimation;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+}
 
-/* Alt av innhold på pcskjerm */
-#computerScreen {
+#loading {
     position: absolute;
-    top: 60px;
-    left: 60px;
+    top: 185px;
+    left: 310px;
+    width: 30px;
+}
+
+@keyframes brokenComputerAnimation {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    20.1% {opacity: 1;}
+    20.5% {opacity: 1;}
+    20.6% {opacity: 0;}
+    21% {opacity: 1;}
+    22% {opacity: 1;}
+    22.1% {opacity: 0;}
+    30% {opacity: 0;}
+    30.1% {opacity: 1;}
+    38% {opacity: 1;}
+    38.1% {opacity: 0;}
+
+} 
+
+#computerDisplay {
+    position: absolute;
     width: 650px;
-    height: 400;
+    height: 400px;
+    background: #EFEFEF;
+    border-radius: 30px;
+    border-top: 30px solid #333333;
+    border-left: 30px solid #333333;
+    border-bottom: 30px solid #202020;
+    border-right: 30px solid #202020;
     z-index: 3;
 }
 
-    /* Facebook meny bar */
-    #facebookMenu {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 650px;
-        height: 35px;
-        background-color: #4267B2;
-    }
+#computerFoot1 {
+    position: absolute;
+    width: 50px;
+    height: 130px;
+    background-color: #979797;
+    top: 400px;
+    left: 330px;
+    z-index: 1;
+}
 
-    #facebookLogo {
-        position: absolute;
-        top: 5px;
-        left: 40px;
-        width: 25px;
-        height: 25px;
-        background-color: white;
-        border-radius: 2.5px;
-    }
+#computerFoot2 {
+position: absolute;
+width: 220px;
+height: 30px;
+background-color: #979797;
+top: 530px;
+left: 245px;
+}
 
-    #facebookF {
-        position: absolute;
-        top: 0px;
-        left: 10px;
-        color: #4267B2;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 530;
-        font-size: 25px;
-    }
+#webcam {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #202020;
+    border-radius: 50%;
+    top: 10px;
+    left: 350px;
+    z-index: 4;
+}
 
-    #searchBar {
-        position: absolute;
-        top: 5px;
-        left: 70px;
-        width: 200px;
-        height: 23px;
-        font-family: sans-serif;
-        font-size: 12px;
-        background-color: #FFFFFF;
-        border: 1px solid #CECECE;
-        border-radius: 3px;
-        color: grey;
-    }
+/* Alt av innhold på pcskjerm 
+---------------------------------------------------- */
+#computerScreen {
+position: absolute;
+top: 60px;
+left: 60px;
+width: 650px;
+height: 400;
+z-index: 3;
+}
 
-    #searchTxt {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-    }
+/* Facebook meny bar 
+---------------------------------------------------- */
+#facebookMenu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 650px;
+    height: 35px;
+    background-color: #4267B2;
+}
 
-    #searchIcon {
-        position: absolute;
-        top: 4px;
-        left: 180px;
-        width: 15px;
-        opacity: 0.5;
-    }
+#facebookLogo {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 2.5px;
+}
 
-    #fbIcons {
-        position: absolute;
-        top: 5px;
-        left: 350px;
-        width: 280px;
-    }
+#facebookF {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #4267B2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 530;
+    font-size: 25px;
+}
 
-    /* Artikkel av Greta */
-    #gretaArticle {
-        position: absolute;
-        top: 45px;
-        left: 40px;
-        width: 250px;
-        height: 350px;
-        background-color: #EAEAEA;
-        border-radius: 5px;
-        border: 1px solid #CECECE;
-    }
+#searchBar {
+    position: absolute;
+    top: 5px;
+    left: 70px;
+    width: 200px;
+    height: 23px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #CECECE;
+    border-radius: 3px;
+    color: grey;
+}
 
-    #gretaImg {
-        position: absolute;
-        width: 250px;
-        border-radius: 5px;
-    }
+#searchTxt {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
 
-    #articleLinkTxt {
-        position: absolute;
-        top: 265px;
-        left: 0px;
-        width: 242px;
-        height: 15px;
-        padding-left: 8px;
-        background-color: #DFDFDF;
-        font-size: 10px;
-        font-family: sans-serif;
-        color: #6D6D6D;
-        border-top: 2px solid #CECECE;
-    }
-    
-    #articleHeading {
-        position: absolute;
-        font-family: 'Times New Roman', Times, serif;
-        width: 242px;
-        height: 70px;
-        background-color: #DFDFDF;
-        top: 280px;
-        font-weight: 550;
-        font-size: 30px;
-        padding-left: 8px;
-    }
+#searchIcon {
+    position: absolute;
+    top: 4px;
+    left: 180px;
+    width: 15px;
+    opacity: 0.5;
+}
 
-    /* Kommentarfelt */
-    .commentSection {
-        position: absolute;
-        top: 45px;
-        left: 300px;
-        width: 340px;
-        height: 350px;
-        background-color: #EAEAEA;
-        border-radius: 5px;
-        border: 1px solid #CECECE;
-    }
+#fbIcons {
+    position: absolute;
+    top: 5px;
+    left: 350px;
+    width: 280px;
+}
 
-    #newComment{
-        position: absolute;
-        bottom: 5px;
-        width: 270px;
-        height: 30px;
-        font-family: sans-serif;
-        font-size: 12px;
-        background-color: #DFDFDF;
-        padding: 5px;
-        border-radius: 15px;
-        left: 10px;
-        border: 1px solid #CECECE;
-        color: grey;
-    }
+/* Artikkel av Greta 
+---------------------------------------------------- */
+#gretaArticle {
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    width: 250px;
+    height: 350px;
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    border: 1px solid #CECECE;
+}
 
-    #sendButton {
-        position: relative;
-        margin-left: 305px;
-        top: 298px;
-        font-size: 30px;
-        color: #4267B2;
+#gretaImg {
+    position: absolute;
+    width: 250px;
+    border-radius: 5px;
+}
 
-    }
+#articleLinkTxt {
+    position: absolute;
+    top: 265px;
+    left: 0px;
+    width: 242px;
+    height: 15px;
+    padding-left: 8px;
+    background-color: #DFDFDF;
+    font-size: 10px;
+    font-family: sans-serif;
+    color: #6D6D6D;
+    border-top: 2px solid #CECECE;
+}
 
-    .facebookName {
-        font-family: sans-serif;
-        font-weight: 600;
-        color: #4267B2;
-        font-size: 12px;
-    }
+#articleHeading {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    width: 242px;
+    height: 70px;
+    background-color: #DFDFDF;
+    top: 280px;
+    font-weight: 550;
+    font-size: 30px;
+    padding-left: 8px;
+}
 
-    .facebookComment {
-        position: absolute;
-        width: 300px;
-        font-family: sans-serif;
-        font-size: 12px;
-        background-color: #DFDFDF;
-        padding: 10px;
-        border-radius: 15px;
-        left: 8px;
-        border: 1px solid #CECECE;
-        margin-top: 5px;
-    }
+/* Kommentarfelt 
+---------------------------------------------------- */
+.commentSection {
+    position: absolute;
+    top: 45px;
+    left: 300px;
+    width: 340px;
+    height: 350px;
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    border: 1px solid #CECECE;
+}
 
-    .facebookActions {
-        position: relative;
-        top: 25px;
-        font-family: sans-serif;
-        color: #4267B2;
-        font-size: 10px;
-        font-weight: 400;
-    }
+.facebookName {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #4267B2;
+    font-size: 12px;
+}
 
-    .commentMinutes {
-        color: #6D6D6D;
-    }
+.facebookComment {
+    position: absolute;
+    width: 300px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #DFDFDF;
+    padding: 10px;
+    border-radius: 15px;
+    left: 8px;
+    border: 1px solid #CECECE;
+    margin-top: 5px;
+}
 
-    .fbSection {
-        position: absolute;
-        top: 0px;
-        width: 340px;
-        height: 350px;
-        background-color: #EAEAEA;
-    }
+.facebookActions {
+    position: relative;
+    top: 25px;
+    font-family: sans-serif;
+    color: #4267B2;
+    font-size: 10px;
+    font-weight: 400;
+}
 
-    .jonnyComment{
-        position: absolute;
-        width: 270px;
-        font-family: sans-serif;
-        font-size: 12px;
-        background-color: #DFDFDF;
-        padding: 5px;
-        border-radius: 15px;
-        left: 10px;
-        border: 1px solid #CECECE;
-        color: black;
-        bottom: 5px;
-    }
+.commentMinutes {
+    color: #6D6D6D;
+}
+
+.fbSection {
+    position: absolute;
+    top: 0px;
+    width: 340px;
+    height: 350px;
+    background-color: #EAEAEA;
+}
+
+.jonnyComment{
+    position: absolute;
+    width: 270px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #DFDFDF;
+    padding: 5px;
+    border-radius: 15px;
+    left: 10px;
+    border: 1px solid #CECECE;
+    color: black;
+    bottom: 5px;
+}
+
+#newComment{
+    position: absolute;
+    bottom: 5px;
+    width: 270px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #DFDFDF;
+    padding: 5px;
+    border-radius: 15px;
+    left: 10px;
+    border: 1px solid #CECECE;
+    color: grey;
+}
+
+#sendButton {
+    position: relative;
+    margin-left: 305px;
+    top: 298px;
+    font-size: 30px;
+    color: #4267B2;
+
+}
 
 
-    /* "Skyld på andre" */
-    #fbSection_1 {
-        display: none;
-    }
+/* "Skyld på andre" 
+---------------------------------------------------- */
+#fbSection_1 {
+    display: none;
+}
 
-    #hugoHansenComment {
-        top: 100px;
-    }
+#hugoHansenComment {
+    top: 100px;
+}
 
-    /* Kveruler */
-    #fbSection_2 {
-        display: none;
-    }
+/* Kveruler 
+---------------------------------------------------- */
+#fbSection_2 {
+    display: none;
+}
 
-    /* Snakk nedlatende om ungdommen */
-    #fbSection_3{
-        display: none;
-    }
+/* Snakk nedlatende om ungdommen 
+---------------------------------------------------- */
+#fbSection_3{
+    display: none;
+}
 
-    #sylviComment {
-        top: 75px;
-    }
+#sylviComment {
+    top: 75px;
+}
 
-    /* Påstå at klimakrisen er en konspirasjon */
-    #fbSection_4 {
-        display: none;
-    }
+/* Påstå at klimakrisen er en konspirasjon 
+---------------------------------------------------- */
+#fbSection_4 {
+    display: none;
+}
 
-    #ruthComment {
-        top: 115px;
-    }
+#ruthComment {
+    top: 115px;
+}
 
-/* Knapper */
+/* Knapper 
+---------------------------------------------------- */
 #buttons {
     position: absolute;
     top: 630px;
