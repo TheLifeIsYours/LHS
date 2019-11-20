@@ -106,18 +106,6 @@ input {
     animation-delay: 3s;
 }
 
-@keyframes pulse {
-    0% {
-        opacity: 0;
-    }
-     50% {
-         opacity: 0.8;
-     }
-     100% {
-        bottom:3em;
-     }
-}
-
 /* Roaches related styles
 -------------------------------------------------------------------------------*/
  #roachesContainer {
@@ -132,6 +120,31 @@ input {
     bottom: 2em;
 }
 
+/* Snakke bobbler
+----------------------------------------------------------------------------------*/
+#speechBubbleContainer {
+    position: absolute;
+    top: 20em;
+    left: 10em;
+}
+
+.bubbleText {
+    display: none;
+}
+
+#bubbleText_1Input:checked ~ #bubbleText_1 {
+    display: block;
+}
+#bubbleText_2Input:checked ~ #bubbleText_2 {
+    display: block;
+}
+#bubbleText_3Input:checked ~ #bubbleText_3 {
+    display: block;
+}
+
+#speechBubble_1Input:checked ~ #speechBubble_1 {
+    display: none;
+}
 
 
 /* Exam test Section toggle
@@ -304,7 +317,7 @@ input {
 ------------------------------------------------------------------------*/
 
 @keyframes lamp {
-    
+
 }
 
 
@@ -312,5 +325,14 @@ input {
 
 }
 
-
-
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+     50% {
+         opacity: 0.8;
+     }
+     100% {
+        bottom:3em;
+     }
+}
