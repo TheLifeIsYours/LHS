@@ -43,7 +43,6 @@
     animation-play-state: running;
 }
 
-
 #speechBubble_1{
     position: absolute;
     background: #fff;
@@ -156,11 +155,25 @@
 
 #plant{
     position: absolute;
-    width: 150px;
-    height: 170px;
+    width: 160px;
+    height: 190px;
     left: 30px;
     top: 250px;
     z-index: 1;
+    animation: plantAnimation 1s linear infinite;
+    animation-play-state: paused;
+    transition-duration: 2;
+}
+
+@keyframes plantAnimation{
+0% {top: 250px; right: 20px;}
+50% {top: 225px}
+100% {top: 250px}
+}
+
+#plant:hover{
+transform: scale(1.05);
+animation-play-state: running;
 }
 
 #garbage{
@@ -206,6 +219,18 @@
     transform: scale(1);
     animation: zoom 2s ease infinite;
     z-index: 2;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1.5);
+    }
 }
 
 #star_1{
@@ -301,15 +326,4 @@
     100%{right: -200px; top: 400px;}
 }
 
-@keyframes zoom{
-    0%{
-        transform: scale(1.5);
-    }
-    50%{
-        transform: scale(2);
-    }
-    100%{
-        transform: scale(1.5);
-    }
-}
 
