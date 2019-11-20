@@ -37,6 +37,22 @@
     position: absolute;
     right:170px;
     top: 30px;
+    animation-name: exitSign;
+    animation-duration: 1s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exitSign{
+    0% {
+        transform: scale();
+    }
+    50% {
+        transform: scale();
+    }
+    100%{
+        transform: scale(1.1);
+    }
 }
 
 #doorContainer {
@@ -55,6 +71,12 @@
 
 #doorContainer:hover{
     transform: rotate(3deg)
+}
+
+#doorText {
+    position: absolute;
+    top: 70px;
+    left: 44px;
 }
 
 #door{
@@ -77,18 +99,6 @@
     left: 1130px;
     bottom: 770px;
     z-index: 1;
-}
-
-#sign{
-    width: 100px;
-    height: 30px;
-    position: relative;
-    z-index: 2;
-    left: 1025px;
-    bottom: 900px;
-    color: white;
-    font-family: Crayon, comic sans ms;
-    text-align: center;
 }
 
 #jonny{

@@ -131,7 +131,7 @@ li {
     97% {top: 110px}
     98% {top: 130px}
     99% {top: 110px;}
-    100% {top: 130; right: -200; transform: rotateY(180deg);}
+    100% {top: 130px; right: -200px; transform: rotateY(180deg);}
 }
 
 #jonnyImg {

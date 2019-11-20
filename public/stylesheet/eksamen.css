@@ -2,24 +2,126 @@ input {
     display: none;
 }
 
+#mainContainer {
+    background: linear-gradient(#dc9d62 78%, white 78%, white 81%, rgb(30, 30, 88) 81%, #333369 90%);
+}
+
 #blackboard {
-    padding:0.25em,
+    padding: 0.25em;
+    width: 720px;
+    height: 420px;
+    background: rgb(43, 43, 43);
+}
+
+#desk {
+    top: 590px;
+}
+
+.questionText {
+    font-size: 1.4em;
 }
 
 .questionAnswerText {
+    position: relative;
     display: block;
     max-width: 100%;
     padding: 0.25em;
+    padding-left: 1.25em;
     cursor: pointer;
 }
+
 .questionAnswerText:hover {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.2);
 }
 
+.questionAnswerText::before {
+    content: '';
+    position: absolute;
+    left: 0.25em;
+    top: 0.55em;
+    width: 0.5em;
+    height: 0.5em;
+    border: solid 3px white;
+    border-radius: 1em;
+}
+/* Black Board Next Task Lable (Sponge)
+----------------------------------------------------------*/
+.nextTaskLabel {
+    position: absolute;
+    bottom: 1.5em;
+    left: 0.5em;
+    width: 5em;
+    padding: 0.25em;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nextTaskLabel:hover {
+    font-weight: bold;
+    width: 5.5em;
+}
+
+.nextTaskLabel > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nextTaskSponge {
+    width: 100%;
+}
+
+/* Ashtray
+--------------------------------------------------------*/
+#ashtrayContainer {
+    position: absolute;
+    top: -3em;
+    width: 4em;
+    z-index: 1;
+}
+
+.smoke {
+    position: absolute;
+    bottom: 0.25em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s;
+    animation: pulse 7s infinite forwards;
+}
+
+#smoke_1 {
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+#smoke_2 {
+    animation-delay: 3s;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+     50% {
+         opacity: 0.8;
+     }
+     100% {
+        bottom:3em;
+     }
+}
+
+
 /* Exam test Section toggle
--------------------------------------------------------*/
+--------------------------------------------------------*/
 .examTask {
     display: none;
+}
+
+#examTask_1Input:checked ~ #examTask_1 {
+    display: block;
 }
 
 #examTask_1Input:checked ~ #examTask_1 {
@@ -38,24 +140,142 @@ input {
     display: block;
 }
 
-/* Exam test question toggle
+/* Exam test 1 questions
 -----------------------------------------------------------*/
-
-
-#examTestQuestionInput_11:checked ~ #examTestQuestion_11 {
-    width: 10em;
-    height: 10em;
-    background: yellow;
+#questionAnswerInput_11:checked ~ #questionAnswerLabel_11{
+    color: lightgreen;
+}
+#questionAnswerInput_11:checked ~ #questionAnswerLabel_11::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
 }
 
-#questionInput_3:checked ~ #box {
-    width: 10em;
-    height: 10em;
-    background: yellow;
+#questionAnswerInput_12:checked ~ #questionAnswerLabel_12 {
+    color: lightgreen;
+}
+#questionAnswerInput_12:checked ~ #questionAnswerLabel_12::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
 }
 
-#questionInput_4:checked ~ #box {
-    width: 10em;
-    height: 10em;
-    background: yellow;
+#questionAnswerInput_13:checked ~ #questionAnswerLabel_13 {
+    color: lightgreen;
+}
+#questionAnswerInput_13:checked ~ #questionAnswerLabel_13::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_14:checked ~ #questionAnswerLabel_14 {
+    color: rgb(255, 103, 86);
+}
+#questionAnswerInput_14:checked ~ #questionAnswerLabel_14::before {
+    background: rgb(124, 0, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+/* Exam test 1 question toggle
+-----------------------------------------------------------*/
+#questionAnswerInput_21:checked ~ #questionAnswerLabel_21 {
+    color: lightgreen;
+}
+#questionAnswerInput_21:checked ~ #questionAnswerLabel_21::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_22:checked ~ #questionAnswerLabel_22 {
+    color: lightgreen;
+}
+#questionAnswerInput_22:checked ~ #questionAnswerLabel_22::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_23:checked ~ #questionAnswerLabel_23 {
+    color: lightgreen;
+}
+#questionAnswerInput_23:checked ~ #questionAnswerLabel_23::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_24:checked ~ #questionAnswerLabel_24 {
+    color: rgb(255, 103, 86);
+}
+#questionAnswerInput_24:checked ~ #questionAnswerLabel_24::before {
+    background: rgb(124, 0, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+/* Exam test 1 question toggle
+-----------------------------------------------------------*/
+#questionAnswerInput_31:checked ~ #questionAnswerLabel_31 {
+    color: lightgreen;
+}
+#questionAnswerInput_31:checked ~ #questionAnswerLabel_31::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_32:checked ~ #questionAnswerLabel_32 {
+    color: lightgreen;
+}
+#questionAnswerInput_32:checked ~ #questionAnswerLabel_32::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_33:checked ~ #questionAnswerLabel_33 {
+    color: lightgreen;
+}
+#questionAnswerInput_33:checked ~ #questionAnswerLabel_33::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_34:checked ~ #questionAnswerLabel_34 {
+    color: rgb(255, 103, 86);
+}
+#questionAnswerInput_34:checked ~ #questionAnswerLabel_34::before {
+    background: rgb(124, 0, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+/* Exam test 1 question
+-----------------------------------------------------------*/
+#examTaskAnswers_4 {
+    font-size: 0.8em;
+}
+
+#questionAnswerInput_41:checked ~ #questionAnswerLabel_41 {
+    color: lightgreen;
+}
+#questionAnswerInput_41:checked ~ #questionAnswerLabel_41::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_42:checked ~ #questionAnswerLabel_42 {
+    color: lightgreen;
+}
+#questionAnswerInput_42:checked ~ #questionAnswerLabel_42::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_43:checked ~ #questionAnswerLabel_43 {
+    color: lightgreen;
+}
+#questionAnswerInput_43:checked ~ #questionAnswerLabel_43::before {
+    background: rgb(35, 124, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+#questionAnswerInput_44:checked ~ #questionAnswerLabel_44 {
+    color: rgb(255, 103, 86);
+}
+#questionAnswerInput_44:checked ~ #questionAnswerLabel_44::before {
+    background: rgb(124, 0, 0);
+    border-color: rgb(255, 255, 255);
 }
