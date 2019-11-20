@@ -6,6 +6,8 @@ input {
     background: linear-gradient(#dc9d62 78%, white 78%, white 81%, rgb(30, 30, 88) 81%, #333369 90%);
 }
 
+/* Blackboard related styles
+--------------------------------------------------------------*/
 #blackboard {
     padding: 0.25em;
     width: 720px;
@@ -13,8 +15,13 @@ input {
     background: rgb(43, 43, 43);
 }
 
-#desk {
-    top: 590px;
+#examStartLabel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    text-align: center;
 }
 
 .questionText {
@@ -30,7 +37,7 @@ input {
     cursor: pointer;
 }
 
-.questionAnswerText:hover {
+.questionAnswerText:hover, #examStartLabel:hover {
     background: rgba(255,255,255,0.2);
 }
 
@@ -44,6 +51,7 @@ input {
     border: solid 3px white;
     border-radius: 1em;
 }
+
 /* Black Board Next Task Lable (Sponge)
 ----------------------------------------------------------*/
 .nextTaskLabel {
@@ -74,8 +82,14 @@ input {
     width: 100%;
 }
 
-/* Ashtray
---------------------------------------------------------*/
+/* Desk related styles
+--------------------------------------------------------------------------------------*/
+#desk {
+    top: 590px;
+    background: linear-gradient(rgb(56, 35, 19) -5%, rgb(129, 84, 47) 10%);
+}
+
+/* Ashtray stylings */
 #ashtrayContainer {
     position: absolute;
     top: -3em;
@@ -101,24 +115,119 @@ input {
     animation-delay: 3s;
 }
 
-@keyframes pulse {
-    0% {
-        opacity: 0;
-    }
-     50% {
-         opacity: 0.8;
-     }
-     100% {
-        bottom:3em;
-     }
+/* Roaches related styles
+-------------------------------------------------------------------------------*/
+ #roachesContainer {
+    
+ }
+
+ #roach_1 {
+     position: absolute;
+     left: 100px;
+     top: 100px;
+     transform: rotate(180deg);
+     animation: roach1Anim 10s linear infinite;
+ }
+ #roach_2 {
+    position: absolute;
+    right: 100px;
+    top: 110px;
+    transform: rotate(180deg);
+    animation: roach2Anim 10s linear infinite;
+}
+#roach_3 {
+    position: absolute;
+    width: 20px;
+    right: 100px;
+    top: 110px;
+    opacity: 1;
+    transform: rotate(90deg);
+    animation: roach3Anim 10s linear infinite;
+}
+
+ @keyframes roach1Anim {
+     0% {left: 100px; top: -100px; transform: rotate(180deg);}
+     10% {top: 100px; transform: rotate(180deg);}
+     15% {transform: rotate(90deg);}
+     20% {left: 100px; top: 100px;}
+     30% {left: 400px; transform: rotate(90deg);}
+     35% {transform: rotate(130deg);}
+     40% {left: 400px; top: 100px;}
+     50% {left: 700px; top: 400px; transform: rotate(130deg);}
+     55% {transform: rotate(70deg);}
+     60% {left: 700px; top: 400px;}
+     70% {left: 1150px; top: 100px; transform: rotate(70deg);}
+     75% {top: 100px; transform: rotate(180deg);}
+     80% {transform: rotate(360deg);}
+     85% {top: 100px; transform: rotate(0deg);}
+     90% {left: 1150px; top: -100px; transform: rotate(0deg);}
+     100% {left: 100px; top: -100px;}
+ }
+ @keyframes roach2Anim {
+     0% {right: 100px; top: 110px; transform: rotate(180deg);}
+     30%{top: 530px; transform: rotate(180deg);}
+     35%{transform: rotate(0deg);}
+     40%{top: 530px;}
+     75% {right: 100px; top: 120px; transform: rotate(0deg);}
+     80% {transform: rotate(-260deg);}
+     85% {right: 100px; top: 110px; transform: rotate(0deg);}
+     100% {right: 100px; top: 110px; transform: rotate(180deg);}
+ }
+ @keyframes roach3Anim {
+     0% {top: 110px; right: 100px; opacity: 0;}
+     84% {opacity: 0;}
+     85% {right: 100px; opacity: 1;}
+     90% {right: 60px;}
+     95% {right: 60px;}
+     99% {right: -100px; opacity: 1;}
+     100% {top: 110px; right: -100px; opacity: 0;}
+ }
+
+
+/* Jonny related styles
+-------------------------------------------------------------------------------*/
+#jonnyContainer {
+    position: absolute;
+    bottom: 2em;
+}
+
+/* Snakke bobbler
+----------------------------------------------------------------------------------*/
+#speechBubbleContainer {
+    position: absolute;
+    top: 13em;
+    left: 13em;
+}
+
+.bubbleText {
+    display: none;
+}
+
+#bubbleText_1Input:checked ~ #bubbleText_1 {
+    display: block;
+}
+#bubbleText_2Input:checked ~ #bubbleText_2 {
+    display: block;
+}
+#bubbleText_3Input:checked ~ #bubbleText_3 {
+    display: block;
+}
+
+#speechBubble_1Input:checked ~ #speechBubble_1 {
+    display: none;
 }
 
 
 /* Exam test Section toggle
---------------------------------------------------------*/
-.examTask {
+--------------------------------------------------------------------------------------*/
+.examSlide {
     display: none;
 }
+
+#examStartInput:checked ~ #examStart {
+    display: block;
+}
+
 
 #examTask_1Input:checked ~ #examTask_1 {
     display: block;
@@ -278,4 +387,28 @@ input {
 #questionAnswerInput_44:checked ~ #questionAnswerLabel_44::before {
     background: rgb(124, 0, 0);
     border-color: rgb(255, 255, 255);
+}
+
+/* Animation keyframes
+------------------------------------------------------------------------*/
+
+@keyframes lamp {
+
+}
+
+
+@keyframes roaches {
+
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+     50% {
+         opacity: 0.8;
+     }
+     100% {
+        bottom:3em;
+     }
 }

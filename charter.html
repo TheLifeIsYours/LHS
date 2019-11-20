@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lynkurs i charter</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
-        <link rel="stylesheet" type="text/css" href="public/stylesheet/charter.css">
-    </head>
-    <body>
-        <!-- Hovedkontainer for klasserom -->
-        <main id="mainContainer">
 
-<!--bilder i hovedkontainer-->
-            <!-- Label for snakkebobble till Jonny -->
-            <label for="speechBubble_1Input">
-                    <!-- Bilde av Jonny -->
-                    <img id="jonny" src="public/images/jonny/jonny.png" alt="jonny">
-                </label>
-                <input id="speechBubble_1Input" type="radio">
-                <!-- Snakkebobble till Jonny -->
-                <div id="speechBubble_1" class="speechBubble topLeft">
-                    <p>
-                        I dette faget gir vi deg et lynkurs i charter.
-                        <br> Vi har vært så heldig å få Svein Østvik som foreleser
-                    </p>
+<head>
+    <title>Lynkurs i charter</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/charter.css">
+</head>
+
+<body>
+    <!-- Hovedkontainer for klasserom -->
+    <main id="mainContainer">
+
+        <!--bilder i hovedkontainer-->
+        <!-- Label for snakkebobble till Jonny -->
+        <label for="speechBubble_1Input">
+            <!-- Bilde av Jonny -->
+            <img id="jonny" src="public/images/jonny/jonny.png" alt="jonny">
+        </label>
+        <input id="speechBubble_1Input" type="radio">
+        <!-- Snakkebobble till Jonny -->
+        <div id="speechBubble_1" class="speechBubble topLeft">
+            <p>
+                I dette faget gir vi deg et lynkurs i charter.<br>
+                Vi har vært så heldig å få Svein Østvik som foreleser
+            </p>
+        </div>
+        <img id="svein" src="public/images/charter/sveinface.png" alt="svein">
+        <img id="bodySvein" src="public/images/charter/sveinbody.png" alt="body-svein">
+        <img id="rat_1" src="public/images/Index/Rat.png" alt="rat">
+
+        <img id="exit" src="public/images/charter/nødutgang.jpg" alt="exit">
+        <div id=kongHaraldDiv>
+            <img id="kongHarald" src="public/images/charter/kongharald.jpg">
+        </div>
+
+        <!--Lydfil som spiller "kongen av mallorca"-->
+        <audio autoplay loop src="public/audio/hereYouGoPernille.mp3" type="audio/mpeg"></audio>
+
+
+        <!--Dør til neste side-->
+        <a id="doorContainer" href="facebook.html"><span id="doorText">Klasserom 2</span></a>
+
+        <div id="door"></div>
+        <div id="handle"></div>
+
+
+        <!--Overskrift på tavlen -->
+        <section id="blackboard">
+            <h1>Reiseliv: </h1>
+            <div id="pictureOnBlackboard">
+                <div>
+
+                    <!--Bilder på tavlen -->
+                    <div>
+                        <img id="crocs" src="public/images/charter/crocs.png" alt="crocs">
+                    </div>
+
+                    <div>
+                        <img id="sunscreen" src="public/images/charter/sunscreen.png" alt="sunscreen">
+                    </div>
+
+                    <div>
+                        <img id="flag" src="public/images/charter/flag.png" alt="flag">
+                    </div>
+
+                    <div>
+                        <img id="taxfree" src="public/images/charter/kvote.png" alt="taxfree">
+                    </div>
                 </div>
-            <img id="svein" src="public/images/charter/sveinface.png" alt="svein">
-            <img id="bodySvein" src="public/images/charter/sveinbody.png" alt="body-svein">
-            <img id="rat_1" src="public/images/Index/Rat.png" alt="rat">
 
-            <img id="exit" src="public/images/charter/nødutgang.jpg" alt="exit" width="80" height="50">
-            <div id=kongHaraldDiv>
-                <img id="kongHarald" src="public/images/charter/kongharald.jpg" alt="kongen" width="100" height="100">
+                <!--tekst på tavlen  -->
+
+                <div id="textOnBlackboard">
+                    <ul>
+                        <li>Ha alltid på crocs</li>
+                        <br>
+                        <li>Ingen solkrem første dagen</li>
+                        <br>
+                        <li>Snakk alltid norsk. <br>Blir du ikke forstått, snakk langsommere og høyt</li>
+                        <br>
+                        <li>Lær deg tax-free kvoten inn til Norge</li>
+                    </ul>
+                </div>
             </div>
-            
-<!--Lydfil som spiller "kongen av mallorca"-->
-            <audio autoplay loop src="public/audio/hereYouGoPernille.mp3" type="audio/mpeg"></audio>
+        </section>
+        <section id="desk">
+        </section>
+    </main>
+</body>
 
-
-            <!--Dør til neste side-->
-            <a id="doorContainer" href="facebook.html"><span id="doorText">Klasserom 2</span></a>
-
-            <div id="door"></div>
-            <div id="handle"></div>
-            
-        
-
-            <section id="blackboard">
-                <h1>Reiseliv: </h1>
-                <div id="pictureOnBlackboard"><div>
-<div>
-<img id="crocs" src="public/images/charter/crocs.png" alt="crocs">
-</div>
-
-<div>
-<img id="sunscreen" src="public/images/charter/sunscreen.png" alt="sunscreen">
-</div>
-
-<div>
-<img id="flag" src="public/images/charter/flag.png" alt="flag">
-</div>
-
-<div>
-<img id="taxfree" src="public/images/charter/kvote.png" alt="taxfree">
-</div>
-</div>
-
-<div id="textOnBlackboard">
-        <ul>
-            <li>Ha alltid på crocs</li>
-            <br>
-            <li>Ingen solkrem første dagen</li>
-            <br> 
-            <li>Snakk alltid norsk. <br>Blir du ikke forstått, snakk langsommere og høyt</li>
-            <br>
-            <li>Lær deg tax-free kvoten inn til Norge</li>
-        </ul> 
-    </div>
-            </section>
-            <section id="desk">
-            </section>
-        </main>
-    </body>
 </html>

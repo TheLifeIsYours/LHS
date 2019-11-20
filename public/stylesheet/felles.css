@@ -36,8 +36,11 @@ html, body {
     padding: 10px;
     margin-bottom: 1em;
     border: solid 2px #34373c;
-    cursor: pointer;
     overflow-wrap: break-word;
+  }
+
+  .nextBubble, label {
+      cursor: pointer;
   }
   
   /* Klasser for posisjon av pekere til snakkeboblene
