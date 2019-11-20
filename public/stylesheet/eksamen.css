@@ -118,6 +118,13 @@ input {
      }
 }
 
+/* Roaches related styles
+-------------------------------------------------------------------------------*/
+ #roachesContainer {
+    
+ }
+
+
 /* Jonny related styles
 -------------------------------------------------------------------------------*/
 #jonnyContainer {
@@ -292,3 +299,18 @@ input {
     background: rgb(124, 0, 0);
     border-color: rgb(255, 255, 255);
 }
+
+/* Animation keyframes
+------------------------------------------------------------------------*/
+
+@keyframes lamp {
+    
+}
+
+
+@keyframes roaches {
+
+}
+
+
+
