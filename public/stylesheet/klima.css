@@ -429,7 +429,7 @@ input {
     position: absolute;
     left: 200px;
     bottom: 100px;
-    animation: jonny 5s ease-out forwards;
+    animation: jonny 3s ease-out forwards;
     visibility: visible;
     z-index: 100;
 }
@@ -470,6 +470,46 @@ input {
 }
 
 /*----------------------------------------------------*/
+
+/*Styling av mars*/
+/*----------------------------------------------------*/
 #marsPic{
     margin: 20px;
 }
+/*----------------------------------------------------*/
+
+/*Styling av gress*/
+/*----------------------------------------------------*/
+#grassPic_1{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 10px;
+}
+#grassPic_2{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 10px;
+    right: 200px;
+}#grassPic_3{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 50px;
+    right: 10px;
+}
+#grassPic_4{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 100px;
+    left: 20px
+}#grassPic_5{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 200px;
+    left: 500px;
+}
+/*----------------------------------------------------*/
