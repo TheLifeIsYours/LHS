@@ -12,7 +12,6 @@
     top: 200px;
     z-index: 1;
 }
-
 #doorJonny {
     position: absolute;
     top: 385px;
@@ -20,7 +19,6 @@
     z-index: 1;
     transition-duration: 1s;
 }
-
 #doorJonny:hover {
     transform: scale(1.1);
 }
