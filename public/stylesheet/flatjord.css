@@ -23,7 +23,7 @@
     top: 0em;
     width: 2.5em;
     transform: rotate3d(11, -7, 17, -92deg);
-    z-index: 99;
+    z-index: 1;
 }
 
 #telescopeImage {
@@ -50,6 +50,7 @@
     height: 100%;
     display: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 #telescopeInput:checked ~ #flatEarth {
