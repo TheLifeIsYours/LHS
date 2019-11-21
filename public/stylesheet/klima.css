@@ -4,7 +4,7 @@
 
 /*Animation av snø for bakken*/
 /*----------------------------------------------------*/
-/* Snø element */
+/* Snø dekke */
 #snowGround {
     background-color: white;
     position: absolute;
@@ -75,6 +75,7 @@
     z-index: 1;
 }
 
+/* Possisjonering av snøflak */
 #snowFlake_1 {
     transform: translate(50px, -150px);
 }

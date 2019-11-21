@@ -192,7 +192,6 @@
 
 /* Snakkebobble til jonny
 ------------------------------------------------------------*/
-
 #speechBubble_1 {
     position: absolute;
     left: 210px;
@@ -212,7 +211,6 @@
 
 /* Animation for rotte
 ------------------------------------------------------------*/
-
 #rat_1 {
     position: absolute;
     left: 1300px;
@@ -220,6 +218,7 @@
     animation: rat1Anim 5s linear infinite;
 }
 
+/* Rotte keyframes */
 @keyframes rat1Anim {
     0% {
         left: 1300px;
