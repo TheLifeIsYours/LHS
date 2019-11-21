@@ -58,7 +58,6 @@
     margin-bottom: 1em;
     background: #fff;
     border: solid 2px #34373c;
-    overflow-wrap: break-word;
     animation: speechBubbleAnimation 20s normal;
     opacity: 0;
     cursor: pointer;
@@ -156,7 +155,7 @@
     height: 500px;
     opacity: 0.5;
     z-index: 2;
-    }
+}
 
 #plant{
     position: absolute;

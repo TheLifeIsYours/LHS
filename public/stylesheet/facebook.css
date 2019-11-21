@@ -244,12 +244,12 @@ animation-direction: normal;
 }
 
 #computerFoot2 {
-position: absolute;
-width: 220px;
-height: 30px;
-background-color: #979797;
-top: 530px;
-left: 245px;
+    position: absolute;
+    width: 220px;
+    height: 30px;
+    background-color: #979797;
+    top: 530px;
+    left: 245px;
 }
 
 #webcam {

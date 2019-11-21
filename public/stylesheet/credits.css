@@ -15,6 +15,7 @@
     top: 95%;
     animation: scroll 100s linear infinite;
 }
+
 #menuSection, #menuButtonText {
     position: absolute;
     top: 50%;
@@ -86,10 +87,6 @@
 .creditList > * > h3 {
     padding: 0;
     margin: 0;
-}
-
-.creditImage {
-
 }
 
 @keyframes scroll {
