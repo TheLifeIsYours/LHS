@@ -27,7 +27,7 @@
 .smokeHouseJonny div{
     position: absolute;
     background-color: black;
-    widows: 25px;
+    width: 25px;
     height: 25px;
     border-radius: 100%;
     left: 470px;

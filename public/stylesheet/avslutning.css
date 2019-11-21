@@ -35,9 +35,7 @@
     left: 200px; 
     top: 250px;
     z-index: 2;
-    animation: jonnyAnimation 0.3s linear infinite;
-    animation-play-state: paused;
-    transition-duration: 0.2;
+    animation: jonnyAnimation 0.3s linear infinite paused;
 }
 
 #jonny:hover{
@@ -170,7 +168,6 @@
     z-index: 1;
     animation: plantAnimation 2s linear infinite;
     animation-play-state: running;
-    transition-duration: 2;
 }
 
 #plant:hover{

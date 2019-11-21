@@ -49,3 +49,7 @@
     padding: 0.5em 0.75em 0.5em 0.75em;
 }
 
+#deskSign > h3 {
+    padding: 0;
+    margin: 0;
+}

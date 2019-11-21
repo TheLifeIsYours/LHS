@@ -83,6 +83,11 @@
     font-size: 1.5em;
 }
 
+.creditList > * > h3 {
+    padding: 0;
+    margin: 0;
+}
+
 .creditImage {
 
 }

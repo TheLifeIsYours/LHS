@@ -44,6 +44,10 @@
     font-size: 19px;
 }
 
+#textOnBlackboard > ul > li {
+    padding: 0.5em;
+}
+
 /* Pult i klasserommet
 ------------------------------------------------------------*/
 #desk {
