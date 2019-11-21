@@ -13,7 +13,7 @@
 #creditsTextScroll {
     position: relative;
     top: 95%;
-    animation: scroll 200s linear infinite;
+    animation: scroll 100s linear infinite;
 }
 #menuSection, #menuButtonText {
     position: absolute;
