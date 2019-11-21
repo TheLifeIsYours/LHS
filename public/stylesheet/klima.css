@@ -439,6 +439,7 @@
     transform: translate(-50%, -50%);
     z-index: 999;
 }
+
 #nextPageBtn:hover {
     font-size: 1.1em;
 }
