@@ -290,6 +290,36 @@
     animation: smokeAnimation 2s infinite 2s linear;
 }
 
+/* Politi bil container, bilder og animationer
+------------------------------------------------------------------------------------------------------- */
+#copCarContainer {
+    position: absolute;
+    bottom: 0em;
+    left: 20em;
+    animation: copCarAnim 3s forwards 1.5s;
+    transform: rotateY(180deg);
+    width: 10em;
+}
+#copCar {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+#copCarWheelLeft {
+    position: absolute;
+    bottom: 30px;
+    left: 20%;
+    animation: copCarWheelsAnim 3s ease-out;
+    width: 10%;
+}
+#copCarWheelRight {
+    position: absolute;
+    bottom: 30px;
+    left: 75%;
+    animation: copCarWheelsAnim 3s ease;
+    width: 10%;
+}
+
 /* Jonny related styles
 -------------------------------------------------------------------------------*/
 #jonnyContainer {
@@ -301,7 +331,7 @@
     position: relative;
     left: -15em;
     z-index: 999;
-    animation: jonnyWalk 2s linear 2s forwards;
+    animation: jonnyWalk 2s linear 3s forwards;
 }
 
 /* Snakke bobble logic
@@ -311,7 +341,7 @@
     bottom: 23em;
     left: 13em;
     opacity: 0;
-    animation: makeVisible 0.5s forwards 4.2s;
+    animation: makeVisible 0.5s forwards 5.2s;
     z-index: 999;
 }
 #speechBubbleContainer_2 {
@@ -692,6 +722,18 @@
         height: 100px;
         opacity: 0;
     }
+}
+
+/* Police car keyframes */
+@keyframes copCarAnim {
+    0% {left: 20em;}
+    100% {left: 4em;}
+}
+@keyframes copCarWheelsAnim {
+    0% {transform: rotate(0deg);}
+    40% {transform: rotate(500deg);}
+    60% {transform: rotate(500deg);}
+    100% {transform: rotate(1500deg);}
 }
 
 /* Jonny Walk keyframes
