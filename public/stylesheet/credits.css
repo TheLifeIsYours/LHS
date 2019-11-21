@@ -1,0 +1,101 @@
+#mainContainer {
+    background: url("../images/credits/navhovedkontor.png");
+}
+
+#creditMenuContainer {
+    position: absolute;
+    top: 75%;
+    left: 77.5%;
+    height: 39%;
+    width: 35%;
+    text-align: center;
+    font-family: Crayon;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#menuSection, #menuButtonText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menuTitle {
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+#menuButton {
+    position: relative;
+    left: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 3em;
+    font-family: Modus,Arial,Helvetica,sans-serif;
+    transform: translate(-50%);
+    background: red;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#menuButtonText:hover, #menuButton:hover {
+    background:white;
+    color: red;
+}
+
+#creditsContainer {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    font-family: Crayon;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#creditsTextScroll {
+    position: relative;
+    top: 95%;
+    animation: scroll 500s linear forwards;
+}
+
+.creditSection {
+    padding: 2em;
+}
+
+.creditSection > * {
+    position: relative;
+    left: 50%;
+    max-width: 70%;
+    transform: translate(-50%);
+}
+
+.creditTitle {
+    padding: 1em;
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+.creditList {
+    font-size: 1.5em;
+}
+
+.creditImage {
+
+}
+
+@keyframes scroll {
+    from {
+        top: 95%;
+    }
+    to {
+        top: -2000%;
+    }
+}
