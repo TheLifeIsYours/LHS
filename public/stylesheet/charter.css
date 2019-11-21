@@ -58,7 +58,7 @@
     top: 40px;
     right: 150px;
     width: 100px;
-    animation: exitSign 1s infinite 10s;
+    animation: exitSign 1s infinite;
 }
 
 /* Animation for Exit skiltet
@@ -66,15 +66,15 @@
 
 @keyframes exitSign {
     0% {
-        transform: scale();
+        transform: scale(1);
     }
 
     50% {
-        transform: scale();
+        transform: scale(1.1);
     }
 
     100% {
-        transform: scale(1.1);
+        transform: scale(1);
     }
 }
 
