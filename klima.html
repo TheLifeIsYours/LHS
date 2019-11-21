@@ -10,9 +10,12 @@
 
 <body>
     <main id="mainContainer">
+
+        <!-- Bilder brukt på siden -->
         <div id="imageContainer">
-            <!-- Sol element -->
+            <!-- Animert sol -->
             <img id="sol" src="public/images/klima/sun.png" alt="sol">
+
             <img id="lavaPic" src="public/images/klima/lava.png" alt="lava">
             <img id="marsPic" src="public/images/klima/mars.png" alt="mars">
             <img id="grassPic_1" src="public/images/klima/grass.svg" alt="grass">
@@ -22,14 +25,21 @@
             <img id="grassPic_5" src="public/images/klima/grass.svg" alt="grass">
         </div>
 
-
+        <!-- Før reise til Mars -->
         <input id="rocketTravelInput" name="rocketTravel" type="radio" checked>
         <section id="rocketTravel" class="rocketTravel">
+            <!-- Jonny -->
             <img id="jonnyPic_1" src="public/images/jonny/jonny.png" alt="jonny">
+
+            <!-- Rakket knapp -->
             <label id="rocketPicContainer_1" for="rocketTravelAnimatedInput">
                 <img id="rocketPic_1" src="public/images/flat/spaceship-svgrepo-com.svg" alt="rocketShip">
             </label>
-            <div id="speechBubble_1" class="speechBubble bottomLeft">
+
+            <!-- Snakkeboble -->
+            <section id="speechBubble_1" class="speechBubble bottomLeft">
+
+                <!-- Boble 1 -->
                 <input id="bubbleText_1Input" name="bubbleText" type="radio" checked="checked">
                 <section id="bubbleText_1" class="bubbleText">
                     <div>
@@ -39,6 +49,7 @@
                     <label class="nextBubble" for="bubbleText_2Input"> >>> </label>
                 </section>
 
+                <!-- Boble 1 -->
                 <input id="bubbleText_2Input" name="bubbleText" type="radio">
                 <section id="bubbleText_2" class="bubbleText">
                     <div>
@@ -46,9 +57,10 @@
                         så skal jeg vise dere at jorda er flat
                     </div>
                 </section>
-            </div>
+            </section>
         </section>
 
+        <!-- Reise til Mars -->
         <input id="rocketTravelAnimatedInput" name="rocketTravel" type="radio">
         <section id="rocketTravelAnimated" class="rocketTravel">
             <img id="jonnyPic_2" src="public/images/jonny/jonny.png" alt="jonny">
@@ -60,14 +72,15 @@
             </section>
         </section>
 
+        <!-- Tornado -->
         <section id="tornado">
             <img id="tornadoPic_1" src="public/images/klima/tornado_simple_2.png" alt="tornado">
             <img id="tornadoPic_2" src="public/images/klima/tornado_simple_2.png" alt="tornado">
             <img id="tornadoPic_3" src="public/images/klima/tornado_simple_2.png" alt="tornado">
             <img id="tornadoPic_4" src="public/images/klima/tornado_simple_2.png" alt="tornado">
-
-
         </section>
+
+        <!-- Snø storm -->
         <section id="snowFlakeContainer">
             <img id="snowFlake_1" src="public/images/klima/snowflake-svgrepo-com.svg" alt="snow">
             <img id="snowFlake_2" src="public/images/klima/snowflake-svgrepo-com.svg" alt="snow">
@@ -91,7 +104,8 @@
             <img id="snowFlake_20" src="public/images/klima/snowflake-svgrepo-com.svg" alt="snow">
             <img id="snowFlake_21" src="public/images/klima/snowflake-svgrepo-com.svg" alt="snow">
         </section>
-        <!-- Snø DIV for bakken -->
+
+        <!-- Snø dekke for bakken -->
         <div id="snowGround"></div>
 
     </main>
