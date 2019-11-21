@@ -8,6 +8,7 @@
     padding: 0.25em;
     width: 720px;
     height: 420px;
+    left: 52%;
     background: rgb(43, 43, 43);
     z-index: 3;
 }
