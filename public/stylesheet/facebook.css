@@ -471,7 +471,7 @@ z-index: 3;
     color: grey;
 }
 
-#sendButton {
+.sendButton {
     position: relative;
     margin-left: 305px;
     top: 298px;
