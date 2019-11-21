@@ -468,7 +468,6 @@
 
 .hiddenSection {
     opacity: 0;
-    visibility: hidden;
 }
 
 #speechBubble_1 {
@@ -487,6 +486,5 @@
 #bubbleTextInput_13:checked ~ #bubbleText_13,
 #bubbleTextInput_14:checked ~ #bubbleText_14 {
     opacity: 1;
-    visibility: visible;
     display: block;
 }
