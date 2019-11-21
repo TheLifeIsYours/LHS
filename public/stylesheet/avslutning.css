@@ -35,12 +35,11 @@
     left: 200px; 
     top: 250px;
     z-index: 2;
-    animation: jonnyAnimation 0.3s linear infinite paused;
 }
 
 #jonny:hover{
     transform: scale(1.05);
-    animation-play-state: running;
+    animation: jonnyAnimation 0.3s linear infinite;
 }
 
 @keyframes jonnyAnimation{
