@@ -1,7 +1,3 @@
-ol {
-    margin-left: 30px;
-}
-
 li {
     font-size: 22px;
 }
@@ -44,6 +40,7 @@ li {
 /* Elementer i bakgrunn 
 ---------------------------------------------------- */
 #blackboard {    
+    padding: 1em;
     width: 700px;
     height: 300px;
     left: 90%;
