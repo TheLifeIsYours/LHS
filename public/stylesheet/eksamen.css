@@ -1,7 +1,3 @@
-input {
-    display: none;
-}
-
 #mainContainer {
     background: linear-gradient(#7c7059 78%, white 78%, white 81%, rgb(30, 30, 88) 81%, #333369 90%);
 }
@@ -54,7 +50,7 @@ input {
 
 /* Black Board Next Task Lable (Sponge)
 ----------------------------------------------------------*/
-.nextTaskLabel {
+.nextTaskLabel, .sponge {
     position: absolute;
     bottom: 1.5em;
     left: 0.5em;
@@ -63,12 +59,16 @@ input {
     color: white;
     text-align: center;
     font-size: 20px;
-    cursor: pointer;
 }
 
-.nextTaskLabel:hover {
+.nextTaskLabel.hover:hover{
     font-weight: bold;
+    cursor: pointer;
     width: 5.5em;
+}
+
+.nextTaskSponge {
+    width: 100%;
 }
 
 .nextTaskLabel > * {
@@ -78,8 +78,43 @@ input {
     transform: translate(-50%, -50%);
 }
 
-.nextTaskSponge {
+/* Blackboard 2 sponge */
+#examBlackboard_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+}
+
+#blackboardCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent 80%, #2b2b2b, #2b2b2b 0%);
+    overflow: hidden;
+}
+
+#blackboardCoverBlock {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2b2b2b 80%, transparent);
+    animation: eraseBlackboard 6s linear forwards;
+}
+
+#spongeEraser {
+    position: absolute;
+    padding: 0;
+    bottom: -4.7%;
+    left: 1.3%;
+    width: 5.5em;
+    transform: rotate(0deg);
+    animation: eraseSponge 7s linear forwards;
 }
 
 /* Desk related styles
@@ -99,12 +134,13 @@ input {
 
 .smoke {
     position: absolute;
-    bottom: 0.25em;
-    left: 50%;
+    bottom: 1.5em;
+    left: 85%;
+    width: 0em;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 1s;
-    animation: pulse 7s infinite forwards;
+    animation: pulse 7s ease-in-out infinite;
 }
 
 #smoke_1 {
@@ -150,6 +186,7 @@ input {
     top: 0em;
     right: 7em;
     animation: swing 3s alternate infinite ease-in-out;
+    z-index: 999;
 }
 
 #lampItem {
@@ -178,6 +215,7 @@ input {
     width: 20em;
     transform: translate(-50%);
     pointer-events: none;
+    animation: blink 5s infinite;
 }
 
 /* Jonny related styles
@@ -191,35 +229,30 @@ input {
 ----------------------------------------------------------------------------------*/
 #speechBubbleContainer {
     position: absolute;
-    top: 13em;
+    bottom: 23em;
     left: 13em;
 }
 
 .bubbleText {
     display: none;
 }
-
-#bubbleText_1Input:checked ~ #bubbleText_1 {
-    display: block;
-}
-#bubbleText_2Input:checked ~ #bubbleText_2 {
-    display: block;
-}
-#bubbleText_3Input:checked ~ #bubbleText_3 {
-    display: block;
-}
-
+#speechBubble_1Input:checked ~ #speechBubble_1,
+#bubbleText_1Input:checked ~ #bubbleText_1,
+#bubbleText_2Input:checked ~ #bubbleText_2,
+#bubbleText_3Input:checked ~ #bubbleText_3,
 #speechBubble_1Input:checked ~ #speechBubble_1 {
-    display: none;
+    display: block;
 }
 
 
 /* Exam test Section toggle
 --------------------------------------------------------------------------------------*/
-.examSlide {
+.hiddenSection {
     display: none;
 }
 
+#examBlackboardInput_1:checked ~ #examBlackboard_1,
+#examBlackboardInput_2:checked ~ #examBlackboard_2,
 #examStartInput:checked ~ #examStart,
 #examTaskInputCharter:checked ~ #examTaskCharter,
 #examTaskInputFacebook:checked ~ #examTaskFacebook,
@@ -371,6 +404,8 @@ input {
 /* Animation keyframes
 ------------------------------------------------------------------------*/
 
+/* Lamp swining animation
+-------------------------------------*/
 @keyframes swing {
     from {
         transform: rotateZ(45deg);
@@ -378,7 +413,25 @@ input {
     to {
         transform: rotateZ(-45deg);
     }
+}
 
+@keyframes blink {
+    0% {opacity: 1;}
+    2% {opacity: 1;}
+    3% {opacity: 0;}
+    4% {opacity: 0;}
+    7% {opacity: 1;}
+    8% {opacity: 0;}
+    15% {opacity: 0;}
+    16% {opacity: 1;}
+    20% {opacity: 1;}
+    25% {opacity: 1;}
+    26% {opacity: 0;}
+    28% {opacity: 1;}
+    38% {opacity: 0;}
+    38% {opacity: 0;}
+    40% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 /* Roaches keyframes
@@ -426,11 +479,80 @@ input {
 @keyframes pulse {
     0% {
         opacity: 0;
+        width: 0;
     }
      50% {
          opacity: 0.8;
      }
      100% {
         bottom:3em;
+        width: 4em;
      }
+}
+
+/* Blackboard erasing animation
+---------------------------------------*/
+@keyframes eraseBlackboard {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0%;
+    }
+}
+
+/* Blackboard sponge animation
+---------------------------------------*/
+@keyframes eraseSponge {
+    0% {
+        bottom: -4.7%;
+        left: 1.3%;
+        transform: rotate(0deg);
+    }
+    10% {
+        bottom: 73%;
+        left: 80%;
+        transform: rotate(120deg);
+    }
+    20% {
+        left: 0%;
+        transform: rotate(50deg);
+    }
+    30% {
+        bottom: 53%;
+        left: 80%;
+        transform: rotate(120deg);
+    }
+    40% {
+        left: 0%;
+        transform: rotate(50deg);
+    }
+    50% {
+        bottom: 33%;
+        left: 80%;
+        transform: rotate(120deg);
+    }
+    60% {
+        left: 0%;
+        transform: rotate(50deg);
+    }
+    70% {
+        bottom: 13%;
+        left: 80%;
+        transform: rotate(120deg);
+    }
+    80% {
+        left: 1.3%;
+        transform: rotate(10deg);
+    }
+    85% {
+        bottom: -4.7%;
+        left: 1.3%;
+        transform: rotate(0deg);
+    }
+    100% {
+        bottom: -4.7%;
+        left: 1.3%;
+        transform: rotate(0deg);
+    }
 }
