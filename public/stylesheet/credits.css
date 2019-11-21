@@ -8,14 +8,13 @@
     left: 77.5%;
     height: 39%;
     width: 35%;
-    text-align: center;
-    font-family: Crayon;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.9);
-    transform: translate(-50%, -50%);
-    overflow: hidden;
 }
 
+#creditsTextScroll {
+    position: relative;
+    top: 95%;
+    animation: scroll 500s linear forwards;
+}
 #menuSection, #menuButtonText {
     position: absolute;
     top: 50%;
@@ -52,18 +51,15 @@
     left: 25%;
     height: 100%;
     width: 60%;
+}
+
+.container {
     text-align: center;
     font-family: Crayon;
     color: #fff;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.75);
     transform: translate(-50%, -50%);
     overflow: hidden;
-}
-
-#creditsTextScroll {
-    position: relative;
-    top: 95%;
-    animation: scroll 500s linear forwards;
 }
 
 .creditSection {
