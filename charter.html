@@ -13,25 +13,32 @@
     <!-- Hovedkontainer for klasserom -->
     <main id="mainContainer">
 
-        <!--bilder i hovedkontainer-->
         <!-- Label for snakkebobble till Jonny -->
         <label for="speechBubble_1Input">
             <!-- Bilde av Jonny -->
             <img id="jonny" src="public/images/jonny/jonny.png" alt="jonny">
         </label>
-        <input id="speechBubble_1Input" type="radio">
+
         <!-- Snakkebobble till Jonny -->
+        <input id="speechBubble_1Input" type="radio">
         <div id="speechBubble_1" class="speechBubble topLeft">
             <div>
                 I dette faget gir vi deg et lynkurs i charter.<br>
                 Vi har vært så heldig å få Svein Østvik som foreleser
             </div>
         </div>
+
+        <!-- Svein -->
         <img id="svein" src="public/images/charter/sveinface.png" alt="svein">
         <img id="bodySvein" src="public/images/charter/sveinbody.png" alt="body-svein">
+
+        <!-- Rotte -->
         <img id="rat_1" src="public/images/Index/Rat.png" alt="rat">
 
+        <!-- Utgangs skilt -->
         <img id="exit" src="public/images/felles/exit.jpg" alt="exit">
+
+        <!-- Hans Majones Kongen -->
         <div id="kongHaraldContainer">
             <img id="kongHaraldImage" src="public/images/charter/kongharald.jpg">
         </div>
@@ -39,19 +46,16 @@
         <!--Lydfil som spiller "kongen av mallorca"-->
         <audio autoplay loop src="public/audio/hereYouGoPernille.mp3" type="audio/mpeg"></audio>
 
-
         <!--Dør til neste side-->
         <a id="doorContainer" href="facebook.html"><span id="doorText">Klasserom 2</span></a>
-
         <div id="door"></div>
         <div id="handle"></div>
-
 
         <!--Overskrift på tavlen -->
         <section id="blackboard">
             <div id="blackboardTitle">Reiseliv: </div>
             <div id="pictureOnBlackboard">
-                <div>
+                <section>
 
                     <!--Bilder på tavlen -->
                     <div>
@@ -69,11 +73,10 @@
                     <div>
                         <img id="taxfree" src="public/images/charter/kvote.png" alt="taxfree">
                     </div>
-                </div>
+                </section>
 
                 <!--tekst på tavlen  -->
-
-                <div id="textOnBlackboard">
+                <section id="textOnBlackboard">
                     <ul>
                         <li>Ha alltid på crocs</li>
                         <br>
@@ -83,10 +86,11 @@
                         <br>
                         <li>Lær deg tax-free kvoten inn til Norge</li>
                     </ul>
-                </div>
+                </section>
             </div>
         </section>
 
+        <!-- pult -->
         <section id="desk">
             <span id="deskTableTop"></span>
 
