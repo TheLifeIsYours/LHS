@@ -9,6 +9,7 @@
     width: 720px;
     height: 420px;
     background: rgb(43, 43, 43);
+    z-index: 3;
 }
 
 #examStartLabel {
@@ -127,6 +128,7 @@
 #desk {
     top: 590px;
     background: linear-gradient(rgb(56, 35, 19) -5%, rgb(129, 84, 47) 10%);
+    z-index: 3;
 }
 
 /* Ashtray stylings */
@@ -134,7 +136,6 @@
     position: absolute;
     top: -3em;
     width: 4em;
-    z-index: 1;
 }
 
 .smoke {
@@ -154,34 +155,6 @@
 
 #smoke_2 {
     animation-delay: 3s;
-}
-
-/* Roaches related styles
--------------------------------------------------------------------------------*/
- #roach_1 {
-     position: absolute;
-     left: 100px;
-     top: 240px;
-     transform: rotate(180deg);
-     animation: roach1Anim 10s linear infinite;
- }
-
- #roach_2 {
-    position: absolute;
-    right: 100px;
-    top: 250px;
-    transform: rotate(180deg);
-    animation: roach2Anim 10s linear infinite;
-}
-
-#roach_3 {
-    position: absolute;
-    width: 20px;
-    right: 100px;
-    top: 250px;
-    opacity: 1;
-    transform: rotate(90deg);
-    animation: roach3Anim 10s linear infinite;
 }
 
 /* LAMP!
@@ -223,6 +196,100 @@
     animation: blink 5s infinite;
 }
 
+/* Roaches related styles
+-------------------------------------------------------------------------------*/
+#roachesContainer > * {
+    position: absolute;
+    z-index: 4;
+}
+
+ #roach_1 {
+     left: 100px;
+     top: 240px;
+     transform: rotate(180deg);
+     animation: roach1Anim 10s linear infinite;
+ }
+
+ #roach_2 {
+    right: 100px;
+    top: 250px;
+    transform: rotate(180deg);
+    animation: roach2Anim 10s linear infinite;
+}
+
+#roach_3 {
+    width: 20px;
+    right: 100px;
+    top: 250px;
+    opacity: 1;
+    transform: rotate(90deg);
+    animation: roach3Anim 10s linear infinite;
+}
+
+/* Rocket landing related styles
+-------------------------------------------------------------------------------*/
+#rocketContainer {
+    position: absolute;
+    top: 5em;
+    left: 1em;
+    width: 15em;
+    height: 18em;
+    background: linear-gradient(#1a75e8 70%, green 70%, darkgreen 74%, darkgreen 74%, green 90%);
+    border: solid 4px gray;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#windowImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#rocketImage {
+    position: absolute;
+    top: -12em;
+    height: 5em;
+    transform: rotate(180deg);
+    animation: rocket 2s linear forwards;
+}
+
+/* Røyk fra romskipet */
+#spaceshipSmokeContainer {
+    position: absolute;
+    left: 3.5em;
+    top: 15em;
+}
+
+#spaceshipSmokeContainer > * {
+    position: absolute;
+    top: 0em;
+    right: 0em;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+#spaceshipSmoke_1 {
+    animation: smokeAnimation 1s infinite 2s linear;
+}
+
+#spaceshipSmoke_2 {
+    animation: smokeAnimation 1.5s infinite 2s linear;
+}
+
+#spaceshipSmoke_3, #spaceshipSmoke_4 {
+    animation: smokeAnimation 1.75s infinite 2s linear;
+}
+
+#spaceshipSmoke_5, #spaceshipSmoke_6 {
+    animation: smokeAnimation 2s infinite 2s linear;
+}
+
 /* Jonny related styles
 -------------------------------------------------------------------------------*/
 #jonnyContainer {
@@ -230,18 +297,11 @@
     bottom: 2em;
 }
 
-.jonnyImage {
-    display: none;
-}
-
-#jonnyAnimated {
+#jonnyImage {
     position: relative;
-    animation: jonnyWalk 5s linear forwards;
-}
-
-#jonnyStaticInput:checked ~ #jonnyStatic,
-#jonnyWalkAnimationInput:checked ~ #jonnyAnimated {
-    display: block;
+    left: -15em;
+    z-index: 999;
+    animation: jonnyWalk 2s linear 2s forwards;
 }
 
 /* Snakke bobble logic
@@ -250,11 +310,15 @@
     position: absolute;
     bottom: 23em;
     left: 13em;
+    opacity: 0;
+    animation: makeVisible 0.5s forwards 4.2s;
+    z-index: 999;
 }
 #speechBubbleContainer_2 {
     position: absolute;
     bottom: 4em;
     left: -3em;
+    z-index: 999;
 }
 
 .bubbleText {
@@ -473,12 +537,12 @@
 ---------------------------------------------------------------*/
 @keyframes roach1Anim {
     0% {left: 100px; top: -100px; transform: rotate(180deg);}
-    10% {top: 100px; transform: rotate(180deg);}
+    10% {top: 45px; transform: rotate(180deg);}
     15% {transform: rotate(90deg);}
-    20% {left: 100px; top: 100px;}
+    20% {left: 100px; top: 45px;}
     30% {left: 400px; transform: rotate(90deg);}
     35% {transform: rotate(130deg);}
-    40% {left: 400px; top: 100px;}
+    40% {left: 400px; top: 45px;}
     50% {left: 700px; top: 400px; transform: rotate(130deg);}
     55% {transform: rotate(70deg);}
     60% {left: 700px; top: 400px;}
@@ -603,13 +667,54 @@
     }
 }
 
+/* Rocket in background keyframes */
+@keyframes rocket {
+    0% {
+        top: -12em;
+    }
+    100% {
+        top: 11em;
+    }
+}
+
+/* Rocket smoke keyframes */
+@keyframes smokeAnimation {
+    from {
+        transform: translate(0,0%);
+        width: 25px;
+        height: 25px;
+        opacity: 0.7;
+    }
+
+    to {
+        transform: translate(0,-300%);
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+}
+
 /* Jonny Walk keyframes
 ------------------------------------------------*/
 @keyframes jonnyWalk {
-    0% {
-        left: 0em;
-    }
-    100% {
-        left: 80em;
-    }
+    0% {left: -15em;bottom: 1em;}
+    10% {bottom: 0em;}
+    15% {bottom: 1em;}
+    20% {bottom: 0em;}
+    25% {bottom: 1em;}
+    30% {bottom: 0em;}
+    35% {bottom: 1em;}
+    40% {bottom: 0em;}
+    45% {bottom: 1em;}
+    50% {bottom: 0em;}
+    55% {bottom: 1em;}
+    60% {bottom: 0em;}
+    65% {bottom: 1em;}
+    70% {bottom: 0em;}
+    75% {bottom: 1em;}
+    80% {bottom: 0em;}
+    85% {bottom: 1em;}
+    90% {bottom: 0em;}
+    95% {bottom: 1em;}
+    100% {bottom: 0em;left: 0em;}
 }
