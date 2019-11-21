@@ -17,6 +17,15 @@
     cursor: pointer;
 }
 
+#tapedImage {
+    position: absolute;
+    left: -1em;
+    top: 0em;
+    width: 2.5em;
+    transform: rotate3d(11, -7, 17, -92deg);
+    z-index: 99;
+}
+
 #telescopeImage {
     position: absolute;
     width: 100%;

@@ -68,21 +68,45 @@
             </div>
             
             <!-- Label for snakkebobble till Jonny -->
-            <label for="speechBubble_1Input">
+            <label for="speechBubbleInput_1">
                 <!-- Bilde av Jonny -->
                 <img id="jonny" src="public/images/jonny/jonny.png" alt="jonny">
             </label>
-            <input id="speechBubble_1Input" type="radio">
+        
             <!-- Snakkebobble till Jonny -->
-            <div id="speechBubble_1" class="speechBubble bottomLeft">
-                <div>
-                    Hei! Mitt navn er Jonny og jeg er rektor på Livets harde skole.<br>
-                    Hele min kometanse stammer fra egne erfaringer og magefølelse.<br>
-                    I dag skal jeg guide deg gjennom Livets harde skole.<br>
-                    Denne utdanningen er den viktigste du kan ha i livet!<br><br>
-                    Klikk på døra for å starte!
-                </div>
-            </div>
+            <section id="speechBubbleContainer_1">
+                <input id="speechBubbleInput_1" name="sectionContainer" type="radio" />
+                <section id="speechBubble_1" class="speechBubble bottomLeft hiddenSection">
+    
+                    <!-- boble 1 -->
+                    <input id="bubbleTextInput_11" name="bubbleText_1" type="radio" checked>
+                    <section id="bubbleText_11" class="bubbleText">
+                        <div>Hei! Mitt navn er Jonny og jeg er rektor på Livets harde skole.</div>
+                        <label for="bubbleTextInput_12" class="nextBubble"> >>> </label>
+                    </section>
+    
+                    <!-- boble 2 -->
+                    <input id="bubbleTextInput_12" name="bubbleText_1" type="radio">
+                    <section id="bubbleText_12" class="bubbleText">
+                        <div>Hele min kometanse stammer fra egne erfaringer og magefølelse.</div>
+                        <label for="bubbleTextInput_13" class="nextBubble"> >>> </label>
+                    </section>
+    
+                    <!-- boble 3 -->
+                    <input id="bubbleTextInput_13" name="bubbleText_1" type="radio">
+                    <section id="bubbleText_13" class="bubbleText">
+                        <div>I dag skal jeg guide deg gjennom Livets harde skole.</div>
+                        <div>Denne utdanningen er den viktigste du kan ha i livet!</div>
+                        <label for="bubbleTextInput_14" class="nextBubble"> >>> </label>
+                    </section>
+    
+                    <!-- boble 4 -->
+                    <input id="bubbleTextInput_14" name="bubbleText_1" type="radio">
+                    <section id="bubbleText_14" class="bubbleText">
+                        <div>Klikk på døra for å starte!</div>
+                    </section>
+                </section>
+            </section>
         </main>
     </body>
 </html>

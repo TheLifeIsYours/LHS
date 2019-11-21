@@ -459,19 +459,34 @@
 
 /* Snakkebobble og transition
 ------------------------------------------------------------------------------------------------------- */
-#speechBubble_1 {
+#speechBubbleContainer_1 {
     position: absolute;
-    left: 650px;
-    bottom: 300px;
+    left: 39em;
+    bottom: 16em;
     z-index: 2;
-    visibility: hidden;
+}
+
+.hiddenSection {
     opacity: 0;
+    visibility: hidden;
+}
+
+#speechBubble_1 {
     transition: all 1s;
 }
-#speechBubble_1Input {
+
+.bubbleText {
     display: none;
+    color: #000;
 }
-#speechBubble_1Input:checked ~ #speechBubble_1{
-    visibility: visible;
+
+/* Før eksamen snakkebobbler */
+#speechBubbleInput_1:checked ~ #speechBubble_1,
+#bubbleTextInput_11:checked ~ #bubbleText_11,
+#bubbleTextInput_12:checked ~ #bubbleText_12,
+#bubbleTextInput_13:checked ~ #bubbleText_13,
+#bubbleTextInput_14:checked ~ #bubbleText_14 {
     opacity: 1;
+    visibility: visible;
+    display: block;
 }
