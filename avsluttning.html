@@ -11,9 +11,15 @@
     </head>
 
     <body>
-        <!-- Hovedkontainer for klasserom -->
+        <!-- Hovedkontainer for Avsluttning -->
         <main id="mainContainer">
-                <div id="weedLight"><img id="weedLightImg" src="public/images/avslutning/weedLight.png"></div>
+
+            <!-- Lampe lys -->
+            <div id="weedLight">
+                <img id="weedLightImg" src="public/images/avslutning/weedLight.png" />
+            </div>
+
+            <!-- Tavle -->
             <section id="blackboard">
                 <div id="blackboardText">
                     <h1>LIVETS HARDE SKOLE</h1>
@@ -21,8 +27,8 @@
                 </div>
             </section>
 
-            <section id="desk">
-            </section>
+            <!-- Pult -->
+            <section id="desk"></section>
         
              <!--Dør videre til neste side-->
              <a href="credits.html">
@@ -31,17 +37,22 @@
                 </div>
             </a>
 
-            <!--Bildefilene-->
+            <!-- Bildefiler -->
             <img id="jonny" src="public/images/jonny/jonny.png" alt="Jonny">
             <img id="beer" src="public/images/avslutning/beer.svg" alt="beer">
             <img id="diploma" src="public/images/avslutning/graduation.svg" alt="diploma">
             <img id="cigarette" src="public/images/avslutning/cigarette.svg" alt="cigarette">
-            <img id="mouse1" src="public/images/avslutning/mouse.svg" alt="mouse1">
-            <img id="mouse2" src="public/images/avslutning/mouse.svg" alt="mouse2">
+
+            <!-- Animerte Mus -->
+            <img id="mouse1" class="mouse" src="public/images/avslutning/mouse.svg" alt="mouse1">
+            <img id="mouse2" class="mouse" src="public/images/avslutning/mouse.svg" alt="mouse2">
+
+            <!-- Animerte Stjerner -->
             <img id="star_1" src="public/images/avslutning/Star.png" alt="star1">
             <img id="star_2" src="public/images/avslutning/Star.png" alt="star2">
             <img id="star_3" src="public/images/avslutning/Star.png" alt="star3">
             <img id="star_4" src="public/images/avslutning/Star.png" alt="star4">
+
             <img id="exit" src="public/images/felles/exit.jpg" alt="exit">
             <img id="window" src="public/images/avslutning/window.png" alt="window">
             <img id="garbage" src="public/images/avslutning/garbage.png" alt="garbage">
@@ -50,7 +61,7 @@
 
 
             <!--Snakkeboblen-->
-            <div id="speechBubble_1" class="bottomLeft">
+            <section id="speechBubble_1" class="bottomLeft">
                 Gratulerer med bestått eksamen på Livets harde skole!
                 <br>
                 Kos deg med denne flotte starter-packen.
@@ -59,9 +70,7 @@
                 Nå får du komme deg ut i samfunnet og gjøre litt nytte for deg
                 <br>
                 ved å påpeke hvor dumme og naive alle andre er!
-            </div>
-
-            
+            </section>
         </main>
     </body>
 </html>

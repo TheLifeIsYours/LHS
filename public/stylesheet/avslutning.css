@@ -26,6 +26,8 @@
     font-size: 60px;
 }
 
+/* Jonny element styling og animasjoner
+--------------------------------------------------------*/
 #jonny{
     position: absolute;
     width: 180px;
@@ -38,34 +40,31 @@
     transition-duration: 0.2;
 }
 
+#jonny:hover{
+    transform: scale(1.05);
+    animation-play-state: running;
+}
+
 @keyframes jonnyAnimation{
     0% {top: 250px}
     50% {top: 225px}
     100% {top: 250px}
 }
 
-#jonny:hover{
-    transform: scale(1.05);
-    animation-play-state: running;
-}
-
+/* Snakkebobble
+----------------------------------------------------*/
 #speechBubble_1{
     position: absolute;
-    background: #fff;
-    min-height: 1em;
-    max-width: 70%;
-    width: fit-content;
-    padding: 10px;
-    margin-bottom: 1em;
-    border: solid 2px #34373c;
-    cursor: pointer;
-    overflow-wrap: break-word;
     top: 140px;
     left: 360px;
-    animation-name: speechBubbleAnimation;
-    animation-duration: 20s;
-    animation-direction: normal;
+    padding: 10px;
+    margin-bottom: 1em;
+    background: #fff;
+    border: solid 2px #34373c;
+    overflow-wrap: break-word;
+    animation: speechBubbleAnimation 20s normal;
     opacity: 0;
+    cursor: pointer;
 }
 
 @keyframes speechBubbleAnimation {
@@ -77,10 +76,8 @@
     100% {opacity: 0;}
 }
 
-.bottomLeft{
-    border-radius: 6px 6px 6px 0px;
-}
-  
+/* Dør elementer styling
+-----------------------------------------------*/
 #door{
     position: absolute;
     width: 180px;
@@ -111,6 +108,8 @@
     top: 150px;  
 }
 
+/* Utgangsskilt
+----------------------------------------------------------*/
 #exit{
     position: absolute;
     width: 60px;
@@ -129,6 +128,8 @@
     z-index: 1;
 }
 
+/* Vindu
+------------------------------------------------------------*/
 #window{
     position: absolute;
     width: 120px;
@@ -139,6 +140,8 @@
     border: solid 6px rgb(56, 56, 56);
 }
 
+/* Hash plantasje
+----------------------------------------------------------------*/
 #lamp{
     position: absolute;
     width: 150px;
@@ -170,17 +173,19 @@
     transition-duration: 2;
 }
 
+#plant:hover{
+    transform: scale(1.05);
+    animation-play-state: running;
+}
+
 @keyframes plantAnimation{
     0% {top: 250px}
     50% {top: 225px}
     100% {top: 250px}
 }
 
-#plant:hover{
-    transform: scale(1.05);
-    animation-play-state: running;
-}
-
+/* Søppeldunk
+--------------------------------------*/
 #garbage{
     position: absolute;
     width: 60px;
@@ -195,6 +200,8 @@
     transform: rotate(40deg);
 }
 
+/* Starter pack elementer
+--------------------------------------------------------------------*/
 #diploma{
     position: absolute;
     width: 120px;
@@ -238,6 +245,8 @@
     }
 }
 
+/* Stjerne elementer og animasjoner
+-----------------------------------------------------------*/
 #star_1{
     position: absolute;
     left: 540px;
@@ -297,23 +306,23 @@
     100% {opacity: 0; transform: scale(1);}
 }
 
-#mouse1{
+
+/* Mus elementer og animasjoner
+--------------------------------------------------------------*/
+.mouse {
     position: absolute;
     width: 80px;
     height: 130px;
     right: 1400px; 
     top: 500px;
     z-index: 1;
+}
+
+#mouse1{
     animation: mouseAnimation 6s linear infinite;
 }
 
 #mouse2{
-    position: absolute;
-    width: 80px;
-    height: 130px;
-    right: 1400px; 
-    top: 500px;
-    z-index: 1;
     animation: mouseAnimation2 10s linear infinite;
 }
 
