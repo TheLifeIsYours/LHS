@@ -1,5 +1,9 @@
-input {
-    display: none;
+ol {
+    margin-left: 30px;
+}
+
+li {
+    font-size: 22px;
 }
 
 #mainContainer {
@@ -68,14 +72,6 @@ input {
     transform: rotate(90deg);
     font-size: 80px;
     font-family: sans-serif;
-}
-
-ol {
-    margin-left: 30px;
-}
-
-li {
-    font-size: 22px;
 }
 
 /* Stilsett av Jonny + animasjon
