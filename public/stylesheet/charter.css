@@ -26,8 +26,8 @@
 ------------------------------------------------------------*/
 #blackboardTitle {
     font-size: 2em;
-    font-weight: bold;
     text-align: center;
+    margin: 0;
 }
 
 #pictureOnBlackboard {
