@@ -235,7 +235,7 @@
     width: 15em;
     height: 18em;
     background: linear-gradient(#1a75e8 70%, green 70%, darkgreen 74%, darkgreen 74%, green 90%);
-    border: solid 4px gray;
+    border: solid 4px #2b394a;
     overflow: hidden;
     z-index: 2;
 }

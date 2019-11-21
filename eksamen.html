@@ -10,10 +10,12 @@
 </head>
 
 <body>
-    <!-- Hovedkontainer for klasserom -->
+    <!-- Hovedkontainer for eksamens klasserom -->
     <main id="mainContainer">
 
         <section id="blackboard">
+
+            <!-- Tavle under eksamen -->
             <input id="examBlackboardInput_1" name="sectionContainer" type="radio" />
             <section id="examBlackboard_1" class="hiddenSection">
                 <!-- Eksamen start skjerm -->
@@ -185,31 +187,34 @@
                 </section>
             </section>
 
+            <!-- Tavel etter eksamen -->
             <input id="examBlackboardInput_2" type="radio" />
             <section id="examBlackboard_2" class="hiddenSection">
                 <div id="blackboardCover">
                     <div id="blackboardCoverBlock"></div>
                 </div>
-                <div id="blackboardContent">
-
-                </div>
+                
                 <img id="spongeEraser" class="sponge" src="public/images/eksamen/sponge.svg" />
 
+                <!-- Etter eksamen snakkeboble kontainer -->
                 <section id="speechBubbleContainer_2">
-                    <!-- Etter eksamen snakkebobler -->
                     <section id="speechBubble_2" class="speechBubble bottomLeft">
+                        
+                        <!-- boble 1 -->
                         <input id="bubbleTextInput_21" name="bubbleText_2" type="radio" checked>
                         <section id="bubbleText_21" class="bubbleText">
                             <div>Da er tiden ute!</div>
                             <label for="bubbleTextInput_22" class="nextBubble"> >>> </label>
                         </section>
         
+                        <!-- boble 2 -->
                         <input id="bubbleTextInput_22" name="bubbleText_2" type="radio">
                         <section id="bubbleText_22" class="bubbleText">
                             <div>Da gjennstår det bare avsluttnigns sermonien.</div>
                             <label for="bubbleTextInput_23" class="nextBubble"> >>> </label>
                         </section>
-        
+                        
+                        <!-- boble 3 -->
                         <input id="bubbleTextInput_23" name="bubbleText_2" type="radio">
                         <section id="bubbleText_23" class="bubbleText">
                             <div>Følg meg!</div>
@@ -220,6 +225,7 @@
             </section>
         </section>
 
+        <!-- Askebeger og røyk-->
         <section id="desk">
             <section id="ashtrayContainer">
                 <img id="smoke_1" class="smoke" src="public/images/eksamen/smoke.svg">
@@ -227,8 +233,10 @@
                 <img id="ashtray" src="public/images/eksamen/ashtray.png">
             </section>
 
+            <!-- bord flate -->
             <span id="deskTableTop"></span>
-
+            
+            <!-- bord skilt -->
             <span id="deskSign">
                 Eksamen
             </span>
@@ -241,16 +249,17 @@
             </div>
         </section>
 
+        <!-- kakkerlak på veggen -->
         <section id="roachesContainer">
             <img id="roach_1" src="public/images/eksamen/cockroach.png" alt="roach1">
             <img id="roach_2" src="public/images/eksamen/cockroach.png" alt="roach2">
             <img id="roach_3" src="public/images/eksamen/cockroach.png" alt="roach3">
         </section>
 
+        <!-- Rakket ulykke i bakgrunden-->
         <section id="rocketContainer">
             <img id="windowImage" src="public/images/eksamen/window.png" />
             <img id="rocketImage" src="public/images/flat/spaceship-svgrepo-com.svg" />
-
 
             <!-- Politi bil container -->
             <section id="copCarContainer">
@@ -259,6 +268,7 @@
                 <img id="copCarWheelRight" src="public/images/Index/PolitiBilHjul.png" alt="wheelRight">
             </section>
             
+            <!-- rakket røyk -->
             <section id="spaceshipSmokeContainer">
                 <div id="spaceshipSmoke_1"></div>
                 <div id="spaceshipSmoke_2"></div>
@@ -269,26 +279,31 @@
             </section>
         </section>
 
+        <!-- Jonny!!! -->
         <section id="jonnyContainer">
             <img id="jonnyImage" src="public/images/jonny/jonny_shadow.png" />
         </section>
         
-        <!-- Før eksamen snakkebobler -->
+        <!-- Før eksamen snakkebobler container -->
         <section id="speechBubbleContainer_1">
             <input id="speechBubbleInput_1" name="sectionContainer" type="radio" checked />
             <section id="speechBubble_1" class="speechBubble bottomLeft hiddenSection">
+
+                <!-- boble 1 -->
                 <input id="bubbleTextInput_11" name="bubbleText_1" type="radio" checked>
                 <section id="bubbleText_11" class="bubbleText">
                     <div>Så fint å se deg her!</div>
                     <label for="bubbleTextInput_12" class="nextBubble"> >>> </label>
                 </section>
 
+                <!-- boble 2 -->
                 <input id="bubbleTextInput_12" name="bubbleText_1" type="radio">
                 <section id="bubbleText_12" class="bubbleText">
                     <div>Nå som du har gått gjennom kursene her hos LHS, så er det på tide med en eksamen!</div>
                     <label for="bubbleTextInput_13" class="nextBubble"> >>> </label>
                 </section>
 
+                <!-- boble 3 -->
                 <input id="bubbleTextInput_13" name="bubbleText_1" type="radio">
                 <section id="bubbleText_13" class="bubbleText">
                     <div>Velg de riktige svarene og vis hva du har lært.</div>
