@@ -269,12 +269,12 @@ left: 245px;
 /* Alt av innhold på pcskjerm 
 ---------------------------------------------------- */
 #computerScreen {
-position: absolute;
-top: 60px;
-left: 60px;
-width: 650px;
-height: 400;
-z-index: 3;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 650px;
+    height: 400px;
+    z-index: 3;
 }
 
 /* Facebook meny bar 
@@ -304,7 +304,6 @@ z-index: 3;
     left: 10px;
     color: #4267B2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 530;
     font-size: 25px;
 }
 
@@ -383,9 +382,9 @@ z-index: 3;
     height: 70px;
     background-color: #DFDFDF;
     top: 280px;
-    font-weight: 550;
     font-size: 30px;
     padding-left: 8px;
+    margin: 0;
 }
 
 /* Kommentarfelt 
