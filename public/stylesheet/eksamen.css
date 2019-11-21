@@ -117,6 +117,11 @@
     animation: eraseSponge 7s linear forwards;
 }
 
+#speechBubble_2 {
+    opacity: 0;
+    animation: makeVisible 0.7s linear 7s forwards;
+}
+
 /* Desk related styles
 --------------------------------------------------------------------------------------*/
 #desk {
@@ -225,27 +230,57 @@
     bottom: 2em;
 }
 
-/* Snakke bobbler
+.jonnyImage {
+    display: none;
+}
+
+#jonnyAnimated {
+    position: relative;
+    animation: jonnyWalk 5s linear forwards;
+}
+
+#jonnyStaticInput:checked ~ #jonnyStatic,
+#jonnyWalkAnimationInput:checked ~ #jonnyAnimated {
+    display: block;
+}
+
+/* Snakke bobble logic
 ----------------------------------------------------------------------------------*/
-#speechBubbleContainer {
+#speechBubbleContainer_1 {
     position: absolute;
     bottom: 23em;
     left: 13em;
 }
+#speechBubbleContainer_2 {
+    position: absolute;
+    bottom: 4em;
+    left: -3em;
+}
 
 .bubbleText {
     display: none;
+    color: #000;
 }
-#speechBubble_1Input:checked ~ #speechBubble_1,
-#bubbleText_1Input:checked ~ #bubbleText_1,
-#bubbleText_2Input:checked ~ #bubbleText_2,
-#bubbleText_3Input:checked ~ #bubbleText_3,
-#speechBubble_1Input:checked ~ #speechBubble_1 {
+
+/* Før eksamen snakkebobbler */
+#speechBubbleInput_1:checked ~ #speechBubble_1,
+#bubbleTextInput_11:checked ~ #bubbleText_11,
+#bubbleTextInput_12:checked ~ #bubbleText_12,
+#bubbleTextInput_13:checked ~ #bubbleText_13 {
     display: block;
 }
 
 
-/* Exam test Section toggle
+/* Etter eksamen snakkebobbler */
+#speechBubbleInput_2:checked ~ #speechBubble_2,
+#bubbleTextInput_21:checked ~ #bubbleText_21,
+#bubbleTextInput_22:checked ~ #bubbleText_22,
+#bubbleTextInput_23:checked ~ #bubbleText_23 {
+    display: block;
+}
+
+
+/* Exam test slides logic
 --------------------------------------------------------------------------------------*/
 .hiddenSection {
     display: none;
@@ -263,34 +298,34 @@
 
 /* Charter questions
 -----------------------------------------------------------*/
-#questionAnswerInputCharter1:checked ~ #questionAnswerLabelCharter_1{
+#questionAnswerInputCharter_1:checked ~ #questionAnswerLabelCharter_1{
     color: lightgreen;
 }
-#questionAnswerInputCharter1:checked ~ #questionAnswerLabelCharter_1::before {
+#questionAnswerInputCharter_1:checked ~ #questionAnswerLabelCharter_1::before {
     background: rgb(35, 124, 0);
     border-color: rgb(255, 255, 255);
 }
 
-#questionAnswerInputCharter2:checked ~ #questionAnswerLabelCharter_2 {
+#questionAnswerInputCharter_2:checked ~ #questionAnswerLabelCharter_2 {
     color: lightgreen;
 }
-#questionAnswerInputCharter2:checked ~ #questionAnswerLabelCharter_2::before {
+#questionAnswerInputCharter_2:checked ~ #questionAnswerLabelCharter_2::before {
     background: rgb(35, 124, 0);
     border-color: rgb(255, 255, 255);
 }
 
-#questionAnswerInputCharter3:checked ~ #questionAnswerLabelCharter_3 {
+#questionAnswerInputCharter_3:checked ~ #questionAnswerLabelCharter_3 {
     color: lightgreen;
 }
-#questionAnswerInputCharter3:checked ~ #questionAnswerLabelCharter_3::before {
+#questionAnswerInputCharter_3:checked ~ #questionAnswerLabelCharter_3::before {
     background: rgb(35, 124, 0);
     border-color: rgb(255, 255, 255);
 }
 
-#questionAnswerInputCharter4:checked ~ #questionAnswerLabelCharter_4 {
+#questionAnswerInputCharter_4:checked ~ #questionAnswerLabelCharter_4 {
     color: rgb(255, 103, 86);
 }
-#questionAnswerInputCharter4:checked ~ #questionAnswerLabelCharter_4::before {
+#questionAnswerInputCharter_4:checked ~ #questionAnswerLabelCharter_4::before {
     background: rgb(124, 0, 0);
     border-color: rgb(255, 255, 255);
 }
@@ -554,5 +589,27 @@
         bottom: -4.7%;
         left: 1.3%;
         transform: rotate(0deg);
+    }
+}
+
+/* Make visible keyframes
+------------------------------------------------*/
+@keyframes makeVisible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Jonny Walk keyframes
+------------------------------------------------*/
+@keyframes jonnyWalk {
+    0% {
+        left: 0em;
+    }
+    100% {
+        left: 80em;
     }
 }
